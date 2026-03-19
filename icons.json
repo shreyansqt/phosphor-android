@@ -1,3 +1,2993 @@
 {
-  "icons": []
+  "icons": [
+    {
+      "name": "acorn",
+      "category": "icon",
+      "keywords": [
+        "acorn"
+      ]
+    },
+    {
+      "name": "address-book-tabs",
+      "category": "icon",
+      "keywords": [
+        "address book tabs"
+      ]
+    },
+    {
+      "name": "address-book",
+      "category": "icon",
+      "keywords": [
+        "address book"
+      ]
+    },
+    {
+      "name": "air-traffic-control",
+      "category": "icon",
+      "keywords": [
+        "air traffic control"
+      ]
+    },
+    {
+      "name": "airplane-in-flight",
+      "category": "icon",
+      "keywords": [
+        "airplane in flight"
+      ]
+    },
+    {
+      "name": "airplane-landing",
+      "category": "icon",
+      "keywords": [
+        "airplane landing"
+      ]
+    },
+    {
+      "name": "airplane-takeoff",
+      "category": "icon",
+      "keywords": [
+        "airplane takeoff"
+      ]
+    },
+    {
+      "name": "airplane-taxiing",
+      "category": "icon",
+      "keywords": [
+        "airplane taxiing"
+      ]
+    },
+    {
+      "name": "airplane-tilt",
+      "category": "icon",
+      "keywords": [
+        "airplane tilt"
+      ]
+    },
+    {
+      "name": "airplane",
+      "category": "icon",
+      "keywords": [
+        "airplane"
+      ]
+    },
+    {
+      "name": "airplay",
+      "category": "icon",
+      "keywords": [
+        "airplay"
+      ]
+    },
+    {
+      "name": "alarm",
+      "category": "icon",
+      "keywords": [
+        "alarm"
+      ]
+    },
+    {
+      "name": "alien",
+      "category": "icon",
+      "keywords": [
+        "alien"
+      ]
+    },
+    {
+      "name": "align-bottom-simple",
+      "category": "icon",
+      "keywords": [
+        "align bottom simple"
+      ]
+    },
+    {
+      "name": "align-bottom",
+      "category": "icon",
+      "keywords": [
+        "align bottom"
+      ]
+    },
+    {
+      "name": "align-center-horizontal-simple",
+      "category": "icon",
+      "keywords": [
+        "align center horizontal simple"
+      ]
+    },
+    {
+      "name": "align-center-horizontal",
+      "category": "icon",
+      "keywords": [
+        "align center horizontal"
+      ]
+    },
+    {
+      "name": "align-center-vertical-simple",
+      "category": "icon",
+      "keywords": [
+        "align center vertical simple"
+      ]
+    },
+    {
+      "name": "align-center-vertical",
+      "category": "icon",
+      "keywords": [
+        "align center vertical"
+      ]
+    },
+    {
+      "name": "align-left-simple",
+      "category": "icon",
+      "keywords": [
+        "align left simple"
+      ]
+    },
+    {
+      "name": "align-left",
+      "category": "icon",
+      "keywords": [
+        "align left"
+      ]
+    },
+    {
+      "name": "align-right-simple",
+      "category": "icon",
+      "keywords": [
+        "align right simple"
+      ]
+    },
+    {
+      "name": "align-right",
+      "category": "icon",
+      "keywords": [
+        "align right"
+      ]
+    },
+    {
+      "name": "align-top-simple",
+      "category": "icon",
+      "keywords": [
+        "align top simple"
+      ]
+    },
+    {
+      "name": "align-top",
+      "category": "icon",
+      "keywords": [
+        "align top"
+      ]
+    },
+    {
+      "name": "amazon-logo",
+      "category": "icon",
+      "keywords": [
+        "amazon logo"
+      ]
+    },
+    {
+      "name": "ambulance",
+      "category": "icon",
+      "keywords": [
+        "ambulance"
+      ]
+    },
+    {
+      "name": "anchor-simple",
+      "category": "icon",
+      "keywords": [
+        "anchor simple"
+      ]
+    },
+    {
+      "name": "anchor",
+      "category": "icon",
+      "keywords": [
+        "anchor"
+      ]
+    },
+    {
+      "name": "android-logo",
+      "category": "icon",
+      "keywords": [
+        "android logo"
+      ]
+    },
+    {
+      "name": "angle",
+      "category": "icon",
+      "keywords": [
+        "angle"
+      ]
+    },
+    {
+      "name": "angular-logo",
+      "category": "icon",
+      "keywords": [
+        "angular logo"
+      ]
+    },
+    {
+      "name": "aperture",
+      "category": "icon",
+      "keywords": [
+        "aperture"
+      ]
+    },
+    {
+      "name": "app-store-logo",
+      "category": "icon",
+      "keywords": [
+        "app store logo"
+      ]
+    },
+    {
+      "name": "app-window",
+      "category": "icon",
+      "keywords": [
+        "app window"
+      ]
+    },
+    {
+      "name": "apple-logo",
+      "category": "icon",
+      "keywords": [
+        "apple logo"
+      ]
+    },
+    {
+      "name": "apple-podcasts-logo",
+      "category": "icon",
+      "keywords": [
+        "apple podcasts logo"
+      ]
+    },
+    {
+      "name": "approximate-equals",
+      "category": "icon",
+      "keywords": [
+        "approximate equals"
+      ]
+    },
+    {
+      "name": "archive",
+      "category": "icon",
+      "keywords": [
+        "archive"
+      ]
+    },
+    {
+      "name": "armchair",
+      "category": "icon",
+      "keywords": [
+        "armchair"
+      ]
+    },
+    {
+      "name": "arrow-arc-left",
+      "category": "icon",
+      "keywords": [
+        "arrow arc left"
+      ]
+    },
+    {
+      "name": "arrow-arc-right",
+      "category": "icon",
+      "keywords": [
+        "arrow arc right"
+      ]
+    },
+    {
+      "name": "arrow-bend-double-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow bend double up left"
+      ]
+    },
+    {
+      "name": "arrow-bend-double-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow bend double up right"
+      ]
+    },
+    {
+      "name": "arrow-bend-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow bend down left"
+      ]
+    },
+    {
+      "name": "arrow-bend-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow bend down right"
+      ]
+    },
+    {
+      "name": "arrow-bend-left-down",
+      "category": "icon",
+      "keywords": [
+        "arrow bend left down"
+      ]
+    },
+    {
+      "name": "arrow-bend-left-up",
+      "category": "icon",
+      "keywords": [
+        "arrow bend left up"
+      ]
+    },
+    {
+      "name": "arrow-bend-right-down",
+      "category": "icon",
+      "keywords": [
+        "arrow bend right down"
+      ]
+    },
+    {
+      "name": "arrow-bend-right-up",
+      "category": "icon",
+      "keywords": [
+        "arrow bend right up"
+      ]
+    },
+    {
+      "name": "arrow-bend-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow bend up left"
+      ]
+    },
+    {
+      "name": "arrow-bend-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow bend up right"
+      ]
+    },
+    {
+      "name": "arrow-circle-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow circle down left"
+      ]
+    },
+    {
+      "name": "arrow-circle-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow circle down right"
+      ]
+    },
+    {
+      "name": "arrow-circle-down",
+      "category": "icon",
+      "keywords": [
+        "arrow circle down"
+      ]
+    },
+    {
+      "name": "arrow-circle-left",
+      "category": "icon",
+      "keywords": [
+        "arrow circle left"
+      ]
+    },
+    {
+      "name": "arrow-circle-right",
+      "category": "icon",
+      "keywords": [
+        "arrow circle right"
+      ]
+    },
+    {
+      "name": "arrow-circle-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow circle up left"
+      ]
+    },
+    {
+      "name": "arrow-circle-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow circle up right"
+      ]
+    },
+    {
+      "name": "arrow-circle-up",
+      "category": "icon",
+      "keywords": [
+        "arrow circle up"
+      ]
+    },
+    {
+      "name": "arrow-clockwise",
+      "category": "icon",
+      "keywords": [
+        "arrow clockwise"
+      ]
+    },
+    {
+      "name": "arrow-counter-clockwise",
+      "category": "icon",
+      "keywords": [
+        "arrow counter clockwise"
+      ]
+    },
+    {
+      "name": "arrow-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow down left"
+      ]
+    },
+    {
+      "name": "arrow-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow down right"
+      ]
+    },
+    {
+      "name": "arrow-down",
+      "category": "icon",
+      "keywords": [
+        "arrow down"
+      ]
+    },
+    {
+      "name": "arrow-elbow-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow down left"
+      ]
+    },
+    {
+      "name": "arrow-elbow-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow down right"
+      ]
+    },
+    {
+      "name": "arrow-elbow-left-down",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow left down"
+      ]
+    },
+    {
+      "name": "arrow-elbow-left-up",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow left up"
+      ]
+    },
+    {
+      "name": "arrow-elbow-left",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow left"
+      ]
+    },
+    {
+      "name": "arrow-elbow-right-down",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow right down"
+      ]
+    },
+    {
+      "name": "arrow-elbow-right-up",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow right up"
+      ]
+    },
+    {
+      "name": "arrow-elbow-right",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow right"
+      ]
+    },
+    {
+      "name": "arrow-elbow-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow up left"
+      ]
+    },
+    {
+      "name": "arrow-elbow-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow elbow up right"
+      ]
+    },
+    {
+      "name": "arrow-fat-down",
+      "category": "icon",
+      "keywords": [
+        "arrow fat down"
+      ]
+    },
+    {
+      "name": "arrow-fat-left",
+      "category": "icon",
+      "keywords": [
+        "arrow fat left"
+      ]
+    },
+    {
+      "name": "arrow-fat-line-down",
+      "category": "icon",
+      "keywords": [
+        "arrow fat line down"
+      ]
+    },
+    {
+      "name": "arrow-fat-line-left",
+      "category": "icon",
+      "keywords": [
+        "arrow fat line left"
+      ]
+    },
+    {
+      "name": "arrow-fat-line-right",
+      "category": "icon",
+      "keywords": [
+        "arrow fat line right"
+      ]
+    },
+    {
+      "name": "arrow-fat-line-up",
+      "category": "icon",
+      "keywords": [
+        "arrow fat line up"
+      ]
+    },
+    {
+      "name": "arrow-fat-lines-down",
+      "category": "icon",
+      "keywords": [
+        "arrow fat lines down"
+      ]
+    },
+    {
+      "name": "arrow-fat-lines-left",
+      "category": "icon",
+      "keywords": [
+        "arrow fat lines left"
+      ]
+    },
+    {
+      "name": "arrow-fat-lines-right",
+      "category": "icon",
+      "keywords": [
+        "arrow fat lines right"
+      ]
+    },
+    {
+      "name": "arrow-fat-lines-up",
+      "category": "icon",
+      "keywords": [
+        "arrow fat lines up"
+      ]
+    },
+    {
+      "name": "arrow-fat-right",
+      "category": "icon",
+      "keywords": [
+        "arrow fat right"
+      ]
+    },
+    {
+      "name": "arrow-fat-up",
+      "category": "icon",
+      "keywords": [
+        "arrow fat up"
+      ]
+    },
+    {
+      "name": "arrow-left",
+      "category": "icon",
+      "keywords": [
+        "arrow left"
+      ]
+    },
+    {
+      "name": "arrow-line-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow line down left"
+      ]
+    },
+    {
+      "name": "arrow-line-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow line down right"
+      ]
+    },
+    {
+      "name": "arrow-line-down",
+      "category": "icon",
+      "keywords": [
+        "arrow line down"
+      ]
+    },
+    {
+      "name": "arrow-line-left",
+      "category": "icon",
+      "keywords": [
+        "arrow line left"
+      ]
+    },
+    {
+      "name": "arrow-line-right",
+      "category": "icon",
+      "keywords": [
+        "arrow line right"
+      ]
+    },
+    {
+      "name": "arrow-line-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow line up left"
+      ]
+    },
+    {
+      "name": "arrow-line-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow line up right"
+      ]
+    },
+    {
+      "name": "arrow-line-up",
+      "category": "icon",
+      "keywords": [
+        "arrow line up"
+      ]
+    },
+    {
+      "name": "arrow-right",
+      "category": "icon",
+      "keywords": [
+        "arrow right"
+      ]
+    },
+    {
+      "name": "arrow-square-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow square down left"
+      ]
+    },
+    {
+      "name": "arrow-square-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow square down right"
+      ]
+    },
+    {
+      "name": "arrow-square-down",
+      "category": "icon",
+      "keywords": [
+        "arrow square down"
+      ]
+    },
+    {
+      "name": "arrow-square-in",
+      "category": "icon",
+      "keywords": [
+        "arrow square in"
+      ]
+    },
+    {
+      "name": "arrow-square-left",
+      "category": "icon",
+      "keywords": [
+        "arrow square left"
+      ]
+    },
+    {
+      "name": "arrow-square-out",
+      "category": "icon",
+      "keywords": [
+        "arrow square out"
+      ]
+    },
+    {
+      "name": "arrow-square-right",
+      "category": "icon",
+      "keywords": [
+        "arrow square right"
+      ]
+    },
+    {
+      "name": "arrow-square-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow square up left"
+      ]
+    },
+    {
+      "name": "arrow-square-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow square up right"
+      ]
+    },
+    {
+      "name": "arrow-square-up",
+      "category": "icon",
+      "keywords": [
+        "arrow square up"
+      ]
+    },
+    {
+      "name": "arrow-u-down-left",
+      "category": "icon",
+      "keywords": [
+        "arrow u down left"
+      ]
+    },
+    {
+      "name": "arrow-u-down-right",
+      "category": "icon",
+      "keywords": [
+        "arrow u down right"
+      ]
+    },
+    {
+      "name": "arrow-u-left-down",
+      "category": "icon",
+      "keywords": [
+        "arrow u left down"
+      ]
+    },
+    {
+      "name": "arrow-u-left-up",
+      "category": "icon",
+      "keywords": [
+        "arrow u left up"
+      ]
+    },
+    {
+      "name": "arrow-u-right-down",
+      "category": "icon",
+      "keywords": [
+        "arrow u right down"
+      ]
+    },
+    {
+      "name": "arrow-u-right-up",
+      "category": "icon",
+      "keywords": [
+        "arrow u right up"
+      ]
+    },
+    {
+      "name": "arrow-u-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow u up left"
+      ]
+    },
+    {
+      "name": "arrow-u-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow u up right"
+      ]
+    },
+    {
+      "name": "arrow-up-left",
+      "category": "icon",
+      "keywords": [
+        "arrow up left"
+      ]
+    },
+    {
+      "name": "arrow-up-right",
+      "category": "icon",
+      "keywords": [
+        "arrow up right"
+      ]
+    },
+    {
+      "name": "arrow-up",
+      "category": "icon",
+      "keywords": [
+        "arrow up"
+      ]
+    },
+    {
+      "name": "arrows-clockwise",
+      "category": "icon",
+      "keywords": [
+        "arrows clockwise"
+      ]
+    },
+    {
+      "name": "arrows-counter-clockwise",
+      "category": "icon",
+      "keywords": [
+        "arrows counter clockwise"
+      ]
+    },
+    {
+      "name": "arrows-down-up",
+      "category": "icon",
+      "keywords": [
+        "arrows down up"
+      ]
+    },
+    {
+      "name": "arrows-horizontal",
+      "category": "icon",
+      "keywords": [
+        "arrows horizontal"
+      ]
+    },
+    {
+      "name": "arrows-in-cardinal",
+      "category": "icon",
+      "keywords": [
+        "arrows in cardinal"
+      ]
+    },
+    {
+      "name": "arrows-in-line-horizontal",
+      "category": "icon",
+      "keywords": [
+        "arrows in line horizontal"
+      ]
+    },
+    {
+      "name": "arrows-in-line-vertical",
+      "category": "icon",
+      "keywords": [
+        "arrows in line vertical"
+      ]
+    },
+    {
+      "name": "arrows-in-simple",
+      "category": "icon",
+      "keywords": [
+        "arrows in simple"
+      ]
+    },
+    {
+      "name": "arrows-in",
+      "category": "icon",
+      "keywords": [
+        "arrows in"
+      ]
+    },
+    {
+      "name": "arrows-left-right",
+      "category": "icon",
+      "keywords": [
+        "arrows left right"
+      ]
+    },
+    {
+      "name": "arrows-merge",
+      "category": "icon",
+      "keywords": [
+        "arrows merge"
+      ]
+    },
+    {
+      "name": "arrows-out-cardinal",
+      "category": "icon",
+      "keywords": [
+        "arrows out cardinal"
+      ]
+    },
+    {
+      "name": "arrows-out-line-horizontal",
+      "category": "icon",
+      "keywords": [
+        "arrows out line horizontal"
+      ]
+    },
+    {
+      "name": "arrows-out-line-vertical",
+      "category": "icon",
+      "keywords": [
+        "arrows out line vertical"
+      ]
+    },
+    {
+      "name": "arrows-out-simple",
+      "category": "icon",
+      "keywords": [
+        "arrows out simple"
+      ]
+    },
+    {
+      "name": "arrows-out",
+      "category": "icon",
+      "keywords": [
+        "arrows out"
+      ]
+    },
+    {
+      "name": "arrows-split",
+      "category": "icon",
+      "keywords": [
+        "arrows split"
+      ]
+    },
+    {
+      "name": "arrows-vertical",
+      "category": "icon",
+      "keywords": [
+        "arrows vertical"
+      ]
+    },
+    {
+      "name": "article-medium",
+      "category": "icon",
+      "keywords": [
+        "article medium"
+      ]
+    },
+    {
+      "name": "article-ny-times",
+      "category": "icon",
+      "keywords": [
+        "article ny times"
+      ]
+    },
+    {
+      "name": "article",
+      "category": "icon",
+      "keywords": [
+        "article"
+      ]
+    },
+    {
+      "name": "asclepius",
+      "category": "icon",
+      "keywords": [
+        "asclepius"
+      ]
+    },
+    {
+      "name": "asterisk-simple",
+      "category": "icon",
+      "keywords": [
+        "asterisk simple"
+      ]
+    },
+    {
+      "name": "asterisk",
+      "category": "icon",
+      "keywords": [
+        "asterisk"
+      ]
+    },
+    {
+      "name": "at",
+      "category": "icon",
+      "keywords": [
+        "at"
+      ]
+    },
+    {
+      "name": "atom",
+      "category": "icon",
+      "keywords": [
+        "atom"
+      ]
+    },
+    {
+      "name": "avocado",
+      "category": "icon",
+      "keywords": [
+        "avocado"
+      ]
+    },
+    {
+      "name": "axe",
+      "category": "icon",
+      "keywords": [
+        "axe"
+      ]
+    },
+    {
+      "name": "baby-carriage",
+      "category": "icon",
+      "keywords": [
+        "baby carriage"
+      ]
+    },
+    {
+      "name": "baby",
+      "category": "icon",
+      "keywords": [
+        "baby"
+      ]
+    },
+    {
+      "name": "backpack",
+      "category": "icon",
+      "keywords": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "backspace",
+      "category": "icon",
+      "keywords": [
+        "backspace"
+      ]
+    },
+    {
+      "name": "bag-simple",
+      "category": "icon",
+      "keywords": [
+        "bag simple"
+      ]
+    },
+    {
+      "name": "bag",
+      "category": "icon",
+      "keywords": [
+        "bag"
+      ]
+    },
+    {
+      "name": "balloon",
+      "category": "icon",
+      "keywords": [
+        "balloon"
+      ]
+    },
+    {
+      "name": "bandaids",
+      "category": "icon",
+      "keywords": [
+        "bandaids"
+      ]
+    },
+    {
+      "name": "bank",
+      "category": "icon",
+      "keywords": [
+        "bank"
+      ]
+    },
+    {
+      "name": "barbell",
+      "category": "icon",
+      "keywords": [
+        "barbell"
+      ]
+    },
+    {
+      "name": "barcode",
+      "category": "icon",
+      "keywords": [
+        "barcode"
+      ]
+    },
+    {
+      "name": "barn",
+      "category": "icon",
+      "keywords": [
+        "barn"
+      ]
+    },
+    {
+      "name": "barricade",
+      "category": "icon",
+      "keywords": [
+        "barricade"
+      ]
+    },
+    {
+      "name": "baseball-cap",
+      "category": "icon",
+      "keywords": [
+        "baseball cap"
+      ]
+    },
+    {
+      "name": "baseball-helmet",
+      "category": "icon",
+      "keywords": [
+        "baseball helmet"
+      ]
+    },
+    {
+      "name": "baseball",
+      "category": "icon",
+      "keywords": [
+        "baseball"
+      ]
+    },
+    {
+      "name": "basket",
+      "category": "icon",
+      "keywords": [
+        "basket"
+      ]
+    },
+    {
+      "name": "basketball",
+      "category": "icon",
+      "keywords": [
+        "basketball"
+      ]
+    },
+    {
+      "name": "bathtub",
+      "category": "icon",
+      "keywords": [
+        "bathtub"
+      ]
+    },
+    {
+      "name": "battery-charging-vertical",
+      "category": "icon",
+      "keywords": [
+        "battery charging vertical"
+      ]
+    },
+    {
+      "name": "battery-charging",
+      "category": "icon",
+      "keywords": [
+        "battery charging"
+      ]
+    },
+    {
+      "name": "battery-empty",
+      "category": "icon",
+      "keywords": [
+        "battery empty"
+      ]
+    },
+    {
+      "name": "battery-full",
+      "category": "icon",
+      "keywords": [
+        "battery full"
+      ]
+    },
+    {
+      "name": "battery-high",
+      "category": "icon",
+      "keywords": [
+        "battery high"
+      ]
+    },
+    {
+      "name": "battery-low",
+      "category": "icon",
+      "keywords": [
+        "battery low"
+      ]
+    },
+    {
+      "name": "battery-medium",
+      "category": "icon",
+      "keywords": [
+        "battery medium"
+      ]
+    },
+    {
+      "name": "battery-plus-vertical",
+      "category": "icon",
+      "keywords": [
+        "battery plus vertical"
+      ]
+    },
+    {
+      "name": "battery-plus",
+      "category": "icon",
+      "keywords": [
+        "battery plus"
+      ]
+    },
+    {
+      "name": "battery-vertical-empty",
+      "category": "icon",
+      "keywords": [
+        "battery vertical empty"
+      ]
+    },
+    {
+      "name": "battery-vertical-full",
+      "category": "icon",
+      "keywords": [
+        "battery vertical full"
+      ]
+    },
+    {
+      "name": "battery-vertical-high",
+      "category": "icon",
+      "keywords": [
+        "battery vertical high"
+      ]
+    },
+    {
+      "name": "battery-vertical-low",
+      "category": "icon",
+      "keywords": [
+        "battery vertical low"
+      ]
+    },
+    {
+      "name": "battery-vertical-medium",
+      "category": "icon",
+      "keywords": [
+        "battery vertical medium"
+      ]
+    },
+    {
+      "name": "battery-warning-vertical",
+      "category": "icon",
+      "keywords": [
+        "battery warning vertical"
+      ]
+    },
+    {
+      "name": "battery-warning",
+      "category": "icon",
+      "keywords": [
+        "battery warning"
+      ]
+    },
+    {
+      "name": "beach-ball",
+      "category": "icon",
+      "keywords": [
+        "beach ball"
+      ]
+    },
+    {
+      "name": "beanie",
+      "category": "icon",
+      "keywords": [
+        "beanie"
+      ]
+    },
+    {
+      "name": "bed",
+      "category": "icon",
+      "keywords": [
+        "bed"
+      ]
+    },
+    {
+      "name": "beer-bottle",
+      "category": "icon",
+      "keywords": [
+        "beer bottle"
+      ]
+    },
+    {
+      "name": "beer-stein",
+      "category": "icon",
+      "keywords": [
+        "beer stein"
+      ]
+    },
+    {
+      "name": "behance-logo",
+      "category": "icon",
+      "keywords": [
+        "behance logo"
+      ]
+    },
+    {
+      "name": "bell-ringing",
+      "category": "icon",
+      "keywords": [
+        "bell ringing"
+      ]
+    },
+    {
+      "name": "bell-simple-ringing",
+      "category": "icon",
+      "keywords": [
+        "bell simple ringing"
+      ]
+    },
+    {
+      "name": "bell-simple-slash",
+      "category": "icon",
+      "keywords": [
+        "bell simple slash"
+      ]
+    },
+    {
+      "name": "bell-simple-z",
+      "category": "icon",
+      "keywords": [
+        "bell simple z"
+      ]
+    },
+    {
+      "name": "bell-simple",
+      "category": "icon",
+      "keywords": [
+        "bell simple"
+      ]
+    },
+    {
+      "name": "bell-slash",
+      "category": "icon",
+      "keywords": [
+        "bell slash"
+      ]
+    },
+    {
+      "name": "bell-z",
+      "category": "icon",
+      "keywords": [
+        "bell z"
+      ]
+    },
+    {
+      "name": "bell",
+      "category": "icon",
+      "keywords": [
+        "bell"
+      ]
+    },
+    {
+      "name": "belt",
+      "category": "icon",
+      "keywords": [
+        "belt"
+      ]
+    },
+    {
+      "name": "bezier-curve",
+      "category": "icon",
+      "keywords": [
+        "bezier curve"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "category": "icon",
+      "keywords": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "binary",
+      "category": "icon",
+      "keywords": [
+        "binary"
+      ]
+    },
+    {
+      "name": "binoculars",
+      "category": "icon",
+      "keywords": [
+        "binoculars"
+      ]
+    },
+    {
+      "name": "biohazard",
+      "category": "icon",
+      "keywords": [
+        "biohazard"
+      ]
+    },
+    {
+      "name": "bird",
+      "category": "icon",
+      "keywords": [
+        "bird"
+      ]
+    },
+    {
+      "name": "blueprint",
+      "category": "icon",
+      "keywords": [
+        "blueprint"
+      ]
+    },
+    {
+      "name": "bluetooth-connected",
+      "category": "icon",
+      "keywords": [
+        "bluetooth connected"
+      ]
+    },
+    {
+      "name": "bluetooth-slash",
+      "category": "icon",
+      "keywords": [
+        "bluetooth slash"
+      ]
+    },
+    {
+      "name": "bluetooth-x",
+      "category": "icon",
+      "keywords": [
+        "bluetooth x"
+      ]
+    },
+    {
+      "name": "bluetooth",
+      "category": "icon",
+      "keywords": [
+        "bluetooth"
+      ]
+    },
+    {
+      "name": "boat",
+      "category": "icon",
+      "keywords": [
+        "boat"
+      ]
+    },
+    {
+      "name": "bomb",
+      "category": "icon",
+      "keywords": [
+        "bomb"
+      ]
+    },
+    {
+      "name": "bone",
+      "category": "icon",
+      "keywords": [
+        "bone"
+      ]
+    },
+    {
+      "name": "book-bookmark",
+      "category": "icon",
+      "keywords": [
+        "book bookmark"
+      ]
+    },
+    {
+      "name": "book-open-text",
+      "category": "icon",
+      "keywords": [
+        "book open text"
+      ]
+    },
+    {
+      "name": "book-open-user",
+      "category": "icon",
+      "keywords": [
+        "book open user"
+      ]
+    },
+    {
+      "name": "book-open",
+      "category": "icon",
+      "keywords": [
+        "book open"
+      ]
+    },
+    {
+      "name": "book",
+      "category": "icon",
+      "keywords": [
+        "book"
+      ]
+    },
+    {
+      "name": "bookmark-simple",
+      "category": "icon",
+      "keywords": [
+        "bookmark simple"
+      ]
+    },
+    {
+      "name": "bookmark",
+      "category": "icon",
+      "keywords": [
+        "bookmark"
+      ]
+    },
+    {
+      "name": "bookmarks-simple",
+      "category": "icon",
+      "keywords": [
+        "bookmarks simple"
+      ]
+    },
+    {
+      "name": "bookmarks",
+      "category": "icon",
+      "keywords": [
+        "bookmarks"
+      ]
+    },
+    {
+      "name": "books",
+      "category": "icon",
+      "keywords": [
+        "books"
+      ]
+    },
+    {
+      "name": "boot",
+      "category": "icon",
+      "keywords": [
+        "boot"
+      ]
+    },
+    {
+      "name": "boules",
+      "category": "icon",
+      "keywords": [
+        "boules"
+      ]
+    },
+    {
+      "name": "bounding-box",
+      "category": "icon",
+      "keywords": [
+        "bounding box"
+      ]
+    },
+    {
+      "name": "bowl-food",
+      "category": "icon",
+      "keywords": [
+        "bowl food"
+      ]
+    },
+    {
+      "name": "bowl-steam",
+      "category": "icon",
+      "keywords": [
+        "bowl steam"
+      ]
+    },
+    {
+      "name": "bowling-ball",
+      "category": "icon",
+      "keywords": [
+        "bowling ball"
+      ]
+    },
+    {
+      "name": "box-arrow-down",
+      "category": "icon",
+      "keywords": [
+        "box arrow down"
+      ]
+    },
+    {
+      "name": "box-arrow-up",
+      "category": "icon",
+      "keywords": [
+        "box arrow up"
+      ]
+    },
+    {
+      "name": "boxing-glove",
+      "category": "icon",
+      "keywords": [
+        "boxing glove"
+      ]
+    },
+    {
+      "name": "brackets-angle",
+      "category": "icon",
+      "keywords": [
+        "brackets angle"
+      ]
+    },
+    {
+      "name": "brackets-curly",
+      "category": "icon",
+      "keywords": [
+        "brackets curly"
+      ]
+    },
+    {
+      "name": "brackets-round",
+      "category": "icon",
+      "keywords": [
+        "brackets round"
+      ]
+    },
+    {
+      "name": "brackets-square",
+      "category": "icon",
+      "keywords": [
+        "brackets square"
+      ]
+    },
+    {
+      "name": "brain",
+      "category": "icon",
+      "keywords": [
+        "brain"
+      ]
+    },
+    {
+      "name": "brandy",
+      "category": "icon",
+      "keywords": [
+        "brandy"
+      ]
+    },
+    {
+      "name": "bread",
+      "category": "icon",
+      "keywords": [
+        "bread"
+      ]
+    },
+    {
+      "name": "bridge",
+      "category": "icon",
+      "keywords": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "briefcase-metal",
+      "category": "icon",
+      "keywords": [
+        "briefcase metal"
+      ]
+    },
+    {
+      "name": "briefcase",
+      "category": "icon",
+      "keywords": [
+        "briefcase"
+      ]
+    },
+    {
+      "name": "broadcast",
+      "category": "icon",
+      "keywords": [
+        "broadcast"
+      ]
+    },
+    {
+      "name": "broom",
+      "category": "icon",
+      "keywords": [
+        "broom"
+      ]
+    },
+    {
+      "name": "browser",
+      "category": "icon",
+      "keywords": [
+        "browser"
+      ]
+    },
+    {
+      "name": "browsers",
+      "category": "icon",
+      "keywords": [
+        "browsers"
+      ]
+    },
+    {
+      "name": "bug-beetle",
+      "category": "icon",
+      "keywords": [
+        "bug beetle"
+      ]
+    },
+    {
+      "name": "bug-droid",
+      "category": "icon",
+      "keywords": [
+        "bug droid"
+      ]
+    },
+    {
+      "name": "bug",
+      "category": "icon",
+      "keywords": [
+        "bug"
+      ]
+    },
+    {
+      "name": "building-apartment",
+      "category": "icon",
+      "keywords": [
+        "building apartment"
+      ]
+    },
+    {
+      "name": "building-office",
+      "category": "icon",
+      "keywords": [
+        "building office"
+      ]
+    },
+    {
+      "name": "building",
+      "category": "icon",
+      "keywords": [
+        "building"
+      ]
+    },
+    {
+      "name": "buildings",
+      "category": "icon",
+      "keywords": [
+        "buildings"
+      ]
+    },
+    {
+      "name": "bulldozer",
+      "category": "icon",
+      "keywords": [
+        "bulldozer"
+      ]
+    },
+    {
+      "name": "bus",
+      "category": "icon",
+      "keywords": [
+        "bus"
+      ]
+    },
+    {
+      "name": "butterfly",
+      "category": "icon",
+      "keywords": [
+        "butterfly"
+      ]
+    },
+    {
+      "name": "cable-car",
+      "category": "icon",
+      "keywords": [
+        "cable car"
+      ]
+    },
+    {
+      "name": "cactus",
+      "category": "icon",
+      "keywords": [
+        "cactus"
+      ]
+    },
+    {
+      "name": "cake",
+      "category": "icon",
+      "keywords": [
+        "cake"
+      ]
+    },
+    {
+      "name": "calculator",
+      "category": "icon",
+      "keywords": [
+        "calculator"
+      ]
+    },
+    {
+      "name": "calendar-blank",
+      "category": "icon",
+      "keywords": [
+        "calendar blank"
+      ]
+    },
+    {
+      "name": "calendar-check",
+      "category": "icon",
+      "keywords": [
+        "calendar check"
+      ]
+    },
+    {
+      "name": "calendar-dot",
+      "category": "icon",
+      "keywords": [
+        "calendar dot"
+      ]
+    },
+    {
+      "name": "calendar-dots",
+      "category": "icon",
+      "keywords": [
+        "calendar dots"
+      ]
+    },
+    {
+      "name": "calendar-heart",
+      "category": "icon",
+      "keywords": [
+        "calendar heart"
+      ]
+    },
+    {
+      "name": "calendar-minus",
+      "category": "icon",
+      "keywords": [
+        "calendar minus"
+      ]
+    },
+    {
+      "name": "calendar-plus",
+      "category": "icon",
+      "keywords": [
+        "calendar plus"
+      ]
+    },
+    {
+      "name": "calendar-slash",
+      "category": "icon",
+      "keywords": [
+        "calendar slash"
+      ]
+    },
+    {
+      "name": "calendar-star",
+      "category": "icon",
+      "keywords": [
+        "calendar star"
+      ]
+    },
+    {
+      "name": "calendar-x",
+      "category": "icon",
+      "keywords": [
+        "calendar x"
+      ]
+    },
+    {
+      "name": "calendar",
+      "category": "icon",
+      "keywords": [
+        "calendar"
+      ]
+    },
+    {
+      "name": "call-bell",
+      "category": "icon",
+      "keywords": [
+        "call bell"
+      ]
+    },
+    {
+      "name": "camera-plus",
+      "category": "icon",
+      "keywords": [
+        "camera plus"
+      ]
+    },
+    {
+      "name": "camera-rotate",
+      "category": "icon",
+      "keywords": [
+        "camera rotate"
+      ]
+    },
+    {
+      "name": "camera-slash",
+      "category": "icon",
+      "keywords": [
+        "camera slash"
+      ]
+    },
+    {
+      "name": "camera",
+      "category": "icon",
+      "keywords": [
+        "camera"
+      ]
+    },
+    {
+      "name": "campfire",
+      "category": "icon",
+      "keywords": [
+        "campfire"
+      ]
+    },
+    {
+      "name": "car-battery",
+      "category": "icon",
+      "keywords": [
+        "car battery"
+      ]
+    },
+    {
+      "name": "car-profile",
+      "category": "icon",
+      "keywords": [
+        "car profile"
+      ]
+    },
+    {
+      "name": "car-simple",
+      "category": "icon",
+      "keywords": [
+        "car simple"
+      ]
+    },
+    {
+      "name": "car",
+      "category": "icon",
+      "keywords": [
+        "car"
+      ]
+    },
+    {
+      "name": "cardholder",
+      "category": "icon",
+      "keywords": [
+        "cardholder"
+      ]
+    },
+    {
+      "name": "cards-three",
+      "category": "icon",
+      "keywords": [
+        "cards three"
+      ]
+    },
+    {
+      "name": "cards",
+      "category": "icon",
+      "keywords": [
+        "cards"
+      ]
+    },
+    {
+      "name": "caret-circle-double-down",
+      "category": "icon",
+      "keywords": [
+        "caret circle double down"
+      ]
+    },
+    {
+      "name": "caret-circle-double-left",
+      "category": "icon",
+      "keywords": [
+        "caret circle double left"
+      ]
+    },
+    {
+      "name": "caret-circle-double-right",
+      "category": "icon",
+      "keywords": [
+        "caret circle double right"
+      ]
+    },
+    {
+      "name": "caret-circle-double-up",
+      "category": "icon",
+      "keywords": [
+        "caret circle double up"
+      ]
+    },
+    {
+      "name": "caret-circle-down",
+      "category": "icon",
+      "keywords": [
+        "caret circle down"
+      ]
+    },
+    {
+      "name": "caret-circle-left",
+      "category": "icon",
+      "keywords": [
+        "caret circle left"
+      ]
+    },
+    {
+      "name": "caret-circle-right",
+      "category": "icon",
+      "keywords": [
+        "caret circle right"
+      ]
+    },
+    {
+      "name": "caret-circle-up-down",
+      "category": "icon",
+      "keywords": [
+        "caret circle up down"
+      ]
+    },
+    {
+      "name": "caret-circle-up",
+      "category": "icon",
+      "keywords": [
+        "caret circle up"
+      ]
+    },
+    {
+      "name": "caret-double-down",
+      "category": "icon",
+      "keywords": [
+        "caret double down"
+      ]
+    },
+    {
+      "name": "caret-double-left",
+      "category": "icon",
+      "keywords": [
+        "caret double left"
+      ]
+    },
+    {
+      "name": "caret-double-right",
+      "category": "icon",
+      "keywords": [
+        "caret double right"
+      ]
+    },
+    {
+      "name": "caret-double-up",
+      "category": "icon",
+      "keywords": [
+        "caret double up"
+      ]
+    },
+    {
+      "name": "caret-down",
+      "category": "icon",
+      "keywords": [
+        "caret down"
+      ]
+    },
+    {
+      "name": "caret-left",
+      "category": "icon",
+      "keywords": [
+        "caret left"
+      ]
+    },
+    {
+      "name": "caret-line-down",
+      "category": "icon",
+      "keywords": [
+        "caret line down"
+      ]
+    },
+    {
+      "name": "caret-line-left",
+      "category": "icon",
+      "keywords": [
+        "caret line left"
+      ]
+    },
+    {
+      "name": "caret-line-right",
+      "category": "icon",
+      "keywords": [
+        "caret line right"
+      ]
+    },
+    {
+      "name": "caret-line-up",
+      "category": "icon",
+      "keywords": [
+        "caret line up"
+      ]
+    },
+    {
+      "name": "caret-right",
+      "category": "icon",
+      "keywords": [
+        "caret right"
+      ]
+    },
+    {
+      "name": "caret-up-down",
+      "category": "icon",
+      "keywords": [
+        "caret up down"
+      ]
+    },
+    {
+      "name": "caret-up",
+      "category": "icon",
+      "keywords": [
+        "caret up"
+      ]
+    },
+    {
+      "name": "carrot",
+      "category": "icon",
+      "keywords": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "cash-register",
+      "category": "icon",
+      "keywords": [
+        "cash register"
+      ]
+    },
+    {
+      "name": "cassette-tape",
+      "category": "icon",
+      "keywords": [
+        "cassette tape"
+      ]
+    },
+    {
+      "name": "castle-turret",
+      "category": "icon",
+      "keywords": [
+        "castle turret"
+      ]
+    },
+    {
+      "name": "cat",
+      "category": "icon",
+      "keywords": [
+        "cat"
+      ]
+    },
+    {
+      "name": "cell-signal-full",
+      "category": "icon",
+      "keywords": [
+        "cell signal full"
+      ]
+    },
+    {
+      "name": "cell-signal-high",
+      "category": "icon",
+      "keywords": [
+        "cell signal high"
+      ]
+    },
+    {
+      "name": "cell-signal-low",
+      "category": "icon",
+      "keywords": [
+        "cell signal low"
+      ]
+    },
+    {
+      "name": "cell-signal-medium",
+      "category": "icon",
+      "keywords": [
+        "cell signal medium"
+      ]
+    },
+    {
+      "name": "cell-signal-none",
+      "category": "icon",
+      "keywords": [
+        "cell signal none"
+      ]
+    },
+    {
+      "name": "cell-signal-slash",
+      "category": "icon",
+      "keywords": [
+        "cell signal slash"
+      ]
+    },
+    {
+      "name": "cell-signal-x",
+      "category": "icon",
+      "keywords": [
+        "cell signal x"
+      ]
+    },
+    {
+      "name": "cell-tower",
+      "category": "icon",
+      "keywords": [
+        "cell tower"
+      ]
+    },
+    {
+      "name": "certificate",
+      "category": "icon",
+      "keywords": [
+        "certificate"
+      ]
+    },
+    {
+      "name": "chair",
+      "category": "icon",
+      "keywords": [
+        "chair"
+      ]
+    },
+    {
+      "name": "chalkboard-simple",
+      "category": "icon",
+      "keywords": [
+        "chalkboard simple"
+      ]
+    },
+    {
+      "name": "chalkboard-teacher",
+      "category": "icon",
+      "keywords": [
+        "chalkboard teacher"
+      ]
+    },
+    {
+      "name": "chalkboard",
+      "category": "icon",
+      "keywords": [
+        "chalkboard"
+      ]
+    },
+    {
+      "name": "champagne",
+      "category": "icon",
+      "keywords": [
+        "champagne"
+      ]
+    },
+    {
+      "name": "charging-station",
+      "category": "icon",
+      "keywords": [
+        "charging station"
+      ]
+    },
+    {
+      "name": "chart-bar-horizontal",
+      "category": "icon",
+      "keywords": [
+        "chart bar horizontal"
+      ]
+    },
+    {
+      "name": "chart-bar",
+      "category": "icon",
+      "keywords": [
+        "chart bar"
+      ]
+    },
+    {
+      "name": "chart-donut",
+      "category": "icon",
+      "keywords": [
+        "chart donut"
+      ]
+    },
+    {
+      "name": "chart-line-down",
+      "category": "icon",
+      "keywords": [
+        "chart line down"
+      ]
+    },
+    {
+      "name": "chart-line-up",
+      "category": "icon",
+      "keywords": [
+        "chart line up"
+      ]
+    },
+    {
+      "name": "chart-line",
+      "category": "icon",
+      "keywords": [
+        "chart line"
+      ]
+    },
+    {
+      "name": "chart-pie-slice",
+      "category": "icon",
+      "keywords": [
+        "chart pie slice"
+      ]
+    },
+    {
+      "name": "chart-pie",
+      "category": "icon",
+      "keywords": [
+        "chart pie"
+      ]
+    },
+    {
+      "name": "chart-polar",
+      "category": "icon",
+      "keywords": [
+        "chart polar"
+      ]
+    },
+    {
+      "name": "chart-scatter",
+      "category": "icon",
+      "keywords": [
+        "chart scatter"
+      ]
+    },
+    {
+      "name": "chat-centered-dots",
+      "category": "icon",
+      "keywords": [
+        "chat centered dots"
+      ]
+    },
+    {
+      "name": "chat-centered-slash",
+      "category": "icon",
+      "keywords": [
+        "chat centered slash"
+      ]
+    },
+    {
+      "name": "chat-centered-text",
+      "category": "icon",
+      "keywords": [
+        "chat centered text"
+      ]
+    },
+    {
+      "name": "chat-centered",
+      "category": "icon",
+      "keywords": [
+        "chat centered"
+      ]
+    },
+    {
+      "name": "chat-circle-dots",
+      "category": "icon",
+      "keywords": [
+        "chat circle dots"
+      ]
+    },
+    {
+      "name": "chat-circle-slash",
+      "category": "icon",
+      "keywords": [
+        "chat circle slash"
+      ]
+    },
+    {
+      "name": "chat-circle-text",
+      "category": "icon",
+      "keywords": [
+        "chat circle text"
+      ]
+    },
+    {
+      "name": "chat-circle",
+      "category": "icon",
+      "keywords": [
+        "chat circle"
+      ]
+    },
+    {
+      "name": "chat-dots",
+      "category": "icon",
+      "keywords": [
+        "chat dots"
+      ]
+    },
+    {
+      "name": "chat-slash",
+      "category": "icon",
+      "keywords": [
+        "chat slash"
+      ]
+    },
+    {
+      "name": "chat-teardrop-dots",
+      "category": "icon",
+      "keywords": [
+        "chat teardrop dots"
+      ]
+    },
+    {
+      "name": "chat-teardrop-slash",
+      "category": "icon",
+      "keywords": [
+        "chat teardrop slash"
+      ]
+    },
+    {
+      "name": "chat-teardrop-text",
+      "category": "icon",
+      "keywords": [
+        "chat teardrop text"
+      ]
+    },
+    {
+      "name": "chat-teardrop",
+      "category": "icon",
+      "keywords": [
+        "chat teardrop"
+      ]
+    },
+    {
+      "name": "chat-text",
+      "category": "icon",
+      "keywords": [
+        "chat text"
+      ]
+    },
+    {
+      "name": "chat",
+      "category": "icon",
+      "keywords": [
+        "chat"
+      ]
+    },
+    {
+      "name": "chats-circle",
+      "category": "icon",
+      "keywords": [
+        "chats circle"
+      ]
+    },
+    {
+      "name": "chats-teardrop",
+      "category": "icon",
+      "keywords": [
+        "chats teardrop"
+      ]
+    },
+    {
+      "name": "chats",
+      "category": "icon",
+      "keywords": [
+        "chats"
+      ]
+    },
+    {
+      "name": "check-circle",
+      "category": "icon",
+      "keywords": [
+        "check circle"
+      ]
+    },
+    {
+      "name": "check-fat",
+      "category": "icon",
+      "keywords": [
+        "check fat"
+      ]
+    },
+    {
+      "name": "check-square-offset",
+      "category": "icon",
+      "keywords": [
+        "check square offset"
+      ]
+    },
+    {
+      "name": "check-square",
+      "category": "icon",
+      "keywords": [
+        "check square"
+      ]
+    },
+    {
+      "name": "check",
+      "category": "icon",
+      "keywords": [
+        "check"
+      ]
+    },
+    {
+      "name": "checkerboard",
+      "category": "icon",
+      "keywords": [
+        "checkerboard"
+      ]
+    },
+    {
+      "name": "checks",
+      "category": "icon",
+      "keywords": [
+        "checks"
+      ]
+    },
+    {
+      "name": "cheers",
+      "category": "icon",
+      "keywords": [
+        "cheers"
+      ]
+    },
+    {
+      "name": "cheese",
+      "category": "icon",
+      "keywords": [
+        "cheese"
+      ]
+    },
+    {
+      "name": "chef-hat",
+      "category": "icon",
+      "keywords": [
+        "chef hat"
+      ]
+    },
+    {
+      "name": "cherries",
+      "category": "icon",
+      "keywords": [
+        "cherries"
+      ]
+    },
+    {
+      "name": "church",
+      "category": "icon",
+      "keywords": [
+        "church"
+      ]
+    },
+    {
+      "name": "cigarette-slash",
+      "category": "icon",
+      "keywords": [
+        "cigarette slash"
+      ]
+    },
+    {
+      "name": "cigarette",
+      "category": "icon",
+      "keywords": [
+        "cigarette"
+      ]
+    },
+    {
+      "name": "circle-dashed",
+      "category": "icon",
+      "keywords": [
+        "circle dashed"
+      ]
+    },
+    {
+      "name": "circle-half-tilt",
+      "category": "icon",
+      "keywords": [
+        "circle half tilt"
+      ]
+    },
+    {
+      "name": "circle-half",
+      "category": "icon",
+      "keywords": [
+        "circle half"
+      ]
+    },
+    {
+      "name": "circle-notch",
+      "category": "icon",
+      "keywords": [
+        "circle notch"
+      ]
+    },
+    {
+      "name": "circle",
+      "category": "icon",
+      "keywords": [
+        "circle"
+      ]
+    },
+    {
+      "name": "circles-four",
+      "category": "icon",
+      "keywords": [
+        "circles four"
+      ]
+    },
+    {
+      "name": "circles-three-plus",
+      "category": "icon",
+      "keywords": [
+        "circles three plus"
+      ]
+    },
+    {
+      "name": "circles-three",
+      "category": "icon",
+      "keywords": [
+        "circles three"
+      ]
+    },
+    {
+      "name": "circuitry",
+      "category": "icon",
+      "keywords": [
+        "circuitry"
+      ]
+    },
+    {
+      "name": "city",
+      "category": "icon",
+      "keywords": [
+        "city"
+      ]
+    },
+    {
+      "name": "clipboard-text",
+      "category": "icon",
+      "keywords": [
+        "clipboard text"
+      ]
+    },
+    {
+      "name": "clipboard",
+      "category": "icon",
+      "keywords": [
+        "clipboard"
+      ]
+    },
+    {
+      "name": "clock-afternoon",
+      "category": "icon",
+      "keywords": [
+        "clock afternoon"
+      ]
+    },
+    {
+      "name": "clock-clockwise",
+      "category": "icon",
+      "keywords": [
+        "clock clockwise"
+      ]
+    },
+    {
+      "name": "clock-countdown",
+      "category": "icon",
+      "keywords": [
+        "clock countdown"
+      ]
+    },
+    {
+      "name": "clock-counter-clockwise",
+      "category": "icon",
+      "keywords": [
+        "clock counter clockwise"
+      ]
+    },
+    {
+      "name": "clock-user",
+      "category": "icon",
+      "keywords": [
+        "clock user"
+      ]
+    },
+    {
+      "name": "clock",
+      "category": "icon",
+      "keywords": [
+        "clock"
+      ]
+    },
+    {
+      "name": "closed-captioning",
+      "category": "icon",
+      "keywords": [
+        "closed captioning"
+      ]
+    },
+    {
+      "name": "cloud-arrow-down",
+      "category": "icon",
+      "keywords": [
+        "cloud arrow down"
+      ]
+    },
+    {
+      "name": "cloud-arrow-up",
+      "category": "icon",
+      "keywords": [
+        "cloud arrow up"
+      ]
+    },
+    {
+      "name": "cloud-check",
+      "category": "icon",
+      "keywords": [
+        "cloud check"
+      ]
+    },
+    {
+      "name": "cloud-fog",
+      "category": "icon",
+      "keywords": [
+        "cloud fog"
+      ]
+    },
+    {
+      "name": "cloud-lightning",
+      "category": "icon",
+      "keywords": [
+        "cloud lightning"
+      ]
+    },
+    {
+      "name": "cloud-moon",
+      "category": "icon",
+      "keywords": [
+        "cloud moon"
+      ]
+    },
+    {
+      "name": "cloud-rain",
+      "category": "icon",
+      "keywords": [
+        "cloud rain"
+      ]
+    },
+    {
+      "name": "cloud-slash",
+      "category": "icon",
+      "keywords": [
+        "cloud slash"
+      ]
+    },
+    {
+      "name": "cloud-snow",
+      "category": "icon",
+      "keywords": [
+        "cloud snow"
+      ]
+    },
+    {
+      "name": "cloud-sun",
+      "category": "icon",
+      "keywords": [
+        "cloud sun"
+      ]
+    },
+    {
+      "name": "cloud-warning",
+      "category": "icon",
+      "keywords": [
+        "cloud warning"
+      ]
+    },
+    {
+      "name": "cloud-x",
+      "category": "icon",
+      "keywords": [
+        "cloud x"
+      ]
+    },
+    {
+      "name": "cloud",
+      "category": "icon",
+      "keywords": [
+        "cloud"
+      ]
+    },
+    {
+      "name": "clover",
+      "category": "icon",
+      "keywords": [
+        "clover"
+      ]
+    },
+    {
+      "name": "club",
+      "category": "icon",
+      "keywords": [
+        "club"
+      ]
+    },
+    {
+      "name": "coat-hanger",
+      "category": "icon",
+      "keywords": [
+        "coat hanger"
+      ]
+    },
+    {
+      "name": "coda-logo",
+      "category": "icon",
+      "keywords": [
+        "coda logo"
+      ]
+    },
+    {
+      "name": "code-block",
+      "category": "icon",
+      "keywords": [
+        "code block"
+      ]
+    },
+    {
+      "name": "code-simple",
+      "category": "icon",
+      "keywords": [
+        "code simple"
+      ]
+    },
+    {
+      "name": "code",
+      "category": "icon",
+      "keywords": [
+        "code"
+      ]
+    },
+    {
+      "name": "codepen-logo",
+      "category": "icon",
+      "keywords": [
+        "codepen logo"
+      ]
+    },
+    {
+      "name": "codesandbox-logo",
+      "category": "icon",
+      "keywords": [
+        "codesandbox logo"
+      ]
+    },
+    {
+      "name": "coffee-bean",
+      "category": "icon",
+      "keywords": [
+        "coffee bean"
+      ]
+    },
+    {
+      "name": "coffee",
+      "category": "icon",
+      "keywords": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "coin-vertical",
+      "category": "icon",
+      "keywords": [
+        "coin vertical"
+      ]
+    },
+    {
+      "name": "coin",
+      "category": "icon",
+      "keywords": [
+        "coin"
+      ]
+    },
+    {
+      "name": "coins",
+      "category": "icon",
+      "keywords": [
+        "coins"
+      ]
+    },
+    {
+      "name": "columns-plus-left",
+      "category": "icon",
+      "keywords": [
+        "columns plus left"
+      ]
+    },
+    {
+      "name": "columns-plus-right",
+      "category": "icon",
+      "keywords": [
+        "columns plus right"
+      ]
+    },
+    {
+      "name": "columns",
+      "category": "icon",
+      "keywords": [
+        "columns"
+      ]
+    },
+    {
+      "name": "command",
+      "category": "icon",
+      "keywords": [
+        "command"
+      ]
+    },
+    {
+      "name": "compass-rose",
+      "category": "icon",
+      "keywords": [
+        "compass rose"
+      ]
+    },
+    {
+      "name": "compass-tool",
+      "category": "icon",
+      "keywords": [
+        "compass tool"
+      ]
+    },
+    {
+      "name": "compass",
+      "category": "icon",
+      "keywords": [
+        "compass"
+      ]
+    },
+    {
+      "name": "computer-tower",
+      "category": "icon",
+      "keywords": [
+        "computer tower"
+      ]
+    },
+    {
+      "name": "confetti",
+      "category": "icon",
+      "keywords": [
+        "confetti"
+      ]
+    },
+    {
+      "name": "contactless-payment",
+      "category": "icon",
+      "keywords": [
+        "contactless payment"
+      ]
+    },
+    {
+      "name": "control",
+      "category": "icon",
+      "keywords": [
+        "control"
+      ]
+    },
+    {
+      "name": "cookie",
+      "category": "icon",
+      "keywords": [
+        "cookie"
+      ]
+    },
+    {
+      "name": "cooking-pot",
+      "category": "icon",
+      "keywords": [
+        "cooking pot"
+      ]
+    },
+    {
+      "name": "copy-simple",
+      "category": "icon",
+      "keywords": [
+        "copy simple"
+      ]
+    },
+    {
+      "name": "copy",
+      "category": "icon",
+      "keywords": [
+        "copy"
+      ]
+    }
+  ]
 }
