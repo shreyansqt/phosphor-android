@@ -2,6 +2,8 @@
 
 Auto-synced Phosphor icons converted to Android Vector Drawables.
 
+🎨 **[Preview all icons →](https://shreyansqt.github.io/phosphor-android/)**
+
 ## Usage
 
 Add icons from the `icons/` directory to your Android project's `res/drawable/`:
@@ -26,8 +28,10 @@ Or in XML:
 
 ## Icons
 
-All available icons are listed in `icons.json` with metadata (name, category, keywords, variants).
+All available icons are listed in `icons.json` with metadata (name, category, keywords).
+
+Use the **[interactive preview page](https://shreyansqt.github.io/phosphor-android/)** to browse and search all 427+ icons.
 
 ## Updates
 
-Icons are automatically synced weekly from [Phosphor Icons](https://phosphoricons.com) and converted to Android Vector Drawables.
+Icons are automatically synced weekly from [Phosphor Icons](https://phosphoricons.com) and converted to Android Vector Drawables. The preview page regenerates on each sync.
