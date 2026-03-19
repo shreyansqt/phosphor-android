@@ -1,0 +1,6167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phosphor Icons for Android</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fafafa;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .search-box {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .search-box input {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: #333;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .icon-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-card:hover {
+      border-color: #333;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .icon-card.hidden {
+      display: none;
+    }
+
+    .icon-preview {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .icon-preview svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon-name {
+      font-size: 12px;
+      color: #666;
+      word-break: break-word;
+      font-weight: 500;
+    }
+
+    .stats {
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .no-results {
+      text-align: center;
+      color: #999;
+      padding: 40px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Phosphor Icons for Android</h1>
+    
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="search" 
+        placeholder="Search icons by name..."
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="stats">
+      <span id="count">427</span> icons
+    </div>
+
+    <div class="icon-grid" id="grid">
+      
+        <div class="icon-card" data-name="acorn" data-keywords="acorn">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,112v16c0,53-88,88-88,112,0-24-88-59-88-112V112" />
+</svg></div>
+          <p class="icon-name">acorn</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="address-book-tabs" data-keywords="address book tabs">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,168c3.55-13.8,17.09-24,32-24s28.46,10.19,32,24" />
+</svg></div>
+          <p class="icon-name">address-book-tabs</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="address-book" data-keywords="address book">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,168a60,60,0,0,1,96,0" />
+</svg></div>
+          <p class="icon-name">address-book</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="air-traffic-control" data-keywords="air traffic control">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,24h48" />
+</svg></div>
+          <p class="icon-name">air-traffic-control</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane-in-flight" data-keywords="airplane in flight">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M144,104h64a32,32,0,0,1,32,32v24H61.06a32,32,0,0,1-30.65-22.8L16.34,90.3A8,8,0,0,1,24,80h8l24,24H92.91L80.42,66.53A8,8,0,0,1,88,56h8Z" />
+</svg></div>
+          <p class="icon-name">airplane-in-flight</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane-landing" data-keywords="airplane landing">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M60,75.46,104,88V48a8,8,0,0,1,10.53-7.59L120,42.24l24,57.2,64.56,18A32,32,0,0,1,232,148.32V184L55.37,134.54A32,32,0,0,1,32,103.73V48a8,8,0,0,1,10.53-7.59L48,42.24Z" />
+</svg></div>
+          <p class="icon-name">airplane-landing</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane-takeoff" data-keywords="airplane takeoff">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,116.51,58.65,88a8,8,0,0,1,2.2-13.3L68,72l57.53,21.17,54.84-32.75a32,32,0,0,1,41,7.32L240,91.64l-147.41,88a32,32,0,0,1-38-4.32L18.53,140a8,8,0,0,1,2.32-13.19L24,125.27,55.79,136Z" />
+</svg></div>
+          <p class="icon-name">airplane-takeoff</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane-taxiing" data-keywords="airplane taxiing">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M144,104h64a32,32,0,0,1,32,32v24H61.06a32,32,0,0,1-30.65-22.8L16.34,90.3A8,8,0,0,1,24,80h8l24,24H92.91L80.42,66.53A8,8,0,0,1,88,56h8Z" />
+</svg></div>
+          <p class="icon-name">airplane-taxiing</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane-tilt" data-keywords="airplane tilt">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,224l24-24V176l24-24,48,72,24-24-32-88,33-31A24,24,0,0,0,175,47L144,80,56,48,32,72l72,48L80,144H56L32,168l40,16Z" />
+</svg></div>
+          <p class="icon-name">airplane-tilt</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplane" data-keywords="airplane">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M152,96l80,40v32l-80-16v32l16,16v32l-40-16L88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0Z" />
+</svg></div>
+          <p class="icon-name">airplane</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="airplay" data-keywords="airplay">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,192H48a16,16,0,0,1-16-16V64A16,16,0,0,1,48,48H208a16,16,0,0,1,16,16V176a16,16,0,0,1-16,16h-8" />
+</svg></div>
+          <p class="icon-name">airplay</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="alarm" data-keywords="alarm">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">alarm</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="alien" data-keywords="alien">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,112c0,48.6-56,120-88,120S40,160.6,40,112a88,88,0,0,1,176,0Z" />
+</svg></div>
+          <p class="icon-name">alien</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-bottom-simple" data-keywords="align bottom simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-bottom-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-bottom" data-keywords="align bottom">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-bottom</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-center-horizontal-simple" data-keywords="align center horizontal simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-center-horizontal-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-center-horizontal" data-keywords="align center horizontal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-center-horizontal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-center-vertical-simple" data-keywords="align center vertical simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-center-vertical-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-center-vertical" data-keywords="align center vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-center-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-left-simple" data-keywords="align left simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-left-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-left" data-keywords="align left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-right-simple" data-keywords="align right simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-right-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-right" data-keywords="align right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-top-simple" data-keywords="align top simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-top-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="align-top" data-keywords="align top">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">align-top</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="amazon-logo" data-keywords="amazon logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M240,168l-16,16s-36,40-96,40-96-40-96-40" />
+</svg></div>
+          <p class="icon-name">amazon-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="ambulance" data-keywords="ambulance">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,192H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184V169.37" />
+</svg></div>
+          <p class="icon-name">ambulance</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="anchor-simple" data-keywords="anchor simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,120H32a96,96,0,0,0,192,0H200" />
+</svg></div>
+          <p class="icon-name">anchor-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="anchor" data-keywords="anchor">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,144c0,64-88,24-88,88,0-64-88-24-88-88" />
+</svg></div>
+          <p class="icon-name">anchor</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="android-logo" data-keywords="android logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,184V161.13C24,103.65,70.15,56.2,127.63,56A104,104,0,0,1,232,160v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,184Z" />
+</svg></div>
+          <p class="icon-name">android-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="angle" data-keywords="angle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,72a96,96,0,0,1,96,96" />
+</svg></div>
+          <p class="icon-name">angle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="angular-logo" data-keywords="angular logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">angular-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="aperture" data-keywords="aperture">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">aperture</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="app-store-logo" data-keywords="app store logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">app-store-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="app-window" data-keywords="app window">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">app-window</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="apple-logo" data-keywords="apple logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,73.52C204.53,62.66,185,56,168,56a63.72,63.72,0,0,0-40,14h0A63.71,63.71,0,0,0,88.88,56C52,55.5,23.06,86.3,24,123.19a119.62,119.62,0,0,0,37.65,84.12A31.92,31.92,0,0,0,83.6,216h87.7a31.75,31.75,0,0,0,23.26-10c15.85-17,21.44-33.2,21.44-33.2h0c-16.79-11.53-24-30.87-24-52.78,0-18.3,11.68-34.81,24-46.48Z" />
+</svg></div>
+          <p class="icon-name">apple-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="apple-podcasts-logo" data-keywords="apple podcasts logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M131.56,224h-7.12a16.2,16.2,0,0,1-15.76-12.12l-12.19-48A16.06,16.06,0,0,1,112.25,144h31.5a16.06,16.06,0,0,1,15.76,19.88l-12.19,48A16.2,16.2,0,0,1,131.56,224Z" />
+</svg></div>
+          <p class="icon-name">apple-podcasts-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="approximate-equals" data-keywords="approximate equals">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40,161.61c72-59.69,104,56.47,176-3.22" />
+</svg></div>
+          <p class="icon-name">approximate-equals</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="archive" data-keywords="archive">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96" />
+</svg></div>
+          <p class="icon-name">archive</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="armchair" data-keywords="armchair">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,96V72A32,32,0,0,1,80,40h96a32,32,0,0,1,32,32V96" />
+</svg></div>
+          <p class="icon-name">armchair</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-arc-left" data-keywords="arrow arc left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,184A96,96,0,0,0,60.12,116.12L24,152" />
+</svg></div>
+          <p class="icon-name">arrow-arc-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-arc-right" data-keywords="arrow arc right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,184a96,96,0,0,1,163.88-67.88L232,152" />
+</svg></div>
+          <p class="icon-name">arrow-arc-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-double-up-left" data-keywords="arrow bend double up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,200a96,96,0,0,0-96-96H80" />
+</svg></div>
+          <p class="icon-name">arrow-bend-double-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-double-up-right" data-keywords="arrow bend double up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,200a96,96,0,0,1,96-96h48" />
+</svg></div>
+          <p class="icon-name">arrow-bend-double-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-down-left" data-keywords="arrow bend down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,56a96,96,0,0,1-96,96H32" />
+</svg></div>
+          <p class="icon-name">arrow-bend-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-down-right" data-keywords="arrow bend down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,56a96,96,0,0,0,96,96h96" />
+</svg></div>
+          <p class="icon-name">arrow-bend-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-left-down" data-keywords="arrow bend left down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,32a96,96,0,0,0-96,96v96" />
+</svg></div>
+          <p class="icon-name">arrow-bend-left-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-left-up" data-keywords="arrow bend left up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,224a96,96,0,0,1-96-96V32" />
+</svg></div>
+          <p class="icon-name">arrow-bend-left-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-right-down" data-keywords="arrow bend right down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,32a96,96,0,0,1,96,96v96" />
+</svg></div>
+          <p class="icon-name">arrow-bend-right-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-right-up" data-keywords="arrow bend right up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,224a96,96,0,0,0,96-96V32" />
+</svg></div>
+          <p class="icon-name">arrow-bend-right-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-up-left" data-keywords="arrow bend up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,200a96,96,0,0,0-96-96H32" />
+</svg></div>
+          <p class="icon-name">arrow-bend-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-bend-up-right" data-keywords="arrow bend up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,200a96,96,0,0,1,96-96h96" />
+</svg></div>
+          <p class="icon-name">arrow-bend-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-down-left" data-keywords="arrow circle down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-down-right" data-keywords="arrow circle down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-down" data-keywords="arrow circle down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-left" data-keywords="arrow circle left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-right" data-keywords="arrow circle right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-up-left" data-keywords="arrow circle up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-up-right" data-keywords="arrow circle up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-circle-up" data-keywords="arrow circle up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-circle-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-clockwise" data-keywords="arrow clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M188.4,192a88,88,0,1,1,1.83-126.23L232,104" />
+</svg></div>
+          <p class="icon-name">arrow-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-counter-clockwise" data-keywords="arrow counter clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M67.59,192A88,88,0,1,0,65.77,65.77L24,104" />
+</svg></div>
+          <p class="icon-name">arrow-counter-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-down-left" data-keywords="arrow down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-down-right" data-keywords="arrow down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-down" data-keywords="arrow down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-down-left" data-keywords="arrow elbow down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-down-right" data-keywords="arrow elbow down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-left-down" data-keywords="arrow elbow left down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-left-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-left-up" data-keywords="arrow elbow left up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-left-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-left" data-keywords="arrow elbow left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-right-down" data-keywords="arrow elbow right down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-right-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-right-up" data-keywords="arrow elbow right up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-right-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-right" data-keywords="arrow elbow right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-up-left" data-keywords="arrow elbow up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-elbow-up-right" data-keywords="arrow elbow up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-elbow-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-down" data-keywords="arrow fat down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,136l96,96,96-96H176V48a8,8,0,0,0-8-8H88a8,8,0,0,0-8,8v88Z" />
+</svg></div>
+          <p class="icon-name">arrow-fat-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-left" data-keywords="arrow fat left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M120,32,24,128l96,96V176h88a8,8,0,0,0,8-8V88a8,8,0,0,0-8-8H120Z" />
+</svg></div>
+          <p class="icon-name">arrow-fat-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-line-down" data-keywords="arrow fat line down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-line-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-line-left" data-keywords="arrow fat line left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-line-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-line-right" data-keywords="arrow fat line right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-line-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-line-up" data-keywords="arrow fat line up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-line-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-lines-down" data-keywords="arrow fat lines down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-lines-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-lines-left" data-keywords="arrow fat lines left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-lines-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-lines-right" data-keywords="arrow fat lines right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-lines-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-lines-up" data-keywords="arrow fat lines up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-fat-lines-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-right" data-keywords="arrow fat right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M136,32l96,96-96,96V176H48a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8h88Z" />
+</svg></div>
+          <p class="icon-name">arrow-fat-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-fat-up" data-keywords="arrow fat up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,120l96-96,96,96H176v88a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V120Z" />
+</svg></div>
+          <p class="icon-name">arrow-fat-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-left" data-keywords="arrow left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-down-left" data-keywords="arrow line down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-down-right" data-keywords="arrow line down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-down" data-keywords="arrow line down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-left" data-keywords="arrow line left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-right" data-keywords="arrow line right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-up-left" data-keywords="arrow line up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-up-right" data-keywords="arrow line up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-line-up" data-keywords="arrow line up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-line-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-right" data-keywords="arrow right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-down-left" data-keywords="arrow square down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-down-right" data-keywords="arrow square down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-down" data-keywords="arrow square down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-in" data-keywords="arrow square in">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M160,184h48a8,8,0,0,0,8-8V48a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8V96" />
+</svg></div>
+          <p class="icon-name">arrow-square-in</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-left" data-keywords="arrow square left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-out" data-keywords="arrow square out">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M184,136v72a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h72" />
+</svg></div>
+          <p class="icon-name">arrow-square-out</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-right" data-keywords="arrow square right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-up-left" data-keywords="arrow square up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-up-right" data-keywords="arrow square up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-square-up" data-keywords="arrow square up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-square-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-down-left" data-keywords="arrow u down left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,56h88a56,56,0,0,1,56,56h0a56,56,0,0,1-56,56H32" />
+</svg></div>
+          <p class="icon-name">arrow-u-down-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-down-right" data-keywords="arrow u down right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M176,56H88a56,56,0,0,0-56,56h0a56,56,0,0,0,56,56H224" />
+</svg></div>
+          <p class="icon-name">arrow-u-down-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-left-down" data-keywords="arrow u left down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,176V88a56,56,0,0,0-56-56h0A56,56,0,0,0,88,88V224" />
+</svg></div>
+          <p class="icon-name">arrow-u-left-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-left-up" data-keywords="arrow u left up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,80v88a56,56,0,0,1-56,56h0a56,56,0,0,1-56-56V32" />
+</svg></div>
+          <p class="icon-name">arrow-u-left-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-right-down" data-keywords="arrow u right down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,176V88a56,56,0,0,1,56-56h0a56,56,0,0,1,56,56V224" />
+</svg></div>
+          <p class="icon-name">arrow-u-right-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-right-up" data-keywords="arrow u right up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,80v88a56,56,0,0,0,56,56h0a56,56,0,0,0,56-56V32" />
+</svg></div>
+          <p class="icon-name">arrow-u-right-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-up-left" data-keywords="arrow u up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,200h88a56,56,0,0,0,56-56h0a56,56,0,0,0-56-56H32" />
+</svg></div>
+          <p class="icon-name">arrow-u-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-u-up-right" data-keywords="arrow u up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224" />
+</svg></div>
+          <p class="icon-name">arrow-u-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-up-left" data-keywords="arrow up left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-up-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-up-right" data-keywords="arrow up right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-up-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrow-up" data-keywords="arrow up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrow-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-clockwise" data-keywords="arrows clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,96,187.72,67.72A88,88,0,0,0,64,67" />
+</svg></div>
+          <p class="icon-name">arrows-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-counter-clockwise" data-keywords="arrows counter clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40,96,68.28,67.72A88,88,0,0,1,192,67" />
+</svg></div>
+          <p class="icon-name">arrows-counter-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-down-up" data-keywords="arrows down up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-down-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-horizontal" data-keywords="arrows horizontal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-horizontal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-in-cardinal" data-keywords="arrows in cardinal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-in-cardinal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-in-line-horizontal" data-keywords="arrows in line horizontal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-in-line-horizontal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-in-line-vertical" data-keywords="arrows in line vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-in-line-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-in-simple" data-keywords="arrows in simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-in-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-in" data-keywords="arrows in">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-in</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-left-right" data-keywords="arrows left right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-left-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-merge" data-keywords="arrows merge">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-merge</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-out-cardinal" data-keywords="arrows out cardinal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-out-cardinal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-out-line-horizontal" data-keywords="arrows out line horizontal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-out-line-horizontal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-out-line-vertical" data-keywords="arrows out line vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-out-line-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-out-simple" data-keywords="arrows out simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-out-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-out" data-keywords="arrows out">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-out</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-split" data-keywords="arrows split">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-split</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="arrows-vertical" data-keywords="arrows vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">arrows-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="article-medium" data-keywords="article medium">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">article-medium</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="article-ny-times" data-keywords="article ny times">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">article-ny-times</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="article" data-keywords="article">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">article</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="asclepius" data-keywords="asclepius">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M160,166.11A24,24,0,0,1,168,184h0a24,24,0,0,1-24,24H96" />
+</svg></div>
+          <p class="icon-name">asclepius</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="asterisk-simple" data-keywords="asterisk simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">asterisk-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="asterisk" data-keywords="asterisk">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">asterisk</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="at" data-keywords="at">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M184,208c-15.21,10.11-36.37,16-56,16a96,96,0,1,1,96-96c0,22.09-8,40-28,40s-28-17.91-28-40V88" />
+</svg></div>
+          <p class="icon-name">at</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="atom" data-keywords="atom">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">atom</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="avocado" data-keywords="avocado">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M82.73,48a48,48,0,0,1,90.9,1l29.82,84.28a80,80,0,1,1-150.26-1.74Z" />
+</svg></div>
+          <p class="icon-name">avocado</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="axe" data-keywords="axe">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M164.47,189.65a8,8,0,0,1-13.6-4.68c-7.09-53.14-42.41-87.8-59.45-99.76A8,8,0,0,1,90.33,73L129,34.33a8,8,0,0,1,12.2,1.09c12,17,46.62,52.36,99.76,59.45a8,8,0,0,1,4.68,13.6Z" />
+</svg></div>
+          <p class="icon-name">axe</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="baby-carriage" data-keywords="baby carriage">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,112H232a0,0,0,0,1,0,0v0a72,72,0,0,1-72,72H120a72,72,0,0,1-72-72v0A0,0,0,0,1,48,112Z" />
+</svg></div>
+          <p class="icon-name">baby-carriage</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="baby" data-keywords="baby">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M156,168a53,53,0,0,1-56,0" />
+</svg></div>
+          <p class="icon-name">baby</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="backpack" data-keywords="backpack">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,48h64a48,48,0,0,1,48,48V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96A48,48,0,0,1,96,48Z" />
+</svg></div>
+          <p class="icon-name">backpack</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="backspace" data-keywords="backspace">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M61.67,204.12,16,128,61.67,51.88A8,8,0,0,1,68.53,48H216a8,8,0,0,1,8,8V200a8,8,0,0,1-8,8H68.53A8,8,0,0,1,61.67,204.12Z" />
+</svg></div>
+          <p class="icon-name">backspace</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bag-simple" data-keywords="bag simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,72V64a40,40,0,0,1,80,0v8" />
+</svg></div>
+          <p class="icon-name">bag-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bag" data-keywords="bag">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,96V64a40,40,0,0,1,80,0V96" />
+</svg></div>
+          <p class="icon-name">bag</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="balloon" data-keywords="balloon">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,104c0,44.18-35.82,96-80,96s-80-51.82-80-96a80,80,0,0,1,160,0Z" />
+</svg></div>
+          <p class="icon-name">balloon</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bandaids" data-keywords="bandaids">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M49.37,94.63A32,32,0,0,1,94.63,49.37l112,112a32,32,0,0,1-45.26,45.26Z" />
+</svg></div>
+          <p class="icon-name">bandaids</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bank" data-keywords="bank">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bank</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="barbell" data-keywords="barbell">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,80h24a8,8,0,0,1,8,8v80a8,8,0,0,1-8,8H200" />
+</svg></div>
+          <p class="icon-name">barbell</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="barcode" data-keywords="barcode">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">barcode</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="barn" data-keywords="barn">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M240,128,200,72,132.44,25.34a8,8,0,0,0-8.88,0L56,72,16,128" />
+</svg></div>
+          <p class="icon-name">barn</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="barricade" data-keywords="barricade">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">barricade</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="baseball-cap" data-keywords="baseball cap">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,128a96,96,0,0,1,192,0v56a16,16,0,0,1-25.48,12.88C182.53,185.26,159,176,128,176s-54.53,9.26-70.52,20.88A16,16,0,0,1,32,184Z" />
+</svg></div>
+          <p class="icon-name">baseball-cap</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="baseball-helmet" data-keywords="baseball helmet">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,128a96,96,0,0,0-192,0v24a64,64,0,0,0,128,0V128h96" />
+</svg></div>
+          <p class="icon-name">baseball-helmet</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="baseball" data-keywords="baseball">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,144a94.87,94.87,0,0,1-4.14,16" />
+</svg></div>
+          <p class="icon-name">baseball</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="basket" data-keywords="basket">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,88H232L216.93,201.06A8,8,0,0,1,209,208H47a8,8,0,0,1-7.93-6.94Z" />
+</svg></div>
+          <p class="icon-name">basket</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="basketball" data-keywords="basketball">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M60,60.24A95.7,95.7,0,0,1,88,128a95.7,95.7,0,0,1-28,67.76" />
+</svg></div>
+          <p class="icon-name">basketball</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bathtub" data-keywords="bathtub">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M200,104h40v40a48,48,0,0,1-48,48H64a48,48,0,0,1-48-48V104H136" />
+</svg></div>
+          <p class="icon-name">bathtub</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-charging-vertical" data-keywords="battery charging vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-charging-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-charging" data-keywords="battery charging">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-charging</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-empty" data-keywords="battery empty">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-empty</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-full" data-keywords="battery full">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-full</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-high" data-keywords="battery high">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-high</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-low" data-keywords="battery low">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-low</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-medium" data-keywords="battery medium">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-medium</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-plus-vertical" data-keywords="battery plus vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-plus-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-plus" data-keywords="battery plus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-plus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-vertical-empty" data-keywords="battery vertical empty">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-vertical-empty</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-vertical-full" data-keywords="battery vertical full">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-vertical-full</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-vertical-high" data-keywords="battery vertical high">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-vertical-high</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-vertical-low" data-keywords="battery vertical low">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-vertical-low</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-vertical-medium" data-keywords="battery vertical medium">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-vertical-medium</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-warning-vertical" data-keywords="battery warning vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-warning-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="battery-warning" data-keywords="battery warning">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">battery-warning</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="beach-ball" data-keywords="beach ball">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M147.93,34.08a192.17,192.17,0,0,1-27.12,189.65" />
+</svg></div>
+          <p class="icon-name">beach-ball</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="beanie" data-keywords="beanie">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40,168V144a88,88,0,0,1,176,0v24" />
+</svg></div>
+          <p class="icon-name">beanie</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bed" data-keywords="bed">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M112,168V80H216a32,32,0,0,1,32,32v56" />
+</svg></div>
+          <p class="icon-name">bed</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="beer-bottle" data-keywords="beer bottle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,24,152,72l-40,8L28.69,163.31a16,16,0,0,0,0,22.63l41.37,41.37a16,16,0,0,0,22.63,0L176,144l8-40,48-64" />
+</svg></div>
+          <p class="icon-name">beer-bottle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="beer-stein" data-keywords="beer stein">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,72c0-26.51,25.07-48,56-48,16.59,0,31.49,6.18,41.74,16H160a32,32,0,0,1,32,32" />
+</svg></div>
+          <p class="icon-name">beer-stein</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="behance-logo" data-keywords="behance logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,124H94a34,34,0,0,1,0,68H32V64H90a30,30,0,0,1,0,60" />
+</svg></div>
+          <p class="icon-name">behance-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-ringing" data-keywords="bell ringing">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,192a32,32,0,0,0,64,0" />
+</svg></div>
+          <p class="icon-name">bell-ringing</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-simple-ringing" data-keywords="bell simple ringing">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M184,24a102.71,102.71,0,0,1,36.29,40" />
+</svg></div>
+          <p class="icon-name">bell-simple-ringing</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-simple-slash" data-keywords="bell simple slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M186.18,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,139.81,56,104A71.65,71.65,0,0,1,68.85,62.94" />
+</svg></div>
+          <p class="icon-name">bell-simple-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-simple-z" data-keywords="bell simple z">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,104a72,72,0,0,1,144,0c0,35.82,8.3,64.6,14.9,76A8,8,0,0,1,208,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,139.81,56,104Z" />
+</svg></div>
+          <p class="icon-name">bell-simple-z</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-simple" data-keywords="bell simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,104a72,72,0,0,1,144,0c0,35.82,8.3,64.6,14.9,76A8,8,0,0,1,208,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,139.81,56,104Z" />
+</svg></div>
+          <p class="icon-name">bell-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-slash" data-keywords="bell slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,192a32,32,0,0,0,64,0" />
+</svg></div>
+          <p class="icon-name">bell-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell-z" data-keywords="bell z">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,192a32,32,0,0,0,64,0" />
+</svg></div>
+          <p class="icon-name">bell-z</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bell" data-keywords="bell">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,192a32,32,0,0,0,64,0" />
+</svg></div>
+          <p class="icon-name">bell</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="belt" data-keywords="belt">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">belt</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bezier-curve" data-keywords="bezier curve">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M151.78,83.25a88.12,88.12,0,0,1,62.78,68.8" />
+</svg></div>
+          <p class="icon-name">bezier-curve</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bicycle" data-keywords="bicycle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,80a16,16,0,0,0-16-16H152l56,96" />
+</svg></div>
+          <p class="icon-name">bicycle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="binary" data-keywords="binary">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">binary</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="binoculars" data-keywords="binoculars">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M229.59,154.32,185.94,55A24,24,0,0,0,152,55V168" />
+</svg></div>
+          <p class="icon-name">binoculars</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="biohazard" data-keywords="biohazard">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,207.83A52,52,0,1,1,232,164" />
+</svg></div>
+          <p class="icon-name">biohazard</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bird" data-keywords="bird">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,99.52V76.89c0-28.77,23-52.75,51.74-52.89a52,52,0,0,1,50.59,38.89L232,80,208,96v24a96,96,0,0,1-96,96H24a8,8,0,0,1-6.25-13Z" />
+</svg></div>
+          <p class="icon-name">bird</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="blueprint" data-keywords="blueprint">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,176V64A24,24,0,0,1,48,40H64V152H48a24,24,0,0,0,0,48H232V64H64" />
+</svg></div>
+          <p class="icon-name">blueprint</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bluetooth-connected" data-keywords="bluetooth connected">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bluetooth-connected</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bluetooth-slash" data-keywords="bluetooth slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bluetooth-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bluetooth-x" data-keywords="bluetooth x">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bluetooth-x</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bluetooth" data-keywords="bluetooth">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bluetooth</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="boat" data-keywords="boat">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,152c0,56-96,80-96,80s-96-24-96-80V125.77a8,8,0,0,1,5.47-7.59L128,88l90.53,30.18a8,8,0,0,1,5.47,7.59Z" />
+</svg></div>
+          <p class="icon-name">boat</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bomb" data-keywords="bomb">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,64h48a8,8,0,0,1,8,8V86.66a80,80,0,1,1-64,0V72A8,8,0,0,1,88,64Z" />
+</svg></div>
+          <p class="icon-name">bomb</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bone" data-keywords="bone">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56.32,199.68a28,28,0,1,1,10.51-51.42,8,8,0,0,0,10-1.07l70.38-70.38a8,8,0,0,0,1.07-10,28,28,0,1,1,51.42-10.51,28,28,0,1,1-10.51,51.42,8,8,0,0,0-10,1.07l-70.38,70.38a8,8,0,0,0-1.07,10,28,28,0,1,1-51.42,10.51Z" />
+</svg></div>
+          <p class="icon-name">bone</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="book-bookmark" data-keywords="book bookmark">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z" />
+</svg></div>
+          <p class="icon-name">book-bookmark</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="book-open-text" data-keywords="book open text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,88a32,32,0,0,1,32-32h72V200H160a32,32,0,0,0-32,32" />
+</svg></div>
+          <p class="icon-name">book-open-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="book-open-user" data-keywords="book open user">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,112a32,32,0,0,1,32-32h72V200H160a32,32,0,0,0-32,32" />
+</svg></div>
+          <p class="icon-name">book-open-user</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="book-open" data-keywords="book open">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,88a32,32,0,0,1,32-32h72V200H160a32,32,0,0,0-32,32" />
+</svg></div>
+          <p class="icon-name">book-open</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="book" data-keywords="book">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z" />
+</svg></div>
+          <p class="icon-name">book</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bookmark-simple" data-keywords="bookmark simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z" />
+</svg></div>
+          <p class="icon-name">bookmark-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bookmark" data-keywords="bookmark">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z" />
+</svg></div>
+          <p class="icon-name">bookmark</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bookmarks-simple" data-keywords="bookmarks simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,224l-56-40L56,224V72a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8Z" />
+</svg></div>
+          <p class="icon-name">bookmarks-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bookmarks" data-keywords="bookmarks">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,224l-56-40L56,224V72a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8Z" />
+</svg></div>
+          <p class="icon-name">bookmarks</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="books" data-keywords="books">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M217.67,205.77l-46.81,10a8,8,0,0,1-9.5-6.21L128.18,51.8a8.07,8.07,0,0,1,6.15-9.57l46.81-10a8,8,0,0,1,9.5,6.21L223.82,196.2A8.07,8.07,0,0,1,217.67,205.77Z" />
+</svg></div>
+          <p class="icon-name">books</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="boot" data-keywords="boot">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M240,168v32a8,8,0,0,1-8,8H205.89a8.08,8.08,0,0,1-3.58-.84l-12.62-6.32a8.08,8.08,0,0,0-3.58-.84H169.89a8.08,8.08,0,0,0-3.58.84l-12.62,6.32a8.08,8.08,0,0,1-3.58.84H121.89a8.08,8.08,0,0,1-3.58-.84l-12.62-6.32a8.08,8.08,0,0,0-3.58-.84H85.89a8.08,8.08,0,0,0-3.58.84l-12.62,6.32a8.08,8.08,0,0,1-3.58.84H40a8,8,0,0,1-8-8V168c9.22-32.06,12-88.65,0-120H144a8,8,0,0,1,8,8v64h40A48,48,0,0,1,240,168Z" />
+</svg></div>
+          <p class="icon-name">boot</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="boules" data-keywords="boules">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">boules</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bounding-box" data-keywords="bounding box">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bounding-box</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bowl-food" data-keywords="bowl food">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,112a80,80,0,0,1,160,0" />
+</svg></div>
+          <p class="icon-name">bowl-food</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bowl-steam" data-keywords="bowl steam">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,207.3A96,96,0,0,1,32,120H224a96,96,0,0,1-56,87.3V216a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8Z" />
+</svg></div>
+          <p class="icon-name">bowl-steam</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bowling-ball" data-keywords="bowling ball">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bowling-ball</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="box-arrow-down" data-keywords="box arrow down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,216H48a8,8,0,0,1-8-8V72L56,40H200l16,32V208A8,8,0,0,1,208,216Z" />
+</svg></div>
+          <p class="icon-name">box-arrow-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="box-arrow-up" data-keywords="box arrow up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,216H48a8,8,0,0,1-8-8V72L56,40H200l16,32V208A8,8,0,0,1,208,216Z" />
+</svg></div>
+          <p class="icon-name">box-arrow-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="boxing-glove" data-keywords="boxing glove">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M72,104V72a48,48,0,0,1,48-48h48a48,48,0,0,1,48,48v46.88a7.85,7.85,0,0,1-.31,2.2L200,176v40a8,8,0,0,1-8,8H80a8,8,0,0,1-8-8V176L33.75,138.19a8,8,0,0,1-1.75-5V104A24,24,0,0,1,56,80H72" />
+</svg></div>
+          <p class="icon-name">boxing-glove</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brackets-angle" data-keywords="brackets angle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">brackets-angle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brackets-curly" data-keywords="brackets curly">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,40c-64,0,0,88-64,88,64,0,0,88,64,88" />
+</svg></div>
+          <p class="icon-name">brackets-curly</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brackets-round" data-keywords="brackets round">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M72,40S32,64,32,128s40,88,40,88" />
+</svg></div>
+          <p class="icon-name">brackets-round</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brackets-square" data-keywords="brackets square">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">brackets-square</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brain" data-keywords="brain">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,136a40,40,0,1,1-40,40v-6.73" />
+</svg></div>
+          <p class="icon-name">brain</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="brandy" data-keywords="brandy">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M201.77,40A88,88,0,1,1,54.23,40Z" />
+</svg></div>
+          <p class="icon-name">brandy</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bread" data-keywords="bread">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,112a32,32,0,0,1,0-64h96a32,32,0,0,1,0,64" />
+</svg></div>
+          <p class="icon-name">bread</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bridge" data-keywords="bridge">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,115.35A64,64,0,0,0,64,56a64,64,0,0,0,128,0,64,64,0,0,0,40,59.35" />
+</svg></div>
+          <p class="icon-name">bridge</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="briefcase-metal" data-keywords="briefcase metal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64" />
+</svg></div>
+          <p class="icon-name">briefcase-metal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="briefcase" data-keywords="briefcase">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64" />
+</svg></div>
+          <p class="icon-name">briefcase</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="broadcast" data-keywords="broadcast">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M181.67,80a71.94,71.94,0,0,1,0,96" />
+</svg></div>
+          <p class="icon-name">broadcast</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="broom" data-keywords="broom">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M112,224a95.2,95.2,0,0,1-29-48" />
+</svg></div>
+          <p class="icon-name">broom</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="browser" data-keywords="browser">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">browser</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="browsers" data-keywords="browsers">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M64,80V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V168a8,8,0,0,1-8,8H192" />
+</svg></div>
+          <p class="icon-name">browsers</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bug-beetle" data-keywords="bug beetle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">bug-beetle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bug-droid" data-keywords="bug droid">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,112a80,80,0,0,1,160,0v40a80,80,0,0,1-160,0Z" />
+</svg></div>
+          <p class="icon-name">bug-droid</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bug" data-keywords="bug">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z" />
+</svg></div>
+          <p class="icon-name">bug</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="building-apartment" data-keywords="building apartment">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">building-apartment</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="building-office" data-keywords="building office">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">building-office</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="building" data-keywords="building">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">building</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="buildings" data-keywords="buildings">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M136,216V32a8,8,0,0,0-12.44-6.65l-80,53.33A8,8,0,0,0,40,85.35V216" />
+</svg></div>
+          <p class="icon-name">buildings</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bulldozer" data-keywords="bulldozer">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M248,144h-8a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h8" />
+</svg></div>
+          <p class="icon-name">bulldozer</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="bus" data-keywords="bus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,184H48V64A24,24,0,0,1,72,40H184a24,24,0,0,1,24,24Z" />
+</svg></div>
+          <p class="icon-name">bus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="butterfly" data-keywords="butterfly">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M187.76,151.94c8.05.48,29.5-1.29,37.36-32.23C233.21,87.84,240.22,48,208.93,48S128,95.8,128,127.67C128,95.8,78.36,48,47.07,48S22.79,87.84,30.88,119.71c7.86,30.94,29.31,32.71,37.36,32.23" />
+</svg></div>
+          <p class="icon-name">butterfly</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cable-car" data-keywords="cable car">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cable-car</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cactus" data-keywords="cactus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,216V136H84A60,60,0,0,1,24,76h0A20,20,0,0,1,44,56h0A20,20,0,0,1,64,76h0A20,20,0,0,0,84,96H96V56a32,32,0,0,1,32-32h0a32,32,0,0,1,32,32v80h12a20,20,0,0,0,20-20h0a20,20,0,0,1,20-20h0a20,20,0,0,1,20,20h0a60,60,0,0,1-60,60H160v40" />
+</svg></div>
+          <p class="icon-name">cactus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cake" data-keywords="cake">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,96H208a16,16,0,0,1,16,16v23.33c0,17.44-13.67,32.18-31.1,32.66A32,32,0,0,1,160,136a32,32,0,0,1-64,0,32,32,0,0,1-32.9,32C45.67,167.51,32,152.77,32,135.33V112A16,16,0,0,1,48,96Z" />
+</svg></div>
+          <p class="icon-name">cake</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calculator" data-keywords="calculator">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calculator</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-blank" data-keywords="calendar blank">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-blank</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-check" data-keywords="calendar check">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-check</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-dot" data-keywords="calendar dot">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-dot</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-dots" data-keywords="calendar dots">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-dots</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-heart" data-keywords="calendar heart">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,120a24,24,0,0,1,48,0c0,32-48,56-48,56s-48-24-48-56a24,24,0,0,1,48,0Z" />
+</svg></div>
+          <p class="icon-name">calendar-heart</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-minus" data-keywords="calendar minus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-minus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-plus" data-keywords="calendar plus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-plus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-slash" data-keywords="calendar slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M48,40,208,216H48a8,8,0,0,1-8-8V48A8,8,0,0,1,48,40Z" />
+</svg></div>
+          <p class="icon-name">calendar-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-star" data-keywords="calendar star">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-star</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar-x" data-keywords="calendar x">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">calendar-x</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="calendar" data-keywords="calendar">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M138.14,128a16,16,0,1,1,26.64,17.63L136,184h32" />
+</svg></div>
+          <p class="icon-name">calendar</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="call-bell" data-keywords="call bell">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,32h48" />
+</svg></div>
+          <p class="icon-name">call-bell</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="camera-plus" data-keywords="camera plus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,64,93.63,43.56A8,8,0,0,1,100.28,40h55.44a8,8,0,0,1,6.65,3.56L176,64h32a16,16,0,0,1,16,16V192a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64Z" />
+</svg></div>
+          <p class="icon-name">camera-plus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="camera-rotate" data-keywords="camera rotate">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,208H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64H80L96,40h64l16,24h32a16,16,0,0,1,16,16V192A16,16,0,0,1,208,208Z" />
+</svg></div>
+          <p class="icon-name">camera-rotate</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="camera-slash" data-keywords="camera slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M154.14,156.75a36,36,0,1,1-48.3-53.12" />
+</svg></div>
+          <p class="icon-name">camera-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="camera" data-keywords="camera">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,208H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64H80L96,40h64l16,24h32a16,16,0,0,1,16,16V192A16,16,0,0,1,208,208Z" />
+</svg></div>
+          <p class="icon-name">camera</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="campfire" data-keywords="campfire">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M152,136a24,24,0,0,1-48,0c0-24,24-40,24-40S152,112,152,136Z" />
+</svg></div>
+          <p class="icon-name">campfire</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="car-battery" data-keywords="car battery">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,80V56a8,8,0,0,1,8-8H96a8,8,0,0,1,8,8V80" />
+</svg></div>
+          <p class="icon-name">car-battery</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="car-profile" data-keywords="car profile">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,176h24a8,8,0,0,0,8-8V128a8,8,0,0,0-8-8H208L162.34,74.34A8,8,0,0,0,156.69,72H44.28a8,8,0,0,0-6.65,3.56L8,120v48a8,8,0,0,0,8,8H40" />
+</svg></div>
+          <p class="icon-name">car-profile</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="car-simple" data-keywords="car simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M216,208H192a8,8,0,0,1-8-8V176H72v24a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V112L61.89,44.75A8,8,0,0,1,69.2,40H186.8a8,8,0,0,1,7.31,4.75L224,112v88A8,8,0,0,1,216,208Z" />
+</svg></div>
+          <p class="icon-name">car-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="car" data-keywords="car">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,176v24a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V176" />
+</svg></div>
+          <p class="icon-name">car</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cardholder" data-keywords="cardholder">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,120H96a32,32,0,0,0,64,0h64" />
+</svg></div>
+          <p class="icon-name">cardholder</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cards-three" data-keywords="cards three">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cards-three</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cards" data-keywords="cards">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M64,48H216a8,8,0,0,1,8,8V176" />
+</svg></div>
+          <p class="icon-name">cards</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-double-down" data-keywords="caret circle double down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-double-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-double-left" data-keywords="caret circle double left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-double-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-double-right" data-keywords="caret circle double right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-double-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-double-up" data-keywords="caret circle double up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-double-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-down" data-keywords="caret circle down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-left" data-keywords="caret circle left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-right" data-keywords="caret circle right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-up-down" data-keywords="caret circle up down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-up-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-circle-up" data-keywords="caret circle up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-circle-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-double-down" data-keywords="caret double down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-double-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-double-left" data-keywords="caret double left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-double-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-double-right" data-keywords="caret double right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-double-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-double-up" data-keywords="caret double up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-double-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-down" data-keywords="caret down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-left" data-keywords="caret left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-line-down" data-keywords="caret line down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-line-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-line-left" data-keywords="caret line left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-line-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-line-right" data-keywords="caret line right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-line-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-line-up" data-keywords="caret line up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-line-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-right" data-keywords="caret right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-up-down" data-keywords="caret up down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-up-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="caret-up" data-keywords="caret up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">caret-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="carrot" data-keywords="carrot">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M43.81,223A8,8,0,0,1,33,212.19S64,112,104.4,72.4a56,56,0,0,1,79.2,79.2C144,192,43.81,223,43.81,223Z" />
+</svg></div>
+          <p class="icon-name">carrot</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cash-register" data-keywords="cash register">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,160,46.49,70.06A8,8,0,0,1,54.25,64h147.5a8,8,0,0,1,7.76,6.06L232,160v32a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" />
+</svg></div>
+          <p class="icon-name">cash-register</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cassette-tape" data-keywords="cassette tape">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cassette-tape</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="castle-turret" data-keywords="castle turret">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M192,224V112l13.66-13.66A8,8,0,0,0,208,92.69V48a8,8,0,0,0-8-8H176V72H144V40H112V72H80V40H56a8,8,0,0,0-8,8V92.69a8,8,0,0,0,2.34,5.65L64,112V224" />
+</svg></div>
+          <p class="icon-name">castle-turret</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cat" data-keywords="cat">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M67.6,67.6h0a102.87,102.87,0,0,1,120.8,0h0l21.94-25.24A8,8,0,0,1,224,48v88c0,48.6-43,88-96,88s-96-39.4-96-88V48a8,8,0,0,1,13.66-5.66Z" />
+</svg></div>
+          <p class="icon-name">cat</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-full" data-keywords="cell signal full">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-full</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-high" data-keywords="cell signal high">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-high</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-low" data-keywords="cell signal low">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-low</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-medium" data-keywords="cell signal medium">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-medium</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-none" data-keywords="cell signal none">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-none</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-slash" data-keywords="cell signal slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-signal-x" data-keywords="cell signal x">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">cell-signal-x</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cell-tower" data-keywords="cell tower">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88.64,95.17a40,40,0,1,1,78.72,0" />
+</svg></div>
+          <p class="icon-name">cell-tower</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="certificate" data-keywords="certificate">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,192H40a8,8,0,0,1-8-8V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V90.06" />
+</svg></div>
+          <p class="icon-name">certificate</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chair" data-keywords="chair">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chair</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chalkboard-simple" data-keywords="chalkboard simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,200V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8v80" />
+</svg></div>
+          <p class="icon-name">chalkboard-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chalkboard-teacher" data-keywords="chalkboard teacher">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M53.39,208a56,56,0,0,1,101.22,0H216a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8Z" />
+</svg></div>
+          <p class="icon-name">chalkboard-teacher</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chalkboard" data-keywords="chalkboard">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32,200V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V200" />
+</svg></div>
+          <p class="icon-name">chalkboard</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="champagne" data-keywords="champagne">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M97.7,16h44.6s52,160-22.3,160S97.7,16,97.7,16Z" />
+</svg></div>
+          <p class="icon-name">champagne</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="charging-station" data-keywords="charging station">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M56,216V56A16,16,0,0,1,72,40h80a16,16,0,0,1,16,16V216" />
+</svg></div>
+          <p class="icon-name">charging-station</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-bar-horizontal" data-keywords="chart bar horizontal">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-bar-horizontal</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-bar" data-keywords="chart bar">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-bar</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-donut" data-keywords="chart donut">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M44.85,80A96,96,0,1,0,128,32V88a40,40,0,1,1-34.65,20Z" />
+</svg></div>
+          <p class="icon-name">chart-donut</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-line-down" data-keywords="chart line down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-line-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-line-up" data-keywords="chart line up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-line-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-line" data-keywords="chart line">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-line</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-pie-slice" data-keywords="chart pie slice">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M33.6,145.5A96,96,0,0,1,96,37.5v72Z" />
+</svg></div>
+          <p class="icon-name">chart-pie-slice</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-pie" data-keywords="chart pie">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-pie</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-polar" data-keywords="chart polar">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-polar</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chart-scatter" data-keywords="chart scatter">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">chart-scatter</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-centered-dots" data-keywords="chat centered dots">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M105.07,192l16,28a8,8,0,0,0,13.9,0l16-28H216a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V184a8,8,0,0,0,8,8Z" />
+</svg></div>
+          <p class="icon-name">chat-centered-dots</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-centered-slash" data-keywords="chat centered slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M55.27,48H40a8,8,0,0,0-8,8V184a8,8,0,0,0,8,8h65.07l16,28a8,8,0,0,0,13.9,0l16-28h35.25" />
+</svg></div>
+          <p class="icon-name">chat-centered-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-centered-text" data-keywords="chat centered text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M105.07,192l16,28a8,8,0,0,0,13.9,0l16-28H216a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V184a8,8,0,0,0,8,8Z" />
+</svg></div>
+          <p class="icon-name">chat-centered-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-centered" data-keywords="chat centered">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M105.07,192l16,28a8,8,0,0,0,13.9,0l16-28H216a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V184a8,8,0,0,0,8,8Z" />
+</svg></div>
+          <p class="icon-name">chat-centered</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-circle-dots" data-keywords="chat circle dots">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z" />
+</svg></div>
+          <p class="icon-name">chat-circle-dots</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-circle-slash" data-keywords="chat circle slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M212.57,173.46a96,96,0,0,0-121.79-134" />
+</svg></div>
+          <p class="icon-name">chat-circle-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-circle-text" data-keywords="chat circle text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z" />
+</svg></div>
+          <p class="icon-name">chat-circle-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-circle" data-keywords="chat circle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z" />
+</svg></div>
+          <p class="icon-name">chat-circle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-dots" data-keywords="chat dots">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M45.15,230.11A8,8,0,0,1,32,224V64a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V192a8,8,0,0,1-8,8H80Z" />
+</svg></div>
+          <p class="icon-name">chat-dots</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-slash" data-keywords="chat slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M193.45,200H80L45.15,230.11A8,8,0,0,1,32,224V64a8,8,0,0,1,8-8H62.55" />
+</svg></div>
+          <p class="icon-name">chat-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-teardrop-dots" data-keywords="chat teardrop dots">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M132,216H48a8,8,0,0,1-8-8V124a92,92,0,0,1,92-92h0a92,92,0,0,1,92,92h0A92,92,0,0,1,132,216Z" />
+</svg></div>
+          <p class="icon-name">chat-teardrop-dots</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-teardrop-slash" data-keywords="chat teardrop slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M189.59,195.75A91.6,91.6,0,0,1,132,216H48a8,8,0,0,1-8-8V124A91.72,91.72,0,0,1,66.05,59.85" />
+</svg></div>
+          <p class="icon-name">chat-teardrop-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-teardrop-text" data-keywords="chat teardrop text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M132,216H48a8,8,0,0,1-8-8V124a92,92,0,0,1,92-92h0a92,92,0,0,1,92,92h0A92,92,0,0,1,132,216Z" />
+</svg></div>
+          <p class="icon-name">chat-teardrop-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-teardrop" data-keywords="chat teardrop">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M132,216H48a8,8,0,0,1-8-8V124a92,92,0,0,1,92-92h0a92,92,0,0,1,92,92h0A92,92,0,0,1,132,216Z" />
+</svg></div>
+          <p class="icon-name">chat-teardrop</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat-text" data-keywords="chat text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M45.15,230.11A8,8,0,0,1,32,224V64a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V192a8,8,0,0,1-8,8H80Z" />
+</svg></div>
+          <p class="icon-name">chat-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chat" data-keywords="chat">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M45.15,230.11A8,8,0,0,1,32,224V64a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V192a8,8,0,0,1-8,8H80Z" />
+</svg></div>
+          <p class="icon-name">chat</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chats-circle" data-keywords="chats circle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M32.5,138A72,72,0,1,1,62,167.5l-27.76,8.16a8,8,0,0,1-9.93-9.93Z" />
+</svg></div>
+          <p class="icon-name">chats-circle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chats-teardrop" data-keywords="chats teardrop">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,176H32a8,8,0,0,1-8-8V104A72,72,0,0,1,96,32h0a72,72,0,0,1,72,72h0A72,72,0,0,1,96,176Z" />
+</svg></div>
+          <p class="icon-name">chats-teardrop</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chats" data-keywords="chats">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M71.58,144,32,176V48a8,8,0,0,1,8-8H168a8,8,0,0,1,8,8v88a8,8,0,0,1-8,8Z" />
+</svg></div>
+          <p class="icon-name">chats</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="check-circle" data-keywords="check circle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">check-circle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="check-fat" data-keywords="check fat">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,147.43l98.34-97.09a8,8,0,0,1,11.32,0l24,23.6a8,8,0,0,1,0,11.32l-128.4,128.4a8,8,0,0,1-11.32,0l-71.6-72a8,8,0,0,1,0-11.31l24-24a8,8,0,0,1,11.32,0Z" />
+</svg></div>
+          <p class="icon-name">check-fat</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="check-square-offset" data-keywords="check square offset">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40,144V48a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8V208a8,8,0,0,1-8,8H136" />
+</svg></div>
+          <p class="icon-name">check-square-offset</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="check-square" data-keywords="check square">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">check-square</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="check" data-keywords="check">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">check</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="checkerboard" data-keywords="checkerboard">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">checkerboard</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="checks" data-keywords="checks">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">checks</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cheers" data-keywords="cheers">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,56l32-8s26.48,41.35,38.9,87.71a32,32,0,1,1-61.82,16.56C124.66,105.91,128,56,128,56Z" />
+</svg></div>
+          <p class="icon-name">cheers</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cheese" data-keywords="cheese">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,160h7.46c13.45,0,24.79-11,24.54-24.46A24,24,0,0,0,32,112H24V88H232v96a8,8,0,0,1-8,8H24Z" />
+</svg></div>
+          <p class="icon-name">cheese</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="chef-hat" data-keywords="chef hat">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M173.65,65.12A48,48,0,1,1,184,160H72A48,48,0,1,1,82.35,65.12" />
+</svg></div>
+          <p class="icon-name">chef-hat</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cherries" data-keywords="cherries">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M112,136s-8,8-24,8-24-8-24-8" />
+</svg></div>
+          <p class="icon-name">cherries</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="church" data-keywords="church">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M72,216h40V168a16,16,0,0,1,16-16h0a16,16,0,0,1,16,16v48h40V104L128,72,72,104Z" />
+</svg></div>
+          <p class="icon-name">church</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cigarette-slash" data-keywords="cigarette slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,104s-18-8,0-40,0-40,0-40" />
+</svg></div>
+          <p class="icon-name">cigarette-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cigarette" data-keywords="cigarette">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,104s-18-8,0-40,0-40,0-40" />
+</svg></div>
+          <p class="icon-name">cigarette</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circle-dashed" data-keywords="circle dashed">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,35a95.51,95.51,0,0,1,48,0" />
+</svg></div>
+          <p class="icon-name">circle-dashed</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circle-half-tilt" data-keywords="circle half tilt">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circle-half-tilt</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circle-half" data-keywords="circle half">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circle-half</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circle-notch" data-keywords="circle notch">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M168,40a97,97,0,0,1,56,88,96,96,0,0,1-192,0A97,97,0,0,1,88,40" />
+</svg></div>
+          <p class="icon-name">circle-notch</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circle" data-keywords="circle">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circle</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circles-four" data-keywords="circles four">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circles-four</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circles-three-plus" data-keywords="circles three plus">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circles-three-plus</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circles-three" data-keywords="circles three">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circles-three</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="circuitry" data-keywords="circuitry">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">circuitry</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="city" data-keywords="city">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">city</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clipboard-text" data-keywords="clipboard text">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M160,40h40a8,8,0,0,1,8,8V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H96" />
+</svg></div>
+          <p class="icon-name">clipboard-text</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clipboard" data-keywords="clipboard">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M160,40h40a8,8,0,0,1,8,8V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H96" />
+</svg></div>
+          <p class="icon-name">clipboard</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock-afternoon" data-keywords="clock afternoon">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">clock-afternoon</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock-clockwise" data-keywords="clock clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M188.4,192a88,88,0,1,1,1.83-126.23C202,77.69,211.72,88.93,224,104" />
+</svg></div>
+          <p class="icon-name">clock-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock-countdown" data-keywords="clock countdown">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,136c-4.07,49.28-45.67,88-96,88a96,96,0,0,1-96-96c0-50.33,38.72-91.93,88-96" />
+</svg></div>
+          <p class="icon-name">clock-countdown</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock-counter-clockwise" data-keywords="clock counter clockwise">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M67.6,192A88,88,0,1,0,65.77,65.77C54,77.69,44.28,88.93,32,104" />
+</svg></div>
+          <p class="icon-name">clock-counter-clockwise</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock-user" data-keywords="clock user">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,224a96,96,0,1,1,96-96" />
+</svg></div>
+          <p class="icon-name">clock-user</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clock" data-keywords="clock">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">clock</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="closed-captioning" data-keywords="closed captioning">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M112,155.72a32,32,0,1,1,0-55.44" />
+</svg></div>
+          <p class="icon-name">closed-captioning</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-arrow-down" data-keywords="cloud arrow down">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,208H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-arrow-down</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-arrow-up" data-keywords="cloud arrow up">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M112,208H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-arrow-up</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-check" data-keywords="cloud check">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-check</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-fog" data-keywords="cloud fog">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,96a68.06,68.06,0,1,1,68,72H76A44,44,0,1,1,90.2,82.34" />
+</svg></div>
+          <p class="icon-name">cloud-fog</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-lightning" data-keywords="cloud lightning">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,88a68.06,68.06,0,1,1,68,72H76A44,44,0,1,1,90.2,74.34" />
+</svg></div>
+          <p class="icon-name">cloud-lightning</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-moon" data-keywords="cloud moon">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M63,138.93A64.12,64.12,0,0,1,25.62,94.38h0a64.06,64.06,0,0,0,76.76-76.76h0A64,64,0,0,1,152,80c0,1,0,2-.07,3" />
+</svg></div>
+          <p class="icon-name">cloud-moon</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-rain" data-keywords="cloud rain">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,88a68.06,68.06,0,1,1,68,72H76A44,44,0,1,1,90.2,74.34" />
+</svg></div>
+          <p class="icon-name">cloud-rain</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-slash" data-keywords="cloud slash">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M193.89,200.49A79.66,79.66,0,0,1,160,208H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-slash</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-snow" data-keywords="cloud snow">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M88,88a68.06,68.06,0,1,1,68,72H76A44,44,0,1,1,90.2,74.34" />
+</svg></div>
+          <p class="icon-name">cloud-snow</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-sun" data-keywords="cloud sun">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,144a68.06,68.06,0,1,1,68,72H84a44,44,0,1,1,14.2-85.66" />
+</svg></div>
+          <p class="icon-name">cloud-sun</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-warning" data-keywords="cloud warning">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-warning</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud-x" data-keywords="cloud x">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud-x</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cloud" data-keywords="cloud">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" />
+</svg></div>
+          <p class="icon-name">cloud</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="clover" data-keywords="clover">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M128,120s90-96,0-96S128,120,128,120Z" />
+</svg></div>
+          <p class="icon-name">clover</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="club" data-keywords="club">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M167.83,98.79a48,48,0,1,1-23.9,71.65L160,224H96l16.07-53.56a48,48,0,1,1-23.9-71.65,48,48,0,1,1,79.66,0Z" />
+</svg></div>
+          <p class="icon-name">club</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coat-hanger" data-keywords="coat hanger">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M96,72a32,32,0,0,1,64,0L19.22,177.6A8,8,0,0,0,24,192H232a8,8,0,0,0,4.79-14.4L128,96" />
+</svg></div>
+          <p class="icon-name">coat-hanger</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coda-logo" data-keywords="coda logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M176,176a48,48,0,1,1,25.85-88.64A4,4,0,0,0,208,84V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V208a8,8,0,0,0,8,8H200a8,8,0,0,0,8-8V172a4,4,0,0,0-6.12-3.38C193.9,173.74,186.27,176.41,176,176Z" />
+</svg></div>
+          <p class="icon-name">coda-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="code-block" data-keywords="code block">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M176,48h24a8,8,0,0,1,8,8V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V136" />
+</svg></div>
+          <p class="icon-name">code-block</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="code-simple" data-keywords="code simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">code-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="code" data-keywords="code">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">code</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="codepen-logo" data-keywords="codepen logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">codepen-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="codesandbox-logo" data-keywords="codesandbox logo">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M131.84,25l88,48.18a8,8,0,0,1,4.16,7v95.64a8,8,0,0,1-4.16,7l-88,48.18a8,8,0,0,1-7.68,0l-88-48.18a8,8,0,0,1-4.16-7V80.18a8,8,0,0,1,4.16-7l88-48.18A8,8,0,0,1,131.84,25Z" />
+</svg></div>
+          <p class="icon-name">codesandbox-logo</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coffee-bean" data-keywords="coffee bean">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M206.11,49.89c-24.51,5-66.9,22-78.11,78.11s-53.6,73.09-78.11,78.11" />
+</svg></div>
+          <p class="icon-name">coffee-bean</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coffee" data-keywords="coffee">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M83.3,216A88,88,0,0,1,32,136V88H208v48a88,88,0,0,1-51.3,80" />
+</svg></div>
+          <p class="icon-name">coffee</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coin-vertical" data-keywords="coin vertical">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M104,32h48c30.93,0,56,43,56,96s-25.07,96-56,96H104" />
+</svg></div>
+          <p class="icon-name">coin-vertical</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coin" data-keywords="coin">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M24,104v48c0,24,40,48,104,48s104-24,104-48V104" />
+</svg></div>
+          <p class="icon-name">coin</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="coins" data-keywords="coins">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M16,84v40c0,19.88,35.82,36,80,36s80-16.12,80-36V84" />
+</svg></div>
+          <p class="icon-name">coins</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="columns-plus-left" data-keywords="columns plus left">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">columns-plus-left</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="columns-plus-right" data-keywords="columns plus right">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">columns-plus-right</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="columns" data-keywords="columns">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">columns</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="command" data-keywords="command">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M180,48h0a28,28,0,0,1,28,28v0a28,28,0,0,1-28,28H152a0,0,0,0,1,0,0V76a28,28,0,0,1,28-28Z" />
+</svg></div>
+          <p class="icon-name">command</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="compass-rose" data-keywords="compass rose">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40.37,119.91a88,88,0,0,1,79.54-79.54" />
+</svg></div>
+          <p class="icon-name">compass-rose</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="compass-tool" data-keywords="compass tool">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M208,120c-14.57,28.49-45.8,48-80,48a87.71,87.71,0,0,1-35.75-7.56" />
+</svg></div>
+          <p class="icon-name">compass-tool</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="compass" data-keywords="compass">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">compass</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="computer-tower" data-keywords="computer tower">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">computer-tower</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="confetti" data-keywords="confetti">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40.49,205.52,93,61.14a7.79,7.79,0,0,1,12.84-2.85l91.88,91.88A7.79,7.79,0,0,1,194.86,163L50.48,215.51A7.79,7.79,0,0,1,40.49,205.52Z" />
+</svg></div>
+          <p class="icon-name">confetti</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="contactless-payment" data-keywords="contactless payment">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M90,104a51,51,0,0,1,0,48" />
+</svg></div>
+          <p class="icon-name">contactless-payment</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="control" data-keywords="control">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">control</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cookie" data-keywords="cookie">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M224,128a48,48,0,0,1-48-48,48,48,0,0,1-48-48,96,96,0,1,0,96,96Z" />
+</svg></div>
+          <p class="icon-name">cookie</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="cooking-pot" data-keywords="cooking pot">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="M40,80H216V184a24,24,0,0,1-24,24H64a24,24,0,0,1-24-24Z" />
+</svg></div>
+          <p class="icon-name">cooking-pot</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="copy-simple" data-keywords="copy simple">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">copy-simple</p>
+        </div>
+      
+
+        <div class="icon-card" data-name="copy" data-keywords="copy">
+          <div class="icon-preview"><svg 
+    width="24dp"
+    height="24dp"
+    viewportWidth="256"
+    viewportHeight="256">
+  <path
+      fillColor="@color/white"
+      pathData="" />
+</svg></div>
+          <p class="icon-name">copy</p>
+        </div>
+      
+    </div>
+
+    <div class="no-results" id="no-results" style="display: none;">
+      No icons found. Try a different search.
+    </div>
+  </div>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const cards = Array.from(document.querySelectorAll('.icon-card'));
+    const search = document.getElementById('search');
+    const count = document.getElementById('count');
+    const noResults = document.getElementById('no-results');
+
+    search.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+
+      let visible = 0;
+      cards.forEach((card) => {
+        const name = card.dataset.name;
+        const keywords = card.dataset.keywords;
+        const matches = name.includes(query) || keywords.includes(query);
+
+        if (matches && query.length > 0) {
+          card.classList.remove('hidden');
+          visible++;
+        } else if (!query) {
+          card.classList.remove('hidden');
+          visible++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      count.textContent = visible;
+      noResults.style.display = visible === 0 && query ? 'block' : 'none';
+    });
+
+    // Allow clicking to copy icon name
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const name = 'phosphor_' + card.dataset.name;
+        navigator.clipboard.writeText(name);
+        const original = card.textContent;
+        card.textContent = 'Copied!';
+        setTimeout(() => {
+          card.textContent = original;
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
