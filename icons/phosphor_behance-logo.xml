@@ -4,6 +4,11 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
   <path
-      android:fillColor="@android:color/white"
-      android:pathData="M32,124H94a34,34,0,0,1,0,68H32V64H90a30,30,0,0,1,0,60" />
+      android:pathData="M32,124H94a34,34,0,0,1,0,68H32V64H90a30,30,0,0,1,0,60"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="1" />
+  <path
+      android:pathData="M232,176a40,40,0,1,1,8-24H160"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="1" />
 </vector>
