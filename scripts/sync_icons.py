@@ -74,9 +74,38 @@ def svg_to_vd_string(svg_content):
     viewbox = viewbox_match.group(1) if viewbox_match else "0 0 256 256"
     parts = viewbox.split()
     
-    # Extract path data
-    path_match = re.search(r'<path[^>]*d="([^"]*)"', svg_content)
-    path_data = path_match.group(1) if path_match else ""
+    # Extract ALL path elements with attributes
+    path_pattern = r'<path([^>]*)d="([^"]*)"([^>]*)>'
+    paths = re.findall(path_pattern, svg_content)
+    
+    paths_xml = ""
+    for pre_attrs, path_data, post_attrs in paths:
+        if not path_data.strip():
+            continue
+            
+        all_attrs = pre_attrs + ' d="' + path_data + '" ' + post_attrs
+        
+        # Extract stroke width (default to 16 for Phosphor)
+        stroke_width_match = re.search(r'stroke-width="([^"]*)"', all_attrs)
+        stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
+        
+        # Check if it's a stroke or fill
+        has_stroke = 'stroke' in all_attrs and 'fill="none"' in all_attrs
+        has_fill = 'fill' in all_attrs and 'fill="none"' not in all_attrs
+        
+        if has_stroke:
+            paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="{stroke_width}"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+'''
+        elif has_fill or path_data.strip():
+            paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:fillColor="@android:color/white" />
+'''
     
     # Generate VectorDrawable XML
     vd_xml = f'''<vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -84,10 +113,7 @@ def svg_to_vd_string(svg_content):
     android:height="24dp"
     android:viewportWidth="{parts[2] if len(parts) > 2 else '256'}"
     android:viewportHeight="{parts[3] if len(parts) > 3 else '256'}">
-  <path
-      android:fillColor="@android:color/white"
-      android:pathData="{path_data}" />
-</vector>'''
+{paths_xml}</vector>'''
     
     return vd_xml
 

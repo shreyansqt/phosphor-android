@@ -11,12 +11,41 @@ const REGISTRY_FILE = path.join(__dirname, '../icons.json');
 const OUTPUT_FILE = path.join(__dirname, '../index.html');
 
 function vdToSvg(vdXml) {
-  return vdXml
-    .replace(/xmlns:android="[^"]*"/g, '')
-    .replace(/android:(\w+)/g, '$1')
-    .replace(/@android:color\/white/g, 'currentColor')
-    .replace(/<vector/g, '<svg')
-    .replace(/<\/vector>/g, '</svg>');
+  // Extract viewBox dimensions
+  const widthMatch = vdXml.match(/android:viewportWidth="([^"]+)"/);
+  const heightMatch = vdXml.match(/android:viewportHeight="([^"]+)"/);
+  const viewportWidth = widthMatch ? widthMatch[1] : '256';
+  const viewportHeight = heightMatch ? heightMatch[1] : '256';
+  const viewBox = `0 0 ${viewportWidth} ${viewportHeight}`;
+
+  // Extract paths with their attributes
+  const pathRegex = /<path\s+([^>]*)android:pathData="([^"]*)"\s*([^>]*)\/>/g;
+  let match;
+  const paths = [];
+
+  while ((match = pathRegex.exec(vdXml)) !== null) {
+    const fullAttrs = match[1] + ' android:pathData="' + match[2] + '" ' + match[3];
+    const pathData = match[2];
+
+    // Extract stroke width
+    const strokeWidthMatch = fullAttrs.match(/android:strokeWidth="([^"]+)"/);
+    const strokeWidth = strokeWidthMatch ? strokeWidthMatch[1] : '16';
+
+    // Determine if stroke or fill
+    const isStroke = fullAttrs.includes('android:strokeColor');
+
+    if (isStroke) {
+      paths.push(
+        `  <path fill="none" stroke="currentColor" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round" d="${pathData}" />`
+      );
+    } else {
+      paths.push(`  <path fill="currentColor" d="${pathData}" />`);
+    }
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="48" height="48" preserveAspectRatio="xMidYMid meet" overflow="visible">
+${paths.join('\n')}
+</svg>`;
 }
 
 function generatePreview() {
@@ -134,11 +163,13 @@ function generatePreview() {
       align-items: center;
       justify-content: center;
       color: #333;
+      overflow: visible;
     }
 
     .icon-preview svg {
       width: 100%;
       height: 100%;
+      overflow: visible;
     }
 
     .icon-name {
