@@ -13,8 +13,8 @@ REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 REPO_URL = "https://raw.githubusercontent.com/phosphor-icons/core/main/raw/regular"
 
 def count_elements(content):
-    """Count SVG/VD elements."""
-    return {
+    """Count SVG/VD elements (skip invisible ones)."""
+    elements = {
         'path': len(re.findall(r'<path\b', content)),
         'line': len(re.findall(r'<line\b', content)),
         'rect': len(re.findall(r'<rect\b', content)),
@@ -23,6 +23,12 @@ def count_elements(content):
         'polygon': len(re.findall(r'<polygon\b', content)),
         'ellipse': len(re.findall(r'<ellipse\b', content)),
     }
+    
+    # Subtract invisible rects (opacity="0")
+    invisible_rects = len(re.findall(r'<rect[^>]*opacity="0"[^>]*>', content))
+    elements['rect'] -= invisible_rects
+    
+    return elements
 
 def get_transforms(content):
     """Count transform attributes."""
