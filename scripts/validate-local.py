@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-ICONS_DIR = Path(__file__).parent.parent / "icons"
+ICONS_DIR = Path(__file__).parent.parent / "xmls"
 SVGS_DIR = Path(__file__).parent.parent / "svgs"
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 

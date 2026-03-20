@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from urllib.request import urlopen
 
-ICONS_DIR = Path(__file__).parent.parent / "icons"
+ICONS_DIR = Path(__file__).parent.parent / "xmls"
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 REPO_URL = "https://raw.githubusercontent.com/phosphor-icons/core/main/raw/regular"
 

@@ -15,7 +15,7 @@ from zipfile import ZipFile
 PHOSPHOR_REPO = "phosphor-icons/core"
 PHOSPHOR_BRANCH = "main"
 PHOSPHOR_WEIGHT = "regular"
-ICONS_DIR = Path(__file__).parent.parent / "icons"
+ICONS_DIR = Path(__file__).parent.parent / "xmls"
 SVGS_DIR = Path(__file__).parent.parent / "svgs"  # Original SVGs for reference
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 

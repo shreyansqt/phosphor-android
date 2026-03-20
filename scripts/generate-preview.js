@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ICONS_DIR = path.join(__dirname, '../icons');
+const ICONS_DIR = path.join(__dirname, "..", "xmls"');
 const REGISTRY_FILE = path.join(__dirname, '../icons.json');
 const OUTPUT_FILE = path.join(__dirname, '../index.html');
 
