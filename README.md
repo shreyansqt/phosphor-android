@@ -1,8 +1,14 @@
 # phosphor-android
 
-Auto-synced Phosphor icons converted to Android Vector Drawables.
+Auto-synced [Phosphor Icons](https://phosphoricons.com) converted to Android Vector Drawables.
 
 🎨 **[Preview all icons →](https://shreyansqt.github.io/phosphor-android/)**
+
+## License
+
+This project is based on [Phosphor Icons](https://github.com/phosphor-icons/core), which is licensed under the [MIT License](LICENSE).
+
+**Attribution:** Phosphor Icons © 2023 Phosphor Icons. All icon assets are derived from the original Phosphor Icons library and converted to Android Vector Drawable format.
 
 ## Usage
 
