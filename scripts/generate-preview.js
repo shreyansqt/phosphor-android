@@ -99,6 +99,25 @@ function updatePage() {
     `id="count">${count} icons</span>`
   );
 
+  // Inject commit hash for cache busting
+  try {
+    const { execSync } = require('child_process');
+    const commitHash = execSync('git rev-parse HEAD', { encoding: 'utf-8' }).trim();
+    pageContent = pageContent.replace(
+      /data-commit="[^"]*"/,
+      `data-commit="${commitHash}"`
+    );
+    // If data-commit doesn't exist, add it to the html tag
+    if (!pageContent.includes('data-commit=')) {
+      pageContent = pageContent.replace(
+        /<html[^>]*>/,
+        `<html data-commit="${commitHash}">`
+      );
+    }
+  } catch (e) {
+    console.warn('Warning: Could not get commit hash');
+  }
+
   fs.writeFileSync(OUTPUT_FILE, pageContent);
   console.log(`Preview updated: ${count} icons`);
 }
