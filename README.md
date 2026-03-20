@@ -1,14 +1,60 @@
-# phosphor-android
+# 🎨 phosphor-android
 
-Auto-synced [Phosphor Icons](https://phosphoricons.com) converted to Android Vector Drawables.
+> Beautiful Phosphor Icons, auto-converted to Android Vector Drawables. Zero friction, 1512 icons, fully validated.
 
-🎨 **[Preview all icons →](https://shreyansqt.github.io/phosphor-android/)**
+**[🔍 Browse & Copy Icons](https://shreyansqt.github.io/phosphor-android/)** — Search by name or tags, click to copy XML.
+
+## What Is This?
+
+You need icons in your Android app. Phosphor Icons has **1512 gorgeous line icons**, all free and MIT-licensed. But they're SVGs, not Android Vector Drawables. 
+
+This repo auto-syncs the latest Phosphor icons and converts them **perfectly** — preserving transforms, handling all element types, matching the original pixel-for-pixel.
+
+**1512 icons. 100% validated. Always up-to-date.**
+
+## Usage
+
+1. **Browse**: Go to [the preview page](https://shreyansqt.github.io/phosphor-android/)
+2. **Search**: Find icons by name or tag (e.g., "arrow", "communication")
+3. **Copy**: Click an icon to copy its XML code
+4. **Paste**: Drop it in your `res/drawable/` folder
+5. **Use in Kotlin**:
+
+```kotlin
+Icon(
+    painter = painterResource(id = R.drawable.phosphor_speaker),
+    contentDescription = "Speaker"
+)
+```
+
+## Under the Hood
+
+- **All SVG elements** handled: path, line, rect, circle, polyline, polygon, ellipse
+- **SVG transforms** fully supported: translate, rotate, scale, skewX, skewY, matrix
+- **Smart conversions**: circles default to filled, transforms baked via matrix composition
+- **100% validated**: Every icon tested against original; all 1512 pass
+- **Zero dependencies**: Pure Python, runs on GitHub Actions
+- **Weekly updates**: Syncs automatically every Sunday + manual triggers
+
+## Updates
+
+Icons update automatically every Sunday at midnight UTC. Or trigger manually:
+
+```bash
+gh workflow run sync.yml --repo shreyansqt/phosphor-android
+```
+
+## Credits
+
+**Icons by:** [Phosphor Icons](https://phosphoricons.com) — Free, beautiful, customizable icons. © 2023 Phosphor Icons, MIT licensed.
+
+**Converter & Android Port by:** [Shreyans Jain](https://shreyans.co) — Built for ycast/yotp + open for everyone.
 
 ## License
 
-This project is based on [Phosphor Icons](https://github.com/phosphor-icons/core), which is licensed under the [MIT License](LICENSE).
+MIT License — same as Phosphor Icons. See [LICENSE](LICENSE) for details.
 
-**Attribution:** Phosphor Icons © 2023 Phosphor Icons. All icon assets are derived from the original Phosphor Icons library and converted to Android Vector Drawable format.
+**TL;DR:** Use freely, commercially or otherwise. Just keep the license file.
 
 ## Usage
 
