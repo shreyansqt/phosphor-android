@@ -62,15 +62,6 @@
 
         .controls {
             margin: 20px 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        @media (max-width: 600px) {
-            .controls {
-                grid-template-columns: 1fr;
-            }
         }
 
         input[type="text"] {
@@ -229,14 +220,8 @@
         <div class="controls">
             <input 
                 type="text" 
-                id="searchName" 
-                placeholder="Search by name (e.g., arrow, speaker)"
-                autocomplete="off"
-            />
-            <input 
-                type="text" 
-                id="searchTags" 
-                placeholder="Search by tags (e.g., communication, ui)"
+                id="search" 
+                placeholder="Search icons by name or tags (e.g., arrow, communication)"
                 autocomplete="off"
             />
         </div>
@@ -265,9 +250,8 @@
                 const response = await fetch('icons.json');
                 const data = await response.json();
                 allIcons = data.icons;
-                document.getElementById('count').textContent = `${allIcons.length} icons`;
                 await loadIconXML();
-                renderGrid(allIcons);
+                filterIcons(); // This will render all icons and set the count
             } catch (e) {
                 console.error('Failed to load icons:', e);
                 document.getElementById('count').textContent = 'Error loading icons';
@@ -324,12 +308,12 @@ ${paths.join('\n')}
             const grid = document.getElementById('grid');
             grid.innerHTML = icons.map(icon => {
                 const svg = iconMap[icon.name] ? vdToSvg(iconMap[icon.name]) : '';
-                const keywords = icon.keywords.join(', ');
+                const keywords = icon.keywords.filter(kw => kw !== icon.name).join(', ');
                 return `
                     <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}">
                         <div class="icon-preview">${svg}</div>
                         <p class="icon-name">${icon.name}</p>
-                        <div class="tag">${keywords}</div>
+                        ${keywords ? `<div class="tag">${keywords}</div>` : ''}
                         <div class="copy-hint">Click to copy XML</div>
                     </div>
                 `;
@@ -354,19 +338,18 @@ ${paths.join('\n')}
         }
 
         function filterIcons() {
-            const nameQuery = document.getElementById('searchName').value.toLowerCase();
-            const tagsQuery = document.getElementById('searchTags').value.toLowerCase();
+            const query = document.getElementById('search').value.toLowerCase();
 
-            const filtered = allIcons.filter(icon => {
-                const nameMatch = !nameQuery || icon.name.includes(nameQuery);
-                const tagsMatch = !tagsQuery || icon.keywords.some(kw => kw.includes(tagsQuery));
-                return nameMatch && tagsMatch;
-            });
+            const filtered = query ? allIcons.filter(icon => {
+                const nameMatch = icon.name.includes(query);
+                const tagsMatch = icon.keywords.some(kw => kw.includes(query));
+                return nameMatch || tagsMatch;
+            }) : allIcons;
 
             const grid = document.getElementById('grid');
             const noResults = document.getElementById('no-results');
 
-            if (filtered.length === 0 && (nameQuery || tagsQuery)) {
+            if (filtered.length === 0 && query) {
                 grid.style.display = 'none';
                 noResults.style.display = 'block';
             } else {
@@ -378,8 +361,7 @@ ${paths.join('\n')}
             document.getElementById('count').textContent = `${filtered.length} icons`;
         }
 
-        document.getElementById('searchName').addEventListener('input', filterIcons);
-        document.getElementById('searchTags').addEventListener('input', filterIcons);
+        document.getElementById('search').addEventListener('input', filterIcons);
 
         window.addEventListener('load', loadIconsList);
     </script>
