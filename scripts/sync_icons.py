@@ -7,8 +7,9 @@ import json
 import os
 import re
 import subprocess
+import urllib.request
 from pathlib import Path
-from urllib.request import Request, urlopen
+from zipfile import ZipFile
 
 PHOSPHOR_REPO = "phosphor-icons/core"
 PHOSPHOR_BRANCH = "main"
@@ -16,82 +17,69 @@ PHOSPHOR_WEIGHT = "regular"
 ICONS_DIR = Path(__file__).parent.parent / "icons"
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 
-def get_auth_token():
-    """Get GitHub auth token from gh CLI."""
-    try:
-        result = subprocess.run(
-            ["gh", "auth", "token"],
-            capture_output=True,
-            text=True,
-            timeout=5
-        )
-        if result.returncode == 0:
-            return result.stdout.strip()
-    except Exception:
-        pass
-    return None
-
-def list_phosphor_icons():
-    """List available Phosphor icons from GitHub API using gh CLI."""
-    print("Fetching Phosphor icon list...")
-    
-    # Try to find gh CLI
-    gh_path = os.path.expanduser("~/bin/gh")
-    if not os.path.exists(gh_path):
-        gh_path = "gh"  # Fallback to PATH
+def download_phosphor_zip():
+    """Download Phosphor repo as ZIP."""
+    print("Downloading Phosphor icons repo...")
+    zip_url = f"https://github.com/{PHOSPHOR_REPO}/archive/{PHOSPHOR_BRANCH}.zip"
+    zip_path = "/tmp/phosphor-core.zip"
     
     try:
-        result = subprocess.run(
-            [gh_path, "api", f"repos/{PHOSPHOR_REPO}/contents/raw/{PHOSPHOR_WEIGHT}"],
-            capture_output=True,
-            text=True,
-            timeout=30
-        )
-        
-        if result.returncode != 0:
-            print(f"Error: {result.stderr}")
-            return []
-        
-        data = json.loads(result.stdout)
-        return [item for item in data if item["name"].endswith(".svg")]
+        urllib.request.urlretrieve(zip_url, zip_path)
+        print(f"Downloaded to {zip_path}")
+        return zip_path
     except Exception as e:
-        print(f"Failed to fetch icons list: {e}")
-        return []
+        print(f"Failed to download: {e}")
+        return None
 
-def download_svg(icon_name):
-    """Download a single SVG from raw.githubusercontent."""
-    url = f"https://raw.githubusercontent.com/{PHOSPHOR_REPO}/{PHOSPHOR_BRANCH}/raw/{PHOSPHOR_WEIGHT}/{icon_name}"
+def extract_svgs_from_zip(zip_path):
+    """Extract SVG files from the ZIP."""
+    print("Extracting SVGs from ZIP...")
+    extract_dir = "/tmp/phosphor-extract"
+    os.makedirs(extract_dir, exist_ok=True)
     
-    with urlopen(url) as response:
-        return response.read().decode('utf-8')
+    with ZipFile(zip_path) as zf:
+        zf.extractall(extract_dir)
+    
+    # Find the SVG directory
+    # The ZIP extracts to phosphor-core-main/raw/regular/
+    svg_dir = Path(extract_dir) / "core-main" / "raw" / PHOSPHOR_WEIGHT
+    if not svg_dir.exists():
+        svg_dir = Path(extract_dir) / f"{PHOSPHOR_REPO.split('/')[-1]}-{PHOSPHOR_BRANCH}" / "raw" / PHOSPHOR_WEIGHT
+    
+    if svg_dir.exists():
+        return list(svg_dir.glob("*.svg"))
+    else:
+        print(f"SVG directory not found at {svg_dir}")
+        return []
 
 
 
 def svg_to_vd_string(svg_content):
     """Convert SVG string to Android Vector Drawable XML."""
+    # Normalize whitespace within tags
+    svg_content = re.sub(r'\s+', ' ', svg_content)
+    
     # Extract viewBox
     viewbox_match = re.search(r'viewBox="([^"]+)"', svg_content)
     viewbox = viewbox_match.group(1) if viewbox_match else "0 0 256 256"
     parts = viewbox.split()
     
-    # Extract ALL path elements with attributes
-    path_pattern = r'<path([^>]*)d="([^"]*)"([^>]*)>'
+    # Extract ALL path elements
+    # Pattern: <path d="..." ... /> where d comes first
+    path_pattern = r'<path\s+d="([^"]*)"\s+([^>]*)/?>'
     paths = re.findall(path_pattern, svg_content)
     
     paths_xml = ""
-    for pre_attrs, path_data, post_attrs in paths:
+    for path_data, attrs in paths:
         if not path_data.strip():
             continue
-            
-        all_attrs = pre_attrs + ' d="' + path_data + '" ' + post_attrs
         
         # Extract stroke width (default to 16 for Phosphor)
-        stroke_width_match = re.search(r'stroke-width="([^"]*)"', all_attrs)
+        stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
         stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
         
         # Check if it's a stroke or fill
-        has_stroke = 'stroke' in all_attrs and 'fill="none"' in all_attrs
-        has_fill = 'fill' in all_attrs and 'fill="none"' not in all_attrs
+        has_stroke = 'stroke="currentColor"' in attrs and 'fill="none"' in attrs
         
         if has_stroke:
             paths_xml += f'''  <path
@@ -101,7 +89,8 @@ def svg_to_vd_string(svg_content):
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
 '''
-        elif has_fill or path_data.strip():
+        else:
+            # Treat as fill path
             paths_xml += f'''  <path
       android:pathData="{path_data}"
       android:fillColor="@android:color/white" />
@@ -121,19 +110,25 @@ def main():
     # Ensure icons directory exists
     ICONS_DIR.mkdir(parents=True, exist_ok=True)
     
-    # List and download icons
-    svg_items = list_phosphor_icons()
-    print(f"Found {len(svg_items)} icons")
+    # Download and extract
+    zip_path = download_phosphor_zip()
+    if not zip_path:
+        return
+    
+    svg_files = extract_svgs_from_zip(zip_path)
+    print(f"Found {len(svg_files)} SVG files")
     
     # Convert SVGs to Vector Drawables
     print("Converting to Vector Drawables...")
     registry_icons = []
     
-    for item in svg_items:
-        icon_name = item["name"].replace(".svg", "")
+    for svg_file in sorted(svg_files):
+        icon_name = svg_file.stem
         
         try:
-            svg_content = download_svg(item["name"])
+            with open(svg_file, 'r', encoding='utf-8') as f:
+                svg_content = f.read()
+            
             vd_xml = svg_to_vd_string(svg_content)
             vd_path = ICONS_DIR / f"phosphor_{icon_name}.xml"
             
