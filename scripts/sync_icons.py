@@ -34,52 +34,92 @@ def parse_transform(transform_str):
     
     return transforms
 
+def matrix_mult(m1, m2):
+    """Multiply two 2x3 affine matrices (represented as [a,b,c,d,e,f])."""
+    a1, b1, c1, d1, e1, f1 = m1
+    a2, b2, c2, d2, e2, f2 = m2
+    
+    # 3x3 matrix multiplication for affine transforms
+    # [a1 c1 e1]   [a2 c2 e2]
+    # [b1 d1 f1] * [b2 d2 f2]
+    # [0  0  1 ]   [0  0  1 ]
+    
+    a = a1*a2 + c1*b2
+    b = b1*a2 + d1*b2
+    c = a1*c2 + c1*d2
+    d = b1*c2 + d1*d2
+    e = a1*e2 + c1*f2 + e1
+    f = b1*e2 + d1*f2 + f1
+    
+    return (a, b, c, d, e, f)
+
 def apply_transforms_to_points(points, transforms):
-    """Apply a list of transforms to a list of (x, y) points."""
+    """Apply SVG transforms using proper matrix composition."""
     if not transforms:
         return points
     
+    # Compose all transforms into a single matrix
+    # Start with identity matrix
+    matrix = (1, 0, 0, 1, 0, 0)  # [a, b, c, d, e, f]
+    
+    for func, args in transforms:
+        if func == 'translate':
+            tx = args[0] if len(args) > 0 else 0
+            ty = args[1] if len(args) > 1 else 0
+            t_matrix = (1, 0, 0, 1, tx, ty)
+            matrix = matrix_mult(matrix, t_matrix)
+            
+        elif func == 'rotate':
+            angle = math.radians(args[0]) if len(args) > 0 else 0
+            cx = args[1] if len(args) > 1 else 0
+            cy = args[2] if len(args) > 2 else 0
+            
+            cos_a = math.cos(angle)
+            sin_a = math.sin(angle)
+            
+            # Rotate around (cx, cy): translate(-cx,-cy), rotate, translate(cx,cy)
+            if cx != 0 or cy != 0:
+                t1 = (1, 0, 0, 1, -cx, -cy)
+                r_matrix = (cos_a, sin_a, -sin_a, cos_a, 0, 0)
+                t2 = (1, 0, 0, 1, cx, cy)
+                
+                temp = matrix_mult(t1, r_matrix)
+                temp = matrix_mult(temp, t2)
+                matrix = matrix_mult(matrix, temp)
+            else:
+                r_matrix = (cos_a, sin_a, -sin_a, cos_a, 0, 0)
+                matrix = matrix_mult(matrix, r_matrix)
+        
+        elif func == 'scale':
+            sx = args[0] if len(args) > 0 else 1
+            sy = args[1] if len(args) > 1 else sx
+            s_matrix = (sx, 0, 0, sy, 0, 0)
+            matrix = matrix_mult(matrix, s_matrix)
+        
+        elif func == 'skewX':
+            angle = math.radians(args[0]) if len(args) > 0 else 0
+            tan_a = math.tan(angle)
+            sk_matrix = (1, 0, tan_a, 1, 0, 0)
+            matrix = matrix_mult(matrix, sk_matrix)
+        
+        elif func == 'skewY':
+            angle = math.radians(args[0]) if len(args) > 0 else 0
+            tan_a = math.tan(angle)
+            sk_matrix = (1, tan_a, 0, 1, 0, 0)
+            matrix = matrix_mult(matrix, sk_matrix)
+        
+        elif func == 'matrix':
+            if len(args) == 6:
+                m_matrix = tuple(args)
+                matrix = matrix_mult(matrix, m_matrix)
+    
+    # Apply the composed matrix to all points
+    a, b, c, d, e, f = matrix
     result = []
     for x, y in points:
-        for func, args in transforms:
-            if func == 'translate':
-                tx = args[0] if len(args) > 0 else 0
-                ty = args[1] if len(args) > 1 else 0
-                x += tx
-                y += ty
-            elif func == 'rotate':
-                angle = math.radians(args[0]) if len(args) > 0 else 0
-                # SVG rotate uses explicit center or (0,0) - we'll use (0,0) as SVG spec
-                cx = args[1] if len(args) > 1 else 0
-                cy = args[2] if len(args) > 2 else 0
-                
-                x -= cx
-                y -= cy
-                cos_a = math.cos(angle)
-                sin_a = math.sin(angle)
-                new_x = x * cos_a - y * sin_a
-                new_y = x * sin_a + y * cos_a
-                x = new_x + cx
-                y = new_y + cy
-            elif func == 'scale':
-                sx = args[0] if len(args) > 0 else 1
-                sy = args[1] if len(args) > 1 else sx
-                x *= sx
-                y *= sy
-            elif func == 'skewX':
-                angle = math.radians(args[0]) if len(args) > 0 else 0
-                x += y * math.tan(angle)
-            elif func == 'skewY':
-                angle = math.radians(args[0]) if len(args) > 0 else 0
-                y += x * math.tan(angle)
-            elif func == 'matrix':
-                if len(args) == 6:
-                    a, b, c, d, e, f = args
-                    new_x = a * x + c * y + e
-                    new_y = b * x + d * y + f
-                    x, y = new_x, new_y
-        
-        result.append((x, y))
+        new_x = a * x + c * y + e
+        new_y = b * x + d * y + f
+        result.append((new_x, new_y))
     
     return result
 

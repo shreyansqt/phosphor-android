@@ -34,7 +34,7 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M-39.99999999999998 304.0 L-39.99999999999997 496.0 L-199.99999999999997 496.0 L-199.99999999999997 304.0 Z"
+      android:pathData="M216.0 32.0 L216.0 224.0 L56.0 224.0 L56.0 32.000000000000014 Z"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
