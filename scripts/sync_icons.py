@@ -129,6 +129,10 @@ def svg_to_vd_string(svg_content):
     rect_pattern = r'<rect\s+x="([^"]*)"\s+y="([^"]*)"\s+width="([^"]*)"\s+height="([^"]*)"\s+([^>]*)/?>'
     for x, y, w, h, attrs in re.findall(rect_pattern, svg_content):
         try:
+            # Skip rects with transform (53 icons, too complex to handle correctly)
+            if 'transform' in attrs:
+                continue
+                
             x_f, y_f, w_f, h_f = float(x), float(y), float(w), float(h)
             # Rectangle as path: M x y L x+w y L x+w y+h L x y+h Z
             path_data = f"M{x_f} {y_f} L{x_f+w_f} {y_f} L{x_f+w_f} {y_f+h_f} L{x_f} {y_f+h_f} Z"
