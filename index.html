@@ -190,19 +190,7 @@
             border-top: 2px solid #eee;
         }
 
-        .tag {
-            display: inline-block;
-            background: #f0f0f0;
-            color: #666;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            margin-top: 4px;
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+
     </style>
 </head>
 <body>
@@ -313,7 +301,6 @@ ${paths.join('\n')}
                     <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}">
                         <div class="icon-preview">${svg}</div>
                         <p class="icon-name">${icon.name}</p>
-                        ${keywords ? `<div class="tag">${keywords}</div>` : ''}
                         <div class="copy-hint">Click to copy XML</div>
                     </div>
                 `;
@@ -337,14 +324,49 @@ ${paths.join('\n')}
             setTimeout(() => toast.remove(), 2000);
         }
 
-        function filterIcons() {
-            const query = document.getElementById('search').value.toLowerCase();
+        function scoreMatch(icon, query) {
+            if (!query) return 0;
+            
+            const name = icon.name.toLowerCase();
+            const keywords = icon.keywords.map(k => k.toLowerCase());
+            
+            let score = 0;
+            
+            // Exact name match
+            if (name === query) score += 1000;
+            // Name starts with query
+            else if (name.startsWith(query)) score += 500;
+            // Name contains query as word boundary (after -)
+            else if (name.includes('-' + query) || name.includes(query + '-')) score += 300;
+            // Name contains query substring
+            else if (name.includes(query)) score += 100;
+            
+            // Check keywords
+            for (const kw of keywords) {
+                if (kw === query) score += 50;
+                else if (kw.startsWith(query)) score += 25;
+                else if (kw.includes(query)) score += 10;
+            }
+            
+            return score;
+        }
 
-            const filtered = query ? allIcons.filter(icon => {
-                const nameMatch = icon.name.includes(query);
-                const tagsMatch = icon.keywords.some(kw => kw.includes(query));
-                return nameMatch || tagsMatch;
-            }) : allIcons;
+        function filterIcons() {
+            const query = document.getElementById('search').value.toLowerCase().trim();
+
+            let filtered = allIcons;
+            
+            if (query) {
+                // Score and filter
+                const scored = allIcons.map(icon => ({
+                    icon: icon,
+                    score: scoreMatch(icon, query)
+                })).filter(item => item.score > 0);
+                
+                // Sort by score (highest first)
+                scored.sort((a, b) => b.score - a.score);
+                filtered = scored.map(item => item.icon);
+            }
 
             const grid = document.getElementById('grid');
             const noResults = document.getElementById('no-results');
