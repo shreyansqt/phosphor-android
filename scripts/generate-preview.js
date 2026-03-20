@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ICONS_DIR = path.join(__dirname, "..", "xmls"');
+const ICONS_DIR = path.join(__dirname, "..", "xmls");
 const REGISTRY_FILE = path.join(__dirname, '../icons.json');
 const OUTPUT_FILE = path.join(__dirname, '../index.html');
 
@@ -48,7 +48,7 @@ function generateIcons() {
   const registry = JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf8'));
   const icons = registry.icons;
 
-  // Also load VD files to inline
+  // Only load VD for SVG rendering; XML loaded on-demand when copying
   const iconCards = icons
     .map((icon) => {
       const vdPath = path.join(ICONS_DIR, `phosphor_${icon.name}.xml`);
@@ -62,11 +62,8 @@ function generateIcons() {
       const svg = vdToSvg(vdXml);
       const keywords = icon.keywords.filter(kw => kw !== icon.name).join(', ');
       
-      // Escape XML for data attribute
-      const vdEscaped = vdXml.replace(/"/g, '&quot;').replace(/\n/g, '');
-      
       return `
-                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}" data-vd="${vdEscaped}">
+                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}">
                         <div class="icon-preview">${svg}</div>
                         <p class="icon-name">${icon.name}</p>
                         <div class="copy-hint">Click to copy XML</div>
