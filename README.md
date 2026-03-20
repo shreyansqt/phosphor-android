@@ -44,6 +44,21 @@ Icons update automatically every Sunday at midnight UTC. Or trigger manually:
 gh workflow run sync.yml --repo shreyansqt/phosphor-android
 ```
 
+## Troubleshooting
+
+**Q: I'm still seeing old icons after an update**
+
+The preview page is cached by Cloudflare CDN (in front of GitHub Pages). If you see stale content:
+
+1. **Hard refresh** your browser (`Cmd+Shift+R` on Mac, `Ctrl+Shift+R` on Windows)
+2. **If still cached**: Add a query string with the commit hash:
+   ```
+   https://shreyansqt.github.io/phosphor-android/?bust=<commit>
+   ```
+   (Replace `<commit>` with any short hash from the [commit log](https://github.com/shreyansqt/phosphor-android/commits/main))
+
+Cloudflare usually clears cache within 10 minutes. The query string forces an immediate refresh.
+
 ## Credits
 
 **Icons by:** [Phosphor Icons](https://phosphoricons.com) — Free, beautiful, customizable icons. © 2023 Phosphor Icons, MIT licensed.
