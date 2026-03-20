@@ -22,19 +22,19 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M80,44.86 L128,128"
+      android:pathData="M80.0,44.86 L128.0,128.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M80,211.14 L128,128"
+      android:pathData="M80.0,211.14 L128.0,128.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M224,128 L128,128"
+      android:pathData="M224.0,128.0 L128.0,128.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

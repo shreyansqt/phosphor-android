@@ -4,7 +4,7 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
   <path
-      android:pathData="M103.75,134 L136,80"
+      android:pathData="M103.75,134.0 L136.0,80.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

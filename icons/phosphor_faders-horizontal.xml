@@ -4,37 +4,37 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
   <path
-      android:pathData="M184,80 L216,80"
+      android:pathData="M184.0,80.0 L216.0,80.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M40,80 L152,80"
+      android:pathData="M40.0,80.0 L152.0,80.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M120,176 L216,176"
+      android:pathData="M120.0,176.0 L216.0,176.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M40,176 L88,176"
+      android:pathData="M40.0,176.0 L88.0,176.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M152,56 L152,104"
+      android:pathData="M152.0,56.0 L152.0,104.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M88,152 L88,200"
+      android:pathData="M88.0,152.0 L88.0,200.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

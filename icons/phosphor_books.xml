@@ -10,13 +10,13 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M48,72 L112,72"
+      android:pathData="M48.0,72.0 L112.0,72.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M48,184 L112,184"
+      android:pathData="M48.0,184.0 L112.0,184.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

@@ -4,13 +4,13 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
   <path
-      android:pathData="M128,192 L128,240"
+      android:pathData="M128.0,192.0 L128.0,240.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M128 16 L48 120 L88 120 L32 192 L224 192 L168 120 L208 120 L128 16 Z"
+      android:pathData="M128.0 16.0 L48.0 120.0 L88.0 120.0 L32.0 192.0 L224.0 192.0 L168.0 120.0 L208.0 120.0 L128.0 16.0 Z"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

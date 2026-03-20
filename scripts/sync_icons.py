@@ -8,6 +8,7 @@ import os
 import re
 import subprocess
 import urllib.request
+import math
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -16,6 +17,70 @@ PHOSPHOR_BRANCH = "main"
 PHOSPHOR_WEIGHT = "regular"
 ICONS_DIR = Path(__file__).parent.parent / "icons"
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
+
+def parse_transform(transform_str):
+    """Parse SVG transform string into list of (function, args) tuples."""
+    if not transform_str:
+        return []
+    
+    transforms = []
+    # Find all transform functions: name(args)
+    for match in re.finditer(r'(\w+)\s*\(([^)]*)\)', transform_str):
+        func = match.group(1)
+        # Split on commas OR whitespace
+        args_str = match.group(2).replace(',', ' ')
+        args = [float(x) for x in args_str.split() if x.strip()]
+        transforms.append((func, args))
+    
+    return transforms
+
+def apply_transforms_to_points(points, transforms):
+    """Apply a list of transforms to a list of (x, y) points."""
+    if not transforms:
+        return points
+    
+    result = []
+    for x, y in points:
+        for func, args in transforms:
+            if func == 'translate':
+                tx = args[0] if len(args) > 0 else 0
+                ty = args[1] if len(args) > 1 else 0
+                x += tx
+                y += ty
+            elif func == 'rotate':
+                angle = math.radians(args[0]) if len(args) > 0 else 0
+                cx = args[1] if len(args) > 1 else 0
+                cy = args[2] if len(args) > 2 else 0
+                
+                x -= cx
+                y -= cy
+                cos_a = math.cos(angle)
+                sin_a = math.sin(angle)
+                new_x = x * cos_a - y * sin_a
+                new_y = x * sin_a + y * cos_a
+                x = new_x + cx
+                y = new_y + cy
+            elif func == 'scale':
+                sx = args[0] if len(args) > 0 else 1
+                sy = args[1] if len(args) > 1 else sx
+                x *= sx
+                y *= sy
+            elif func == 'skewX':
+                angle = math.radians(args[0]) if len(args) > 0 else 0
+                x += y * math.tan(angle)
+            elif func == 'skewY':
+                angle = math.radians(args[0]) if len(args) > 0 else 0
+                y += x * math.tan(angle)
+            elif func == 'matrix':
+                if len(args) == 6:
+                    a, b, c, d, e, f = args
+                    new_x = a * x + c * y + e
+                    new_y = b * x + d * y + f
+                    x, y = new_x, new_y
+        
+        result.append((x, y))
+    
+    return result
 
 def download_phosphor_zip():
     """Download Phosphor repo as ZIP."""
@@ -69,6 +134,10 @@ def svg_to_vd_string(svg_content):
         if not path_data.strip():
             continue
         
+        # Extract transform
+        transform_match = re.search(r'transform="([^"]*)"', attrs)
+        transforms = parse_transform(transform_match.group(1)) if transform_match else []
+        
         stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
         stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
         has_stroke = 'stroke="currentColor"' in attrs and 'fill="none"' in attrs
@@ -90,7 +159,14 @@ def svg_to_vd_string(svg_content):
     # Extract line elements -> convert to paths
     line_pattern = r'<line\s+x1="([^"]*)"\s+y1="([^"]*)"\s+x2="([^"]*)"\s+y2="([^"]*)"\s+([^>]*)/?>'
     for x1, y1, x2, y2, attrs in re.findall(line_pattern, svg_content):
-        path_data = f"M{x1},{y1} L{x2},{y2}"
+        transform_match = re.search(r'transform="([^"]*)"', attrs)
+        transforms = parse_transform(transform_match.group(1)) if transform_match else []
+        
+        points = apply_transforms_to_points([(float(x1), float(y1)), (float(x2), float(y2))], transforms)
+        x1_t, y1_t = points[0]
+        x2_t, y2_t = points[1]
+        
+        path_data = f"M{x1_t},{y1_t} L{x2_t},{y2_t}"
         stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
         stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
         
@@ -109,6 +185,7 @@ def svg_to_vd_string(svg_content):
             cx_f = float(cx)
             cy_f = float(cy)
             r_f = float(r)
+            
             # Two 180-degree arcs to make a full circle
             path_data = f"M{cx_f-r_f},{cy_f} A{r_f} {r_f} 0 1 0 {cx_f+r_f},{cy_f} A{r_f} {r_f} 0 1 0 {cx_f-r_f},{cy_f}"
             
@@ -125,17 +202,43 @@ def svg_to_vd_string(svg_content):
         except:
             pass
     
-    # Extract rect elements -> convert to paths
-    rect_pattern = r'<rect\s+x="([^"]*)"\s+y="([^"]*)"\s+width="([^"]*)"\s+height="([^"]*)"\s+([^>]*)/?>'
-    for x, y, w, h, attrs in re.findall(rect_pattern, svg_content):
+    # Extract rect elements -> convert to paths (handle flexible attribute order)
+    rect_pattern = r'<rect\s+([^>]*?)(?:\s+x="([^"]*)"\s+y="([^"]*)"\s+width="([^"]*)"\s+height="([^"]*)"|\s+width="([^"]*)"\s+height="([^"]*)"\s+x="([^"]*)"\s+y="([^"]*)")\s*([^>]*)/?>'
+    
+    # Simpler approach: find all rects and parse attributes individually
+    rect_pattern = r'<rect\s+([^>]*)/?>'
+    for elem_attrs in re.findall(rect_pattern, svg_content):
+        # Skip background rect
+        if 'width="256" height="256"' in elem_attrs and 'fill="none"' in elem_attrs and 'x=' not in elem_attrs:
+            continue
+            
+        # Extract x, y, width, height from any order
+        x_match = re.search(r'x="([^"]*)"', elem_attrs)
+        y_match = re.search(r'y="([^"]*)"', elem_attrs)
+        w_match = re.search(r'width="([^"]*)"', elem_attrs)
+        h_match = re.search(r'height="([^"]*)"', elem_attrs)
+        
+        if not (x_match and y_match and w_match and h_match):
+            continue
+            
+        x, y, w, h = x_match.group(1), y_match.group(1), w_match.group(1), h_match.group(1)
+        attrs = elem_attrs
         try:
-            # Skip rects with transform (53 icons, too complex to handle correctly)
-            if 'transform' in attrs:
-                continue
-                
             x_f, y_f, w_f, h_f = float(x), float(y), float(w), float(h)
-            # Rectangle as path: M x y L x+w y L x+w y+h L x y+h Z
-            path_data = f"M{x_f} {y_f} L{x_f+w_f} {y_f} L{x_f+w_f} {y_f+h_f} L{x_f} {y_f+h_f} Z"
+            
+            # Extract transform
+            transform_match = re.search(r'transform="([^"]*)"', attrs)
+            transforms = parse_transform(transform_match.group(1)) if transform_match else []
+            
+            # Create rectangle corners
+            points = [(x_f, y_f), (x_f+w_f, y_f), (x_f+w_f, y_f+h_f), (x_f, y_f+h_f)]
+            points = apply_transforms_to_points(points, transforms)
+            
+            # Build path from transformed points
+            path_data = f"M{points[0][0]} {points[0][1]}"
+            for px, py in points[1:]:
+                path_data += f" L{px} {py}"
+            path_data += " Z"
             
             stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
             stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
@@ -156,10 +259,15 @@ def svg_to_vd_string(svg_content):
         try:
             coords = re.findall(r'[\d.]+', points_str)
             if len(coords) >= 4:
-                path_data = f"M{coords[0]} {coords[1]}"
-                for i in range(2, len(coords), 2):
-                    if i+1 < len(coords):
-                        path_data += f" L{coords[i]} {coords[i+1]}"
+                points = [(float(coords[i]), float(coords[i+1])) for i in range(0, len(coords), 2)]
+                
+                transform_match = re.search(r'transform="([^"]*)"', attrs)
+                transforms = parse_transform(transform_match.group(1)) if transform_match else []
+                points = apply_transforms_to_points(points, transforms)
+                
+                path_data = f"M{points[0][0]} {points[0][1]}"
+                for px, py in points[1:]:
+                    path_data += f" L{px} {py}"
                 
                 stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
                 stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
@@ -179,12 +287,17 @@ def svg_to_vd_string(svg_content):
     for points_str, attrs in re.findall(polygon_pattern, svg_content):
         try:
             coords = re.findall(r'[\d.]+', points_str)
-            if len(coords) >= 6:  # At least 3 points
-                path_data = f"M{coords[0]} {coords[1]}"
-                for i in range(2, len(coords), 2):
-                    if i+1 < len(coords):
-                        path_data += f" L{coords[i]} {coords[i+1]}"
-                path_data += " Z"  # Close the polygon
+            if len(coords) >= 6:
+                points = [(float(coords[i]), float(coords[i+1])) for i in range(0, len(coords), 2)]
+                
+                transform_match = re.search(r'transform="([^"]*)"', attrs)
+                transforms = parse_transform(transform_match.group(1)) if transform_match else []
+                points = apply_transforms_to_points(points, transforms)
+                
+                path_data = f"M{points[0][0]} {points[0][1]}"
+                for px, py in points[1:]:
+                    path_data += f" L{px} {py}"
+                path_data += " Z"
                 
                 stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
                 stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
@@ -204,7 +317,6 @@ def svg_to_vd_string(svg_content):
     for cx, cy, rx, ry, attrs in re.findall(ellipse_pattern, svg_content):
         try:
             cx_f, cy_f, rx_f, ry_f = float(cx), float(cy), float(rx), float(ry)
-            # Approximate ellipse with two arcs
             path_data = f"M{cx_f-rx_f},{cy_f} A{rx_f} {ry_f} 0 1 0 {cx_f+rx_f},{cy_f} A{rx_f} {ry_f} 0 1 0 {cx_f-rx_f},{cy_f}"
             
             stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)

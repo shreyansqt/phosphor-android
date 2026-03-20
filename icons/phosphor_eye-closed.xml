@@ -10,25 +10,25 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M224,168 L200.62,127.09"
+      android:pathData="M224.0,168.0 L200.62,127.09"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M160,192 L152.91,149.45"
+      android:pathData="M160.0,192.0 L152.91,149.45"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M96,192 L103.09,149.45"
+      android:pathData="M96.0,192.0 L103.09,149.45"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M32,168 L55.38,127.09"
+      android:pathData="M32.0,168.0 L55.38,127.09"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

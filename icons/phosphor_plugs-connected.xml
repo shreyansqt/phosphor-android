@@ -4,43 +4,49 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
   <path
-      android:pathData="M88,88 L168,168"
+      android:pathData="M88.0,88.0 L168.0,168.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M232,24 L173.94,82.06"
+      android:pathData="M232.0,24.0 L173.94,82.06"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M82.06,173.94 L24,232"
+      android:pathData="M82.06,173.94 L24.0,232.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M96,32 L104,52"
+      android:pathData="M96.0,32.0 L104.0,52.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M32,96 L52,104"
+      android:pathData="M32.0,96.0 L52.0,104.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M204,152 L224,160"
+      android:pathData="M204.0,152.0 L224.0,160.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M152,204 L160,224"
+      android:pathData="M152.0,204.0 L160.0,224.0"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="16"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+  <path
+      android:pathData="M160.09604632844622 145.93976856909157 L251.97750147582622 54.0583134217116 L307.98035854580075 110.06117049168617 L216.0989033984208 201.94262563906614 Z"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"

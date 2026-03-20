@@ -16,7 +16,13 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
-      android:pathData="M152 232 L152 176 L109.54 145.67"
+      android:pathData="M199.982328747476 106.53645474079015 L223.98520929885265 50.53353851996872 L251.98207173256714 62.53300908610911 L227.97919118119046 118.53592530693054 Z"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="16"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+  <path
+      android:pathData="M152.0 232.0 L152.0 176.0 L109.54 145.67"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"
       android:strokeLineCap="round"
