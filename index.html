@@ -232,20 +232,32 @@
 
     <script>
         let allIcons = [];
+        let iconMap = {}; // Map of icon name to XML content
 
-        function loadIconsList() {
+        async function loadIconsList() {
             try {
-                const response = fetch('icons.json');
-                // Build allIcons from the already-rendered DOM
-                const cards = document.querySelectorAll('.icon-card[data-name]');
-                allIcons = Array.from(cards).map(card => ({
-                    name: card.getAttribute('data-name'),
-                    keywords: card.getAttribute('data-keywords').split(', ').filter(k => k)
-                }));
-                filterIcons();
+                const response = await fetch('icons.json');
+                const data = await response.json();
+                allIcons = data.icons;
+                await loadIconXML();
+                filterIcons(); // This will render all icons and set the count
             } catch (e) {
                 console.error('Failed to load icons:', e);
                 document.getElementById('count').textContent = 'Error loading icons';
+            }
+        }
+
+        async function loadIconXML() {
+            // Load XML for all icons (lazy load in batches)
+            for (const icon of allIcons) {
+                try {
+                    const response = await fetch(`icons/phosphor_${icon.name}.xml`);
+                    if (response.ok) {
+                        iconMap[icon.name] = await response.text();
+                    }
+                } catch (e) {
+                    // Skip if not found
+                }
             }
         }
 
@@ -281,24 +293,26 @@ ${paths.join('\n')}
 </svg>`;
         }
 
-        function renderGrid(iconNames) {
+        function renderGrid(icons) {
             const grid = document.getElementById('grid');
-            // Show/hide cards based on names
-            const allCards = Array.from(document.querySelectorAll('.icon-card[data-name]'));
-            allCards.forEach(card => {
-                const name = card.getAttribute('data-name');
-                card.classList.toggle('hidden', !iconNames.some(i => i.name === name));
-            });
+            grid.innerHTML = icons.map(icon => {
+                const svg = iconMap[icon.name] ? vdToSvg(iconMap[icon.name]) : '';
+                const keywords = icon.keywords.filter(kw => kw !== icon.name).join(', ');
+                return `
+                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}">
+                        <div class="icon-preview">${svg}</div>
+                        <p class="icon-name">${icon.name}</p>
+                        <div class="copy-hint">Click to copy XML</div>
+                    </div>
+                `;
+            }).join('');
         }
 
         function copyXML(iconName) {
-            const card = document.querySelector(`[data-name="${iconName}"]`);
-            if (!card) return;
-            
-            const vdXml = card.getAttribute('data-vd');
-            if (!vdXml) return;
-            
-            navigator.clipboard.writeText(vdXml).then(() => {
+            const xml = iconMap[iconName];
+            if (!xml) return;
+
+            navigator.clipboard.writeText(xml).then(() => {
                 showToast(`✓ Copied phosphor_${iconName}.xml`);
             });
         }
