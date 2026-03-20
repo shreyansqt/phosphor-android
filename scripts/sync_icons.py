@@ -125,6 +125,27 @@ def svg_to_vd_string(svg_content):
         except:
             pass
     
+    # Extract rect elements -> convert to paths
+    rect_pattern = r'<rect\s+x="([^"]*)"\s+y="([^"]*)"\s+width="([^"]*)"\s+height="([^"]*)"\s+([^>]*)/?>'
+    for x, y, w, h, attrs in re.findall(rect_pattern, svg_content):
+        try:
+            x_f, y_f, w_f, h_f = float(x), float(y), float(w), float(h)
+            # Rectangle as path: M x y L x+w y L x+w y+h L x y+h Z
+            path_data = f"M{x_f} {y_f} L{x_f+w_f} {y_f} L{x_f+w_f} {y_f+h_f} L{x_f} {y_f+h_f} Z"
+            
+            stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
+            stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
+            
+            paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="{stroke_width}"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+'''
+        except:
+            pass
+    
     # Extract polyline elements -> convert to paths
     polyline_pattern = r'<polyline\s+points="([^"]*)"\s+([^>]*)/?>'
     for points_str, attrs in re.findall(polyline_pattern, svg_content):
@@ -140,6 +161,52 @@ def svg_to_vd_string(svg_content):
                 stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
                 
                 paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="{stroke_width}"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+'''
+        except:
+            pass
+    
+    # Extract polygon elements -> convert to paths
+    polygon_pattern = r'<polygon\s+points="([^"]*)"\s+([^>]*)/?>'
+    for points_str, attrs in re.findall(polygon_pattern, svg_content):
+        try:
+            coords = re.findall(r'[\d.]+', points_str)
+            if len(coords) >= 6:  # At least 3 points
+                path_data = f"M{coords[0]} {coords[1]}"
+                for i in range(2, len(coords), 2):
+                    if i+1 < len(coords):
+                        path_data += f" L{coords[i]} {coords[i+1]}"
+                path_data += " Z"  # Close the polygon
+                
+                stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
+                stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
+                
+                paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="{stroke_width}"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+'''
+        except:
+            pass
+    
+    # Extract ellipse elements -> convert to circle paths
+    ellipse_pattern = r'<ellipse\s+cx="([^"]*)"\s+cy="([^"]*)"\s+rx="([^"]*)"\s+ry="([^"]*)"\s+([^>]*)/?>'
+    for cx, cy, rx, ry, attrs in re.findall(ellipse_pattern, svg_content):
+        try:
+            cx_f, cy_f, rx_f, ry_f = float(cx), float(cy), float(rx), float(ry)
+            # Approximate ellipse with two arcs
+            path_data = f"M{cx_f-rx_f},{cy_f} A{rx_f} {ry_f} 0 1 0 {cx_f+rx_f},{cy_f} A{rx_f} {ry_f} 0 1 0 {cx_f-rx_f},{cy_f}"
+            
+            stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
+            stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
+            
+            paths_xml += f'''  <path
       android:pathData="{path_data}"
       android:strokeColor="@android:color/white"
       android:strokeWidth="{stroke_width}"

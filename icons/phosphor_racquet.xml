@@ -33,4 +33,16 @@
       android:strokeWidth="16"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
+  <path
+      android:pathData="M24.69 187.03 L79.32000000000001 187.03 L79.32000000000001 220.97 L24.69 220.97 Z"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="16"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
+  <path
+      android:pathData="M88.49,88.0 A79.51 63.61 0 1 0 247.51,88.0 A79.51 63.61 0 1 0 88.49,88.0"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="16"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
 </vector>
