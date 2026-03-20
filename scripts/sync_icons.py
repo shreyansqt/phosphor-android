@@ -478,7 +478,8 @@ def main():
             registry_icons.append({
                 "name": icon_name,
                 "category": "icon",
-                "keywords": keywords
+                "keywords": keywords,
+                "vd": vd_xml  # Inline the VD XML for fast rendering
             })
         except Exception as e:
             print(f"Failed to process {icon_name}: {e}")

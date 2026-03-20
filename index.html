@@ -232,32 +232,16 @@
 
     <script>
         let allIcons = [];
-        let iconMap = {}; // Map of icon name to XML content
 
         async function loadIconsList() {
             try {
                 const response = await fetch('icons.json');
                 const data = await response.json();
                 allIcons = data.icons;
-                await loadIconXML();
-                filterIcons(); // This will render all icons and set the count
+                filterIcons();
             } catch (e) {
                 console.error('Failed to load icons:', e);
                 document.getElementById('count').textContent = 'Error loading icons';
-            }
-        }
-
-        async function loadIconXML() {
-            // Load XML for all icons (lazy load in batches)
-            for (const icon of allIcons) {
-                try {
-                    const response = await fetch(`icons/phosphor_${icon.name}.xml`);
-                    if (response.ok) {
-                        iconMap[icon.name] = await response.text();
-                    }
-                } catch (e) {
-                    // Skip if not found
-                }
             }
         }
 
@@ -309,9 +293,14 @@ ${paths.join('\n')}
         }
 
         function copyXML(iconName) {
-            const xml = iconMap[iconName];
-            if (!xml) return;
-
+            const card = document.querySelector(`[data-name="${iconName}"]`);
+            if (!card) return;
+            
+            const vdBase64 = card.getAttribute('data-vd');
+            if (!vdBase64) return;
+            
+            // Decode base64 to get the XML
+            const xml = atob(vdBase64);
             navigator.clipboard.writeText(xml).then(() => {
                 showToast(`✓ Copied phosphor_${iconName}.xml`);
             });
