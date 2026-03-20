@@ -153,10 +153,38 @@ def extract_svgs_from_zip(zip_path):
         svg_dir = Path(extract_dir) / f"{PHOSPHOR_REPO.split('/')[-1]}-{PHOSPHOR_BRANCH}" / "raw" / PHOSPHOR_WEIGHT
     
     if svg_dir.exists():
-        return list(svg_dir.glob("*.svg"))
+        return list(svg_dir.glob("*.svg")), extract_dir
     else:
         print(f"SVG directory not found at {svg_dir}")
-        return []
+        return [], extract_dir
+
+def load_icon_metadata(extract_dir):
+    """Load icon metadata (tags) from src/icons.ts."""
+    metadata = {}
+    icons_ts = Path(extract_dir) / "core-main" / "src" / "icons.ts"
+    if not icons_ts.exists():
+        return metadata
+    
+    try:
+        with open(icons_ts) as f:
+            content = f.read()
+        
+        # Parse the TypeScript file to extract icon data
+        import re
+        
+        # Find each icon object
+        icon_pattern = r'\{\s*name:\s*"([^"]+)"[^}]*?tags:\s*\[(.*?)\]'
+        for match in re.finditer(icon_pattern, content, re.DOTALL):
+            icon_name = match.group(1)
+            tags_str = match.group(2)
+            
+            # Extract individual tags
+            tags = re.findall(r'"([^"]*)"', tags_str)
+            metadata[icon_name] = tags
+    except Exception as e:
+        print(f"Warning: Could not load icon metadata: {e}")
+    
+    return metadata
 
 def svg_to_vd_string(svg_content):
     """Convert SVG string to Android Vector Drawable XML."""
@@ -414,8 +442,12 @@ def main():
     if not zip_path:
         return
     
-    svg_files = extract_svgs_from_zip(zip_path)
+    svg_files, extract_dir = extract_svgs_from_zip(zip_path)
     print(f"Found {len(svg_files)} SVG files")
+    
+    # Load icon metadata (tags)
+    metadata = load_icon_metadata(extract_dir)
+    print(f"Loaded metadata for {len(metadata)} icons")
     
     print("Converting to Vector Drawables...")
     registry_icons = []
@@ -438,10 +470,15 @@ def main():
             with open(vd_path, 'w') as f:
                 f.write(vd_xml)
             
+            # Use metadata tags if available, otherwise use icon name
+            keywords = metadata.get(icon_name, [icon_name.replace("-", " ")])
+            if not keywords:  # If tags are empty, add the name as fallback
+                keywords = [icon_name.replace("-", " ")]
+            
             registry_icons.append({
                 "name": icon_name,
                 "category": "icon",
-                "keywords": [icon_name.replace("-", " ")]
+                "keywords": keywords
             })
         except Exception as e:
             print(f"Failed to process {icon_name}: {e}")
