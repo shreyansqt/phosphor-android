@@ -48,14 +48,25 @@ function generateIcons() {
   const registry = JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf8'));
   const icons = registry.icons;
 
+  // Also load VD files to inline
   const iconCards = icons
     .map((icon) => {
-      if (!icon.vd) return '';  // Skip if no VD data
+      const vdPath = path.join(ICONS_DIR, `phosphor_${icon.name}.xml`);
+      let vdXml = '';
+      try {
+        vdXml = fs.readFileSync(vdPath, 'utf8');
+      } catch (e) {
+        return '';
+      }
 
-      const svg = vdToSvg(icon.vd);
+      const svg = vdToSvg(vdXml);
       const keywords = icon.keywords.filter(kw => kw !== icon.name).join(', ');
+      
+      // Escape XML for data attribute
+      const vdEscaped = vdXml.replace(/"/g, '&quot;').replace(/\n/g, '');
+      
       return `
-                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}" data-vd="${Buffer.from(icon.vd).toString('base64')}">
+                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}" data-vd="${vdEscaped}">
                         <div class="icon-preview">${svg}</div>
                         <p class="icon-name">${icon.name}</p>
                         <div class="copy-hint">Click to copy XML</div>
