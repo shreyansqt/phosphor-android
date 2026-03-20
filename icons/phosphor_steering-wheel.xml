@@ -22,6 +22,9 @@
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
   <path
+      android:pathData="M116.0,140.0 A12.0 12.0 0 1 0 140.0,140.0 A12.0 12.0 0 1 0 116.0,140.0"
+      android:fillColor="@android:color/white" />
+  <path
       android:pathData="M32.0,128.0 A96.0 96.0 0 1 0 224.0,128.0 A96.0 96.0 0 1 0 32.0,128.0"
       android:strokeColor="@android:color/white"
       android:strokeWidth="16"

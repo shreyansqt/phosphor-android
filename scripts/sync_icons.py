@@ -220,25 +220,47 @@ def svg_to_vd_string(svg_content):
 '''
     
     # Extract circle elements -> convert to arc paths
-    circle_pattern = r'<circle\s+cx="([^"]*)"\s+cy="([^"]*)"\s+r="([^"]*)"\s+([^>]*)/?>'
-    for cx, cy, r, attrs in re.findall(circle_pattern, svg_content):
+    # Handle flexible attribute order: cx, cy, r can appear in any order
+    circle_pattern = r'<circle\s+([^>]*)/?>'
+    for elem_attrs in re.findall(circle_pattern, svg_content):
+        # Skip if it's the background rect (shouldn't happen but be safe)
+        if 'width="256" height="256"' in elem_attrs:
+            continue
+        
         try:
-            cx_f = float(cx)
-            cy_f = float(cy)
-            r_f = float(r)
+            # Extract cx, cy, r from any order
+            cx_match = re.search(r'cx="([^"]*)"', elem_attrs)
+            cy_match = re.search(r'cy="([^"]*)"', elem_attrs)
+            r_match = re.search(r'r="([^"]*)"', elem_attrs)
+            
+            if not (cx_match and cy_match and r_match):
+                continue
+            
+            cx_f = float(cx_match.group(1))
+            cy_f = float(cy_match.group(1))
+            r_f = float(r_match.group(1))
             
             # Two 180-degree arcs to make a full circle
             path_data = f"M{cx_f-r_f},{cy_f} A{r_f} {r_f} 0 1 0 {cx_f+r_f},{cy_f} A{r_f} {r_f} 0 1 0 {cx_f-r_f},{cy_f}"
             
-            stroke_width_match = re.search(r'stroke-width="([^"]*)"', attrs)
+            # Check if stroke or fill
+            has_stroke = 'stroke="currentColor"' in elem_attrs and 'fill="none"' in elem_attrs
+            stroke_width_match = re.search(r'stroke-width="([^"]*)"', elem_attrs)
             stroke_width = stroke_width_match.group(1) if stroke_width_match else "16"
             
-            paths_xml += f'''  <path
+            if has_stroke:
+                paths_xml += f'''  <path
       android:pathData="{path_data}"
       android:strokeColor="@android:color/white"
       android:strokeWidth="{stroke_width}"
       android:strokeLineCap="round"
       android:strokeLineJoin="round" />
+'''
+            else:
+                # Default to fill (for dot icons without explicit attributes)
+                paths_xml += f'''  <path
+      android:pathData="{path_data}"
+      android:fillColor="@android:color/white" />
 '''
         except:
             pass
