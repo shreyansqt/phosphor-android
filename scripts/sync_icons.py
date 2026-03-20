@@ -49,6 +49,7 @@ def apply_transforms_to_points(points, transforms):
                 y += ty
             elif func == 'rotate':
                 angle = math.radians(args[0]) if len(args) > 0 else 0
+                # SVG rotate uses explicit center or (0,0) - we'll use (0,0) as SVG spec
                 cx = args[1] if len(args) > 1 else 0
                 cy = args[2] if len(args) > 2 else 0
                 
