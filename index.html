@@ -18252,7 +18252,7 @@ ${paths.join('\n')}
 
         function copyXML(iconName) {
             // Fetch XML file on demand
-            fetch(`xmls/phosphor_${iconName}.xml?v=${Date.now()}`)
+            fetch(`./xmls/phosphor_${iconName}.xml?v=${Date.now()}`)
                 .then(r => r.text())
                 .then(xml => {
                     navigator.clipboard.writeText(xml).then(() => {

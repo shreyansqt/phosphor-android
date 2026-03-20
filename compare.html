@@ -203,7 +203,7 @@ ${paths.join('\n')}
                     const origSvg = await origResponse.text();
 
                     // Fetch our VD
-                    const vdResponse = await fetch(`icons/phosphor_${iconName}.xml`);
+                    const vdResponse = await fetch(`./xmls/phosphor_${iconName}.xml`);
                     const vdXml = await vdResponse.text();
                     const convertedSvg = vdToSvg(vdXml);
 
