@@ -83,24 +83,22 @@ function updatePage() {
   let pageContent = fs.readFileSync(OUTPUT_FILE, 'utf8');
 
   // Update the grid content (between <!-- ICONS_START --> and <!-- ICONS_END -->)
-  if (pageContent.includes('<!-- ICONS_START -->')) {
-    const gridRegex = /<!-- ICONS_START -->[\s\S]*?<!-- ICONS_END -->/;
-    pageContent = pageContent.replace(
-      gridRegex,
-      `<!-- ICONS_START -->\n${iconGrid}\n                <!-- ICONS_END -->`
-    );
-  } else {
-    // Fallback: if markers don't exist, update the grid div
-    const gridRegex = /<div class="icon-grid" id="grid">[\s\S]*?<\/div>/;
-    pageContent = pageContent.replace(
-      gridRegex,
-      `<div class="icon-grid" id="grid">\n${iconGrid}\n        </div>`
-    );
+  const startMarker = '<!-- ICONS_START -->';
+  const endMarker = '<!-- ICONS_END -->';
+  
+  if (pageContent.includes(startMarker) && pageContent.includes(endMarker)) {
+    const start = pageContent.indexOf(startMarker);
+    const end = pageContent.indexOf(endMarker);
+    if (start !== -1 && end !== -1) {
+      const before = pageContent.substring(0, start + startMarker.length);
+      const after = pageContent.substring(end);
+      pageContent = before + '\n' + iconGrid + '\n                ' + after;
+    }
   }
 
   // Update icon count
   pageContent = pageContent.replace(
-    /id="count">Loading icons\.\.\.<\/span>/,
+    /id="count">[^<]*<\/span>/,
     `id="count">${count} icons</span>`
   );
 
