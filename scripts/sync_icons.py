@@ -16,6 +16,7 @@ PHOSPHOR_REPO = "phosphor-icons/core"
 PHOSPHOR_BRANCH = "main"
 PHOSPHOR_WEIGHT = "regular"
 ICONS_DIR = Path(__file__).parent.parent / "icons"
+SVGS_DIR = Path(__file__).parent.parent / "svgs"  # Original SVGs for reference
 REGISTRY_FILE = Path(__file__).parent.parent / "icons.json"
 
 def parse_transform(transform_str):
@@ -406,6 +407,7 @@ def svg_to_vd_string(svg_content):
 
 def main():
     ICONS_DIR.mkdir(parents=True, exist_ok=True)
+    SVGS_DIR.mkdir(parents=True, exist_ok=True)
     
     # Download and extract
     zip_path = download_phosphor_zip()
@@ -424,6 +426,11 @@ def main():
         try:
             with open(svg_file, 'r', encoding='utf-8') as f:
                 svg_content = f.read()
+            
+            # Save original SVG for reference
+            svg_copy_path = SVGS_DIR / f"{icon_name}.svg"
+            with open(svg_copy_path, 'w') as f:
+                f.write(svg_content)
             
             vd_xml = svg_to_vd_string(svg_content)
             vd_path = ICONS_DIR / f"phosphor_{icon_name}.xml"
