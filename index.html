@@ -18238,9 +18238,15 @@ ${paths.join('\n')}
         function renderGrid(iconNames) {
             // Just show/hide cards - SVGs are already in HTML from build time
             const allCards = Array.from(document.querySelectorAll('.icon-card[data-name]'));
+            const namesToShow = new Set(iconNames.map(i => i.name));
+            
             allCards.forEach(card => {
                 const name = card.getAttribute('data-name');
-                card.classList.toggle('hidden', !iconNames.some(i => i.name === name));
+                if (namesToShow.has(name)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
             });
         }
 
@@ -18296,25 +18302,30 @@ ${paths.join('\n')}
 
         function filterIcons() {
             const query = document.getElementById('search').value.toLowerCase().trim();
-
-            let filtered = allIcons;
-            
-            if (query) {
-                // Score and filter
-                const scored = allIcons.map(icon => ({
-                    icon: icon,
-                    score: scoreMatch(icon, query)
-                })).filter(item => item.score > 0);
-                
-                // Sort by score (highest first)
-                scored.sort((a, b) => b.score - a.score);
-                filtered = scored.map(item => item.icon);
-            }
-
             const grid = document.getElementById('grid');
             const noResults = document.getElementById('no-results');
 
-            if (filtered.length === 0 && query) {
+            if (!query) {
+                // Show all icons when search is empty
+                const allCards = document.querySelectorAll('.icon-card[data-name]');
+                allCards.forEach(card => card.classList.remove('hidden'));
+                grid.style.display = 'grid';
+                noResults.style.display = 'none';
+                document.getElementById('count').textContent = `${allCards.length} icons`;
+                return;
+            }
+
+            // Score and filter
+            const scored = allIcons.map(icon => ({
+                icon: icon,
+                score: scoreMatch(icon, query)
+            })).filter(item => item.score > 0);
+            
+            // Sort by score (highest first)
+            scored.sort((a, b) => b.score - a.score);
+            const filtered = scored.map(item => item.icon);
+
+            if (filtered.length === 0) {
                 grid.style.display = 'none';
                 noResults.style.display = 'block';
             } else {
