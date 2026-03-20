@@ -2988,6 +2988,4017 @@
       "keywords": [
         "copy"
       ]
+    },
+    {
+      "name": "copyleft",
+      "category": "icon",
+      "keywords": [
+        "copyleft"
+      ]
+    },
+    {
+      "name": "copyright",
+      "category": "icon",
+      "keywords": [
+        "copyright"
+      ]
+    },
+    {
+      "name": "corners-in",
+      "category": "icon",
+      "keywords": [
+        "corners in"
+      ]
+    },
+    {
+      "name": "corners-out",
+      "category": "icon",
+      "keywords": [
+        "corners out"
+      ]
+    },
+    {
+      "name": "couch",
+      "category": "icon",
+      "keywords": [
+        "couch"
+      ]
+    },
+    {
+      "name": "court-basketball",
+      "category": "icon",
+      "keywords": [
+        "court basketball"
+      ]
+    },
+    {
+      "name": "cow",
+      "category": "icon",
+      "keywords": [
+        "cow"
+      ]
+    },
+    {
+      "name": "cowboy-hat",
+      "category": "icon",
+      "keywords": [
+        "cowboy hat"
+      ]
+    },
+    {
+      "name": "cpu",
+      "category": "icon",
+      "keywords": [
+        "cpu"
+      ]
+    },
+    {
+      "name": "crane-tower",
+      "category": "icon",
+      "keywords": [
+        "crane tower"
+      ]
+    },
+    {
+      "name": "crane",
+      "category": "icon",
+      "keywords": [
+        "crane"
+      ]
+    },
+    {
+      "name": "credit-card",
+      "category": "icon",
+      "keywords": [
+        "credit card"
+      ]
+    },
+    {
+      "name": "cricket",
+      "category": "icon",
+      "keywords": [
+        "cricket"
+      ]
+    },
+    {
+      "name": "crop",
+      "category": "icon",
+      "keywords": [
+        "crop"
+      ]
+    },
+    {
+      "name": "cross",
+      "category": "icon",
+      "keywords": [
+        "cross"
+      ]
+    },
+    {
+      "name": "crosshair-simple",
+      "category": "icon",
+      "keywords": [
+        "crosshair simple"
+      ]
+    },
+    {
+      "name": "crosshair",
+      "category": "icon",
+      "keywords": [
+        "crosshair"
+      ]
+    },
+    {
+      "name": "crown-cross",
+      "category": "icon",
+      "keywords": [
+        "crown cross"
+      ]
+    },
+    {
+      "name": "crown-simple",
+      "category": "icon",
+      "keywords": [
+        "crown simple"
+      ]
+    },
+    {
+      "name": "crown",
+      "category": "icon",
+      "keywords": [
+        "crown"
+      ]
+    },
+    {
+      "name": "cube-focus",
+      "category": "icon",
+      "keywords": [
+        "cube focus"
+      ]
+    },
+    {
+      "name": "cube-transparent",
+      "category": "icon",
+      "keywords": [
+        "cube transparent"
+      ]
+    },
+    {
+      "name": "cube",
+      "category": "icon",
+      "keywords": [
+        "cube"
+      ]
+    },
+    {
+      "name": "currency-btc",
+      "category": "icon",
+      "keywords": [
+        "currency btc"
+      ]
+    },
+    {
+      "name": "currency-circle-dollar",
+      "category": "icon",
+      "keywords": [
+        "currency circle dollar"
+      ]
+    },
+    {
+      "name": "currency-cny",
+      "category": "icon",
+      "keywords": [
+        "currency cny"
+      ]
+    },
+    {
+      "name": "currency-dollar-simple",
+      "category": "icon",
+      "keywords": [
+        "currency dollar simple"
+      ]
+    },
+    {
+      "name": "currency-dollar",
+      "category": "icon",
+      "keywords": [
+        "currency dollar"
+      ]
+    },
+    {
+      "name": "currency-eth",
+      "category": "icon",
+      "keywords": [
+        "currency eth"
+      ]
+    },
+    {
+      "name": "currency-eur",
+      "category": "icon",
+      "keywords": [
+        "currency eur"
+      ]
+    },
+    {
+      "name": "currency-gbp",
+      "category": "icon",
+      "keywords": [
+        "currency gbp"
+      ]
+    },
+    {
+      "name": "currency-inr",
+      "category": "icon",
+      "keywords": [
+        "currency inr"
+      ]
+    },
+    {
+      "name": "currency-jpy",
+      "category": "icon",
+      "keywords": [
+        "currency jpy"
+      ]
+    },
+    {
+      "name": "currency-krw",
+      "category": "icon",
+      "keywords": [
+        "currency krw"
+      ]
+    },
+    {
+      "name": "currency-kzt",
+      "category": "icon",
+      "keywords": [
+        "currency kzt"
+      ]
+    },
+    {
+      "name": "currency-ngn",
+      "category": "icon",
+      "keywords": [
+        "currency ngn"
+      ]
+    },
+    {
+      "name": "currency-rub",
+      "category": "icon",
+      "keywords": [
+        "currency rub"
+      ]
+    },
+    {
+      "name": "cursor-click",
+      "category": "icon",
+      "keywords": [
+        "cursor click"
+      ]
+    },
+    {
+      "name": "cursor-text",
+      "category": "icon",
+      "keywords": [
+        "cursor text"
+      ]
+    },
+    {
+      "name": "cursor",
+      "category": "icon",
+      "keywords": [
+        "cursor"
+      ]
+    },
+    {
+      "name": "cylinder",
+      "category": "icon",
+      "keywords": [
+        "cylinder"
+      ]
+    },
+    {
+      "name": "database",
+      "category": "icon",
+      "keywords": [
+        "database"
+      ]
+    },
+    {
+      "name": "desk",
+      "category": "icon",
+      "keywords": [
+        "desk"
+      ]
+    },
+    {
+      "name": "desktop-tower",
+      "category": "icon",
+      "keywords": [
+        "desktop tower"
+      ]
+    },
+    {
+      "name": "desktop",
+      "category": "icon",
+      "keywords": [
+        "desktop"
+      ]
+    },
+    {
+      "name": "detective",
+      "category": "icon",
+      "keywords": [
+        "detective"
+      ]
+    },
+    {
+      "name": "dev-to-logo",
+      "category": "icon",
+      "keywords": [
+        "dev to logo"
+      ]
+    },
+    {
+      "name": "device-mobile-camera",
+      "category": "icon",
+      "keywords": [
+        "device mobile camera"
+      ]
+    },
+    {
+      "name": "device-mobile-slash",
+      "category": "icon",
+      "keywords": [
+        "device mobile slash"
+      ]
+    },
+    {
+      "name": "device-mobile-speaker",
+      "category": "icon",
+      "keywords": [
+        "device mobile speaker"
+      ]
+    },
+    {
+      "name": "device-mobile",
+      "category": "icon",
+      "keywords": [
+        "device mobile"
+      ]
+    },
+    {
+      "name": "device-rotate",
+      "category": "icon",
+      "keywords": [
+        "device rotate"
+      ]
+    },
+    {
+      "name": "device-tablet-camera",
+      "category": "icon",
+      "keywords": [
+        "device tablet camera"
+      ]
+    },
+    {
+      "name": "device-tablet-speaker",
+      "category": "icon",
+      "keywords": [
+        "device tablet speaker"
+      ]
+    },
+    {
+      "name": "device-tablet",
+      "category": "icon",
+      "keywords": [
+        "device tablet"
+      ]
+    },
+    {
+      "name": "devices",
+      "category": "icon",
+      "keywords": [
+        "devices"
+      ]
+    },
+    {
+      "name": "diamond",
+      "category": "icon",
+      "keywords": [
+        "diamond"
+      ]
+    },
+    {
+      "name": "diamonds-four",
+      "category": "icon",
+      "keywords": [
+        "diamonds four"
+      ]
+    },
+    {
+      "name": "dice-five",
+      "category": "icon",
+      "keywords": [
+        "dice five"
+      ]
+    },
+    {
+      "name": "dice-four",
+      "category": "icon",
+      "keywords": [
+        "dice four"
+      ]
+    },
+    {
+      "name": "dice-one",
+      "category": "icon",
+      "keywords": [
+        "dice one"
+      ]
+    },
+    {
+      "name": "dice-six",
+      "category": "icon",
+      "keywords": [
+        "dice six"
+      ]
+    },
+    {
+      "name": "dice-three",
+      "category": "icon",
+      "keywords": [
+        "dice three"
+      ]
+    },
+    {
+      "name": "dice-two",
+      "category": "icon",
+      "keywords": [
+        "dice two"
+      ]
+    },
+    {
+      "name": "disc",
+      "category": "icon",
+      "keywords": [
+        "disc"
+      ]
+    },
+    {
+      "name": "disco-ball",
+      "category": "icon",
+      "keywords": [
+        "disco ball"
+      ]
+    },
+    {
+      "name": "discord-logo",
+      "category": "icon",
+      "keywords": [
+        "discord logo"
+      ]
+    },
+    {
+      "name": "divide",
+      "category": "icon",
+      "keywords": [
+        "divide"
+      ]
+    },
+    {
+      "name": "dna",
+      "category": "icon",
+      "keywords": [
+        "dna"
+      ]
+    },
+    {
+      "name": "dog",
+      "category": "icon",
+      "keywords": [
+        "dog"
+      ]
+    },
+    {
+      "name": "door-open",
+      "category": "icon",
+      "keywords": [
+        "door open"
+      ]
+    },
+    {
+      "name": "door",
+      "category": "icon",
+      "keywords": [
+        "door"
+      ]
+    },
+    {
+      "name": "dot-outline",
+      "category": "icon",
+      "keywords": [
+        "dot outline"
+      ]
+    },
+    {
+      "name": "dot",
+      "category": "icon",
+      "keywords": [
+        "dot"
+      ]
+    },
+    {
+      "name": "dots-nine",
+      "category": "icon",
+      "keywords": [
+        "dots nine"
+      ]
+    },
+    {
+      "name": "dots-six-vertical",
+      "category": "icon",
+      "keywords": [
+        "dots six vertical"
+      ]
+    },
+    {
+      "name": "dots-six",
+      "category": "icon",
+      "keywords": [
+        "dots six"
+      ]
+    },
+    {
+      "name": "dots-three-circle-vertical",
+      "category": "icon",
+      "keywords": [
+        "dots three circle vertical"
+      ]
+    },
+    {
+      "name": "dots-three-circle",
+      "category": "icon",
+      "keywords": [
+        "dots three circle"
+      ]
+    },
+    {
+      "name": "dots-three-outline-vertical",
+      "category": "icon",
+      "keywords": [
+        "dots three outline vertical"
+      ]
+    },
+    {
+      "name": "dots-three-outline",
+      "category": "icon",
+      "keywords": [
+        "dots three outline"
+      ]
+    },
+    {
+      "name": "dots-three-vertical",
+      "category": "icon",
+      "keywords": [
+        "dots three vertical"
+      ]
+    },
+    {
+      "name": "dots-three",
+      "category": "icon",
+      "keywords": [
+        "dots three"
+      ]
+    },
+    {
+      "name": "download-simple",
+      "category": "icon",
+      "keywords": [
+        "download simple"
+      ]
+    },
+    {
+      "name": "download",
+      "category": "icon",
+      "keywords": [
+        "download"
+      ]
+    },
+    {
+      "name": "dress",
+      "category": "icon",
+      "keywords": [
+        "dress"
+      ]
+    },
+    {
+      "name": "dresser",
+      "category": "icon",
+      "keywords": [
+        "dresser"
+      ]
+    },
+    {
+      "name": "dribbble-logo",
+      "category": "icon",
+      "keywords": [
+        "dribbble logo"
+      ]
+    },
+    {
+      "name": "drone",
+      "category": "icon",
+      "keywords": [
+        "drone"
+      ]
+    },
+    {
+      "name": "drop-half-bottom",
+      "category": "icon",
+      "keywords": [
+        "drop half bottom"
+      ]
+    },
+    {
+      "name": "drop-half",
+      "category": "icon",
+      "keywords": [
+        "drop half"
+      ]
+    },
+    {
+      "name": "drop-simple",
+      "category": "icon",
+      "keywords": [
+        "drop simple"
+      ]
+    },
+    {
+      "name": "drop-slash",
+      "category": "icon",
+      "keywords": [
+        "drop slash"
+      ]
+    },
+    {
+      "name": "drop",
+      "category": "icon",
+      "keywords": [
+        "drop"
+      ]
+    },
+    {
+      "name": "dropbox-logo",
+      "category": "icon",
+      "keywords": [
+        "dropbox logo"
+      ]
+    },
+    {
+      "name": "ear-slash",
+      "category": "icon",
+      "keywords": [
+        "ear slash"
+      ]
+    },
+    {
+      "name": "ear",
+      "category": "icon",
+      "keywords": [
+        "ear"
+      ]
+    },
+    {
+      "name": "egg-crack",
+      "category": "icon",
+      "keywords": [
+        "egg crack"
+      ]
+    },
+    {
+      "name": "egg",
+      "category": "icon",
+      "keywords": [
+        "egg"
+      ]
+    },
+    {
+      "name": "eject-simple",
+      "category": "icon",
+      "keywords": [
+        "eject simple"
+      ]
+    },
+    {
+      "name": "eject",
+      "category": "icon",
+      "keywords": [
+        "eject"
+      ]
+    },
+    {
+      "name": "elevator",
+      "category": "icon",
+      "keywords": [
+        "elevator"
+      ]
+    },
+    {
+      "name": "empty",
+      "category": "icon",
+      "keywords": [
+        "empty"
+      ]
+    },
+    {
+      "name": "engine",
+      "category": "icon",
+      "keywords": [
+        "engine"
+      ]
+    },
+    {
+      "name": "envelope-open",
+      "category": "icon",
+      "keywords": [
+        "envelope open"
+      ]
+    },
+    {
+      "name": "envelope-simple-open",
+      "category": "icon",
+      "keywords": [
+        "envelope simple open"
+      ]
+    },
+    {
+      "name": "envelope-simple",
+      "category": "icon",
+      "keywords": [
+        "envelope simple"
+      ]
+    },
+    {
+      "name": "envelope",
+      "category": "icon",
+      "keywords": [
+        "envelope"
+      ]
+    },
+    {
+      "name": "equalizer",
+      "category": "icon",
+      "keywords": [
+        "equalizer"
+      ]
+    },
+    {
+      "name": "equals",
+      "category": "icon",
+      "keywords": [
+        "equals"
+      ]
+    },
+    {
+      "name": "eraser",
+      "category": "icon",
+      "keywords": [
+        "eraser"
+      ]
+    },
+    {
+      "name": "escalator-down",
+      "category": "icon",
+      "keywords": [
+        "escalator down"
+      ]
+    },
+    {
+      "name": "escalator-up",
+      "category": "icon",
+      "keywords": [
+        "escalator up"
+      ]
+    },
+    {
+      "name": "exam",
+      "category": "icon",
+      "keywords": [
+        "exam"
+      ]
+    },
+    {
+      "name": "exclamation-mark",
+      "category": "icon",
+      "keywords": [
+        "exclamation mark"
+      ]
+    },
+    {
+      "name": "exclude-square",
+      "category": "icon",
+      "keywords": [
+        "exclude square"
+      ]
+    },
+    {
+      "name": "exclude",
+      "category": "icon",
+      "keywords": [
+        "exclude"
+      ]
+    },
+    {
+      "name": "export",
+      "category": "icon",
+      "keywords": [
+        "export"
+      ]
+    },
+    {
+      "name": "eye-closed",
+      "category": "icon",
+      "keywords": [
+        "eye closed"
+      ]
+    },
+    {
+      "name": "eye-slash",
+      "category": "icon",
+      "keywords": [
+        "eye slash"
+      ]
+    },
+    {
+      "name": "eye",
+      "category": "icon",
+      "keywords": [
+        "eye"
+      ]
+    },
+    {
+      "name": "eyedropper-sample",
+      "category": "icon",
+      "keywords": [
+        "eyedropper sample"
+      ]
+    },
+    {
+      "name": "eyedropper",
+      "category": "icon",
+      "keywords": [
+        "eyedropper"
+      ]
+    },
+    {
+      "name": "eyeglasses",
+      "category": "icon",
+      "keywords": [
+        "eyeglasses"
+      ]
+    },
+    {
+      "name": "eyes",
+      "category": "icon",
+      "keywords": [
+        "eyes"
+      ]
+    },
+    {
+      "name": "face-mask",
+      "category": "icon",
+      "keywords": [
+        "face mask"
+      ]
+    },
+    {
+      "name": "facebook-logo",
+      "category": "icon",
+      "keywords": [
+        "facebook logo"
+      ]
+    },
+    {
+      "name": "factory",
+      "category": "icon",
+      "keywords": [
+        "factory"
+      ]
+    },
+    {
+      "name": "faders-horizontal",
+      "category": "icon",
+      "keywords": [
+        "faders horizontal"
+      ]
+    },
+    {
+      "name": "faders",
+      "category": "icon",
+      "keywords": [
+        "faders"
+      ]
+    },
+    {
+      "name": "fallout-shelter",
+      "category": "icon",
+      "keywords": [
+        "fallout shelter"
+      ]
+    },
+    {
+      "name": "fan",
+      "category": "icon",
+      "keywords": [
+        "fan"
+      ]
+    },
+    {
+      "name": "farm",
+      "category": "icon",
+      "keywords": [
+        "farm"
+      ]
+    },
+    {
+      "name": "fast-forward-circle",
+      "category": "icon",
+      "keywords": [
+        "fast forward circle"
+      ]
+    },
+    {
+      "name": "fast-forward",
+      "category": "icon",
+      "keywords": [
+        "fast forward"
+      ]
+    },
+    {
+      "name": "feather",
+      "category": "icon",
+      "keywords": [
+        "feather"
+      ]
+    },
+    {
+      "name": "fediverse-logo",
+      "category": "icon",
+      "keywords": [
+        "fediverse logo"
+      ]
+    },
+    {
+      "name": "figma-logo",
+      "category": "icon",
+      "keywords": [
+        "figma logo"
+      ]
+    },
+    {
+      "name": "file-archive",
+      "category": "icon",
+      "keywords": [
+        "file archive"
+      ]
+    },
+    {
+      "name": "file-arrow-down",
+      "category": "icon",
+      "keywords": [
+        "file arrow down"
+      ]
+    },
+    {
+      "name": "file-arrow-up",
+      "category": "icon",
+      "keywords": [
+        "file arrow up"
+      ]
+    },
+    {
+      "name": "file-audio",
+      "category": "icon",
+      "keywords": [
+        "file audio"
+      ]
+    },
+    {
+      "name": "file-c-sharp",
+      "category": "icon",
+      "keywords": [
+        "file c sharp"
+      ]
+    },
+    {
+      "name": "file-c",
+      "category": "icon",
+      "keywords": [
+        "file c"
+      ]
+    },
+    {
+      "name": "file-cloud",
+      "category": "icon",
+      "keywords": [
+        "file cloud"
+      ]
+    },
+    {
+      "name": "file-code",
+      "category": "icon",
+      "keywords": [
+        "file code"
+      ]
+    },
+    {
+      "name": "file-cpp",
+      "category": "icon",
+      "keywords": [
+        "file cpp"
+      ]
+    },
+    {
+      "name": "file-css",
+      "category": "icon",
+      "keywords": [
+        "file css"
+      ]
+    },
+    {
+      "name": "file-csv",
+      "category": "icon",
+      "keywords": [
+        "file csv"
+      ]
+    },
+    {
+      "name": "file-dashed",
+      "category": "icon",
+      "keywords": [
+        "file dashed"
+      ]
+    },
+    {
+      "name": "file-doc",
+      "category": "icon",
+      "keywords": [
+        "file doc"
+      ]
+    },
+    {
+      "name": "file-html",
+      "category": "icon",
+      "keywords": [
+        "file html"
+      ]
+    },
+    {
+      "name": "file-image",
+      "category": "icon",
+      "keywords": [
+        "file image"
+      ]
+    },
+    {
+      "name": "file-ini",
+      "category": "icon",
+      "keywords": [
+        "file ini"
+      ]
+    },
+    {
+      "name": "file-jpg",
+      "category": "icon",
+      "keywords": [
+        "file jpg"
+      ]
+    },
+    {
+      "name": "file-js",
+      "category": "icon",
+      "keywords": [
+        "file js"
+      ]
+    },
+    {
+      "name": "file-jsx",
+      "category": "icon",
+      "keywords": [
+        "file jsx"
+      ]
+    },
+    {
+      "name": "file-lock",
+      "category": "icon",
+      "keywords": [
+        "file lock"
+      ]
+    },
+    {
+      "name": "file-magnifying-glass",
+      "category": "icon",
+      "keywords": [
+        "file magnifying glass"
+      ]
+    },
+    {
+      "name": "file-md",
+      "category": "icon",
+      "keywords": [
+        "file md"
+      ]
+    },
+    {
+      "name": "file-minus",
+      "category": "icon",
+      "keywords": [
+        "file minus"
+      ]
+    },
+    {
+      "name": "file-pdf",
+      "category": "icon",
+      "keywords": [
+        "file pdf"
+      ]
+    },
+    {
+      "name": "file-plus",
+      "category": "icon",
+      "keywords": [
+        "file plus"
+      ]
+    },
+    {
+      "name": "file-png",
+      "category": "icon",
+      "keywords": [
+        "file png"
+      ]
+    },
+    {
+      "name": "file-ppt",
+      "category": "icon",
+      "keywords": [
+        "file ppt"
+      ]
+    },
+    {
+      "name": "file-py",
+      "category": "icon",
+      "keywords": [
+        "file py"
+      ]
+    },
+    {
+      "name": "file-rs",
+      "category": "icon",
+      "keywords": [
+        "file rs"
+      ]
+    },
+    {
+      "name": "file-sql",
+      "category": "icon",
+      "keywords": [
+        "file sql"
+      ]
+    },
+    {
+      "name": "file-svg",
+      "category": "icon",
+      "keywords": [
+        "file svg"
+      ]
+    },
+    {
+      "name": "file-text",
+      "category": "icon",
+      "keywords": [
+        "file text"
+      ]
+    },
+    {
+      "name": "file-ts",
+      "category": "icon",
+      "keywords": [
+        "file ts"
+      ]
+    },
+    {
+      "name": "file-tsx",
+      "category": "icon",
+      "keywords": [
+        "file tsx"
+      ]
+    },
+    {
+      "name": "file-txt",
+      "category": "icon",
+      "keywords": [
+        "file txt"
+      ]
+    },
+    {
+      "name": "file-video",
+      "category": "icon",
+      "keywords": [
+        "file video"
+      ]
+    },
+    {
+      "name": "file-vue",
+      "category": "icon",
+      "keywords": [
+        "file vue"
+      ]
+    },
+    {
+      "name": "file-x",
+      "category": "icon",
+      "keywords": [
+        "file x"
+      ]
+    },
+    {
+      "name": "file-xls",
+      "category": "icon",
+      "keywords": [
+        "file xls"
+      ]
+    },
+    {
+      "name": "file-zip",
+      "category": "icon",
+      "keywords": [
+        "file zip"
+      ]
+    },
+    {
+      "name": "file",
+      "category": "icon",
+      "keywords": [
+        "file"
+      ]
+    },
+    {
+      "name": "files",
+      "category": "icon",
+      "keywords": [
+        "files"
+      ]
+    },
+    {
+      "name": "film-reel",
+      "category": "icon",
+      "keywords": [
+        "film reel"
+      ]
+    },
+    {
+      "name": "film-script",
+      "category": "icon",
+      "keywords": [
+        "film script"
+      ]
+    },
+    {
+      "name": "film-slate",
+      "category": "icon",
+      "keywords": [
+        "film slate"
+      ]
+    },
+    {
+      "name": "film-strip",
+      "category": "icon",
+      "keywords": [
+        "film strip"
+      ]
+    },
+    {
+      "name": "fingerprint-simple",
+      "category": "icon",
+      "keywords": [
+        "fingerprint simple"
+      ]
+    },
+    {
+      "name": "fingerprint",
+      "category": "icon",
+      "keywords": [
+        "fingerprint"
+      ]
+    },
+    {
+      "name": "finn-the-human",
+      "category": "icon",
+      "keywords": [
+        "finn the human"
+      ]
+    },
+    {
+      "name": "fire-extinguisher",
+      "category": "icon",
+      "keywords": [
+        "fire extinguisher"
+      ]
+    },
+    {
+      "name": "fire-simple",
+      "category": "icon",
+      "keywords": [
+        "fire simple"
+      ]
+    },
+    {
+      "name": "fire-truck",
+      "category": "icon",
+      "keywords": [
+        "fire truck"
+      ]
+    },
+    {
+      "name": "fire",
+      "category": "icon",
+      "keywords": [
+        "fire"
+      ]
+    },
+    {
+      "name": "first-aid-kit",
+      "category": "icon",
+      "keywords": [
+        "first aid kit"
+      ]
+    },
+    {
+      "name": "first-aid",
+      "category": "icon",
+      "keywords": [
+        "first aid"
+      ]
+    },
+    {
+      "name": "fish-simple",
+      "category": "icon",
+      "keywords": [
+        "fish simple"
+      ]
+    },
+    {
+      "name": "fish",
+      "category": "icon",
+      "keywords": [
+        "fish"
+      ]
+    },
+    {
+      "name": "flag-banner-fold",
+      "category": "icon",
+      "keywords": [
+        "flag banner fold"
+      ]
+    },
+    {
+      "name": "flag-banner",
+      "category": "icon",
+      "keywords": [
+        "flag banner"
+      ]
+    },
+    {
+      "name": "flag-checkered",
+      "category": "icon",
+      "keywords": [
+        "flag checkered"
+      ]
+    },
+    {
+      "name": "flag-pennant",
+      "category": "icon",
+      "keywords": [
+        "flag pennant"
+      ]
+    },
+    {
+      "name": "flag",
+      "category": "icon",
+      "keywords": [
+        "flag"
+      ]
+    },
+    {
+      "name": "flame",
+      "category": "icon",
+      "keywords": [
+        "flame"
+      ]
+    },
+    {
+      "name": "flashlight",
+      "category": "icon",
+      "keywords": [
+        "flashlight"
+      ]
+    },
+    {
+      "name": "flask",
+      "category": "icon",
+      "keywords": [
+        "flask"
+      ]
+    },
+    {
+      "name": "flip-horizontal",
+      "category": "icon",
+      "keywords": [
+        "flip horizontal"
+      ]
+    },
+    {
+      "name": "flip-vertical",
+      "category": "icon",
+      "keywords": [
+        "flip vertical"
+      ]
+    },
+    {
+      "name": "floppy-disk-back",
+      "category": "icon",
+      "keywords": [
+        "floppy disk back"
+      ]
+    },
+    {
+      "name": "floppy-disk",
+      "category": "icon",
+      "keywords": [
+        "floppy disk"
+      ]
+    },
+    {
+      "name": "flow-arrow",
+      "category": "icon",
+      "keywords": [
+        "flow arrow"
+      ]
+    },
+    {
+      "name": "flower-lotus",
+      "category": "icon",
+      "keywords": [
+        "flower lotus"
+      ]
+    },
+    {
+      "name": "flower-tulip",
+      "category": "icon",
+      "keywords": [
+        "flower tulip"
+      ]
+    },
+    {
+      "name": "flower",
+      "category": "icon",
+      "keywords": [
+        "flower"
+      ]
+    },
+    {
+      "name": "flying-saucer",
+      "category": "icon",
+      "keywords": [
+        "flying saucer"
+      ]
+    },
+    {
+      "name": "folder-dashed",
+      "category": "icon",
+      "keywords": [
+        "folder dashed"
+      ]
+    },
+    {
+      "name": "folder-lock",
+      "category": "icon",
+      "keywords": [
+        "folder lock"
+      ]
+    },
+    {
+      "name": "folder-minus",
+      "category": "icon",
+      "keywords": [
+        "folder minus"
+      ]
+    },
+    {
+      "name": "folder-open",
+      "category": "icon",
+      "keywords": [
+        "folder open"
+      ]
+    },
+    {
+      "name": "folder-plus",
+      "category": "icon",
+      "keywords": [
+        "folder plus"
+      ]
+    },
+    {
+      "name": "folder-simple-dashed",
+      "category": "icon",
+      "keywords": [
+        "folder simple dashed"
+      ]
+    },
+    {
+      "name": "folder-simple-lock",
+      "category": "icon",
+      "keywords": [
+        "folder simple lock"
+      ]
+    },
+    {
+      "name": "folder-simple-minus",
+      "category": "icon",
+      "keywords": [
+        "folder simple minus"
+      ]
+    },
+    {
+      "name": "folder-simple-plus",
+      "category": "icon",
+      "keywords": [
+        "folder simple plus"
+      ]
+    },
+    {
+      "name": "folder-simple-star",
+      "category": "icon",
+      "keywords": [
+        "folder simple star"
+      ]
+    },
+    {
+      "name": "folder-simple-user",
+      "category": "icon",
+      "keywords": [
+        "folder simple user"
+      ]
+    },
+    {
+      "name": "folder-simple",
+      "category": "icon",
+      "keywords": [
+        "folder simple"
+      ]
+    },
+    {
+      "name": "folder-star",
+      "category": "icon",
+      "keywords": [
+        "folder star"
+      ]
+    },
+    {
+      "name": "folder-user",
+      "category": "icon",
+      "keywords": [
+        "folder user"
+      ]
+    },
+    {
+      "name": "folder",
+      "category": "icon",
+      "keywords": [
+        "folder"
+      ]
+    },
+    {
+      "name": "folders",
+      "category": "icon",
+      "keywords": [
+        "folders"
+      ]
+    },
+    {
+      "name": "football-helmet",
+      "category": "icon",
+      "keywords": [
+        "football helmet"
+      ]
+    },
+    {
+      "name": "football",
+      "category": "icon",
+      "keywords": [
+        "football"
+      ]
+    },
+    {
+      "name": "footprints",
+      "category": "icon",
+      "keywords": [
+        "footprints"
+      ]
+    },
+    {
+      "name": "fork-knife",
+      "category": "icon",
+      "keywords": [
+        "fork knife"
+      ]
+    },
+    {
+      "name": "four-k",
+      "category": "icon",
+      "keywords": [
+        "four k"
+      ]
+    },
+    {
+      "name": "frame-corners",
+      "category": "icon",
+      "keywords": [
+        "frame corners"
+      ]
+    },
+    {
+      "name": "framer-logo",
+      "category": "icon",
+      "keywords": [
+        "framer logo"
+      ]
+    },
+    {
+      "name": "function",
+      "category": "icon",
+      "keywords": [
+        "function"
+      ]
+    },
+    {
+      "name": "funnel-simple-x",
+      "category": "icon",
+      "keywords": [
+        "funnel simple x"
+      ]
+    },
+    {
+      "name": "funnel-simple",
+      "category": "icon",
+      "keywords": [
+        "funnel simple"
+      ]
+    },
+    {
+      "name": "funnel-x",
+      "category": "icon",
+      "keywords": [
+        "funnel x"
+      ]
+    },
+    {
+      "name": "funnel",
+      "category": "icon",
+      "keywords": [
+        "funnel"
+      ]
+    },
+    {
+      "name": "game-controller",
+      "category": "icon",
+      "keywords": [
+        "game controller"
+      ]
+    },
+    {
+      "name": "garage",
+      "category": "icon",
+      "keywords": [
+        "garage"
+      ]
+    },
+    {
+      "name": "gas-can",
+      "category": "icon",
+      "keywords": [
+        "gas can"
+      ]
+    },
+    {
+      "name": "gas-pump",
+      "category": "icon",
+      "keywords": [
+        "gas pump"
+      ]
+    },
+    {
+      "name": "gauge",
+      "category": "icon",
+      "keywords": [
+        "gauge"
+      ]
+    },
+    {
+      "name": "gavel",
+      "category": "icon",
+      "keywords": [
+        "gavel"
+      ]
+    },
+    {
+      "name": "gear-fine",
+      "category": "icon",
+      "keywords": [
+        "gear fine"
+      ]
+    },
+    {
+      "name": "gear-six",
+      "category": "icon",
+      "keywords": [
+        "gear six"
+      ]
+    },
+    {
+      "name": "gear",
+      "category": "icon",
+      "keywords": [
+        "gear"
+      ]
+    },
+    {
+      "name": "gender-female",
+      "category": "icon",
+      "keywords": [
+        "gender female"
+      ]
+    },
+    {
+      "name": "gender-intersex",
+      "category": "icon",
+      "keywords": [
+        "gender intersex"
+      ]
+    },
+    {
+      "name": "gender-male",
+      "category": "icon",
+      "keywords": [
+        "gender male"
+      ]
+    },
+    {
+      "name": "gender-neuter",
+      "category": "icon",
+      "keywords": [
+        "gender neuter"
+      ]
+    },
+    {
+      "name": "gender-nonbinary",
+      "category": "icon",
+      "keywords": [
+        "gender nonbinary"
+      ]
+    },
+    {
+      "name": "gender-transgender",
+      "category": "icon",
+      "keywords": [
+        "gender transgender"
+      ]
+    },
+    {
+      "name": "ghost",
+      "category": "icon",
+      "keywords": [
+        "ghost"
+      ]
+    },
+    {
+      "name": "gif",
+      "category": "icon",
+      "keywords": [
+        "gif"
+      ]
+    },
+    {
+      "name": "gift",
+      "category": "icon",
+      "keywords": [
+        "gift"
+      ]
+    },
+    {
+      "name": "git-branch",
+      "category": "icon",
+      "keywords": [
+        "git branch"
+      ]
+    },
+    {
+      "name": "git-commit",
+      "category": "icon",
+      "keywords": [
+        "git commit"
+      ]
+    },
+    {
+      "name": "git-diff",
+      "category": "icon",
+      "keywords": [
+        "git diff"
+      ]
+    },
+    {
+      "name": "git-fork",
+      "category": "icon",
+      "keywords": [
+        "git fork"
+      ]
+    },
+    {
+      "name": "git-merge",
+      "category": "icon",
+      "keywords": [
+        "git merge"
+      ]
+    },
+    {
+      "name": "git-pull-request",
+      "category": "icon",
+      "keywords": [
+        "git pull request"
+      ]
+    },
+    {
+      "name": "github-logo",
+      "category": "icon",
+      "keywords": [
+        "github logo"
+      ]
+    },
+    {
+      "name": "gitlab-logo-simple",
+      "category": "icon",
+      "keywords": [
+        "gitlab logo simple"
+      ]
+    },
+    {
+      "name": "gitlab-logo",
+      "category": "icon",
+      "keywords": [
+        "gitlab logo"
+      ]
+    },
+    {
+      "name": "globe-hemisphere-east",
+      "category": "icon",
+      "keywords": [
+        "globe hemisphere east"
+      ]
+    },
+    {
+      "name": "globe-hemisphere-west",
+      "category": "icon",
+      "keywords": [
+        "globe hemisphere west"
+      ]
+    },
+    {
+      "name": "globe-simple-x",
+      "category": "icon",
+      "keywords": [
+        "globe simple x"
+      ]
+    },
+    {
+      "name": "globe-simple",
+      "category": "icon",
+      "keywords": [
+        "globe simple"
+      ]
+    },
+    {
+      "name": "globe-stand",
+      "category": "icon",
+      "keywords": [
+        "globe stand"
+      ]
+    },
+    {
+      "name": "globe-x",
+      "category": "icon",
+      "keywords": [
+        "globe x"
+      ]
+    },
+    {
+      "name": "globe",
+      "category": "icon",
+      "keywords": [
+        "globe"
+      ]
+    },
+    {
+      "name": "goggles",
+      "category": "icon",
+      "keywords": [
+        "goggles"
+      ]
+    },
+    {
+      "name": "golf",
+      "category": "icon",
+      "keywords": [
+        "golf"
+      ]
+    },
+    {
+      "name": "goodreads-logo",
+      "category": "icon",
+      "keywords": [
+        "goodreads logo"
+      ]
+    },
+    {
+      "name": "google-cardboard-logo",
+      "category": "icon",
+      "keywords": [
+        "google cardboard logo"
+      ]
+    },
+    {
+      "name": "google-chrome-logo",
+      "category": "icon",
+      "keywords": [
+        "google chrome logo"
+      ]
+    },
+    {
+      "name": "google-drive-logo",
+      "category": "icon",
+      "keywords": [
+        "google drive logo"
+      ]
+    },
+    {
+      "name": "google-logo",
+      "category": "icon",
+      "keywords": [
+        "google logo"
+      ]
+    },
+    {
+      "name": "google-photos-logo",
+      "category": "icon",
+      "keywords": [
+        "google photos logo"
+      ]
+    },
+    {
+      "name": "google-play-logo",
+      "category": "icon",
+      "keywords": [
+        "google play logo"
+      ]
+    },
+    {
+      "name": "google-podcasts-logo",
+      "category": "icon",
+      "keywords": [
+        "google podcasts logo"
+      ]
+    },
+    {
+      "name": "gps-fix",
+      "category": "icon",
+      "keywords": [
+        "gps fix"
+      ]
+    },
+    {
+      "name": "gps-slash",
+      "category": "icon",
+      "keywords": [
+        "gps slash"
+      ]
+    },
+    {
+      "name": "gps",
+      "category": "icon",
+      "keywords": [
+        "gps"
+      ]
+    },
+    {
+      "name": "gradient",
+      "category": "icon",
+      "keywords": [
+        "gradient"
+      ]
+    },
+    {
+      "name": "graduation-cap",
+      "category": "icon",
+      "keywords": [
+        "graduation cap"
+      ]
+    },
+    {
+      "name": "grains-slash",
+      "category": "icon",
+      "keywords": [
+        "grains slash"
+      ]
+    },
+    {
+      "name": "grains",
+      "category": "icon",
+      "keywords": [
+        "grains"
+      ]
+    },
+    {
+      "name": "graph",
+      "category": "icon",
+      "keywords": [
+        "graph"
+      ]
+    },
+    {
+      "name": "graphics-card",
+      "category": "icon",
+      "keywords": [
+        "graphics card"
+      ]
+    },
+    {
+      "name": "greater-than-or-equal",
+      "category": "icon",
+      "keywords": [
+        "greater than or equal"
+      ]
+    },
+    {
+      "name": "greater-than",
+      "category": "icon",
+      "keywords": [
+        "greater than"
+      ]
+    },
+    {
+      "name": "grid-four",
+      "category": "icon",
+      "keywords": [
+        "grid four"
+      ]
+    },
+    {
+      "name": "grid-nine",
+      "category": "icon",
+      "keywords": [
+        "grid nine"
+      ]
+    },
+    {
+      "name": "guitar",
+      "category": "icon",
+      "keywords": [
+        "guitar"
+      ]
+    },
+    {
+      "name": "hair-dryer",
+      "category": "icon",
+      "keywords": [
+        "hair dryer"
+      ]
+    },
+    {
+      "name": "hamburger",
+      "category": "icon",
+      "keywords": [
+        "hamburger"
+      ]
+    },
+    {
+      "name": "hammer",
+      "category": "icon",
+      "keywords": [
+        "hammer"
+      ]
+    },
+    {
+      "name": "hand-arrow-down",
+      "category": "icon",
+      "keywords": [
+        "hand arrow down"
+      ]
+    },
+    {
+      "name": "hand-arrow-up",
+      "category": "icon",
+      "keywords": [
+        "hand arrow up"
+      ]
+    },
+    {
+      "name": "hand-coins",
+      "category": "icon",
+      "keywords": [
+        "hand coins"
+      ]
+    },
+    {
+      "name": "hand-deposit",
+      "category": "icon",
+      "keywords": [
+        "hand deposit"
+      ]
+    },
+    {
+      "name": "hand-eye",
+      "category": "icon",
+      "keywords": [
+        "hand eye"
+      ]
+    },
+    {
+      "name": "hand-fist",
+      "category": "icon",
+      "keywords": [
+        "hand fist"
+      ]
+    },
+    {
+      "name": "hand-grabbing",
+      "category": "icon",
+      "keywords": [
+        "hand grabbing"
+      ]
+    },
+    {
+      "name": "hand-heart",
+      "category": "icon",
+      "keywords": [
+        "hand heart"
+      ]
+    },
+    {
+      "name": "hand-palm",
+      "category": "icon",
+      "keywords": [
+        "hand palm"
+      ]
+    },
+    {
+      "name": "hand-peace",
+      "category": "icon",
+      "keywords": [
+        "hand peace"
+      ]
+    },
+    {
+      "name": "hand-pointing",
+      "category": "icon",
+      "keywords": [
+        "hand pointing"
+      ]
+    },
+    {
+      "name": "hand-soap",
+      "category": "icon",
+      "keywords": [
+        "hand soap"
+      ]
+    },
+    {
+      "name": "hand-swipe-left",
+      "category": "icon",
+      "keywords": [
+        "hand swipe left"
+      ]
+    },
+    {
+      "name": "hand-swipe-right",
+      "category": "icon",
+      "keywords": [
+        "hand swipe right"
+      ]
+    },
+    {
+      "name": "hand-tap",
+      "category": "icon",
+      "keywords": [
+        "hand tap"
+      ]
+    },
+    {
+      "name": "hand-waving",
+      "category": "icon",
+      "keywords": [
+        "hand waving"
+      ]
+    },
+    {
+      "name": "hand-withdraw",
+      "category": "icon",
+      "keywords": [
+        "hand withdraw"
+      ]
+    },
+    {
+      "name": "hand",
+      "category": "icon",
+      "keywords": [
+        "hand"
+      ]
+    },
+    {
+      "name": "handbag-simple",
+      "category": "icon",
+      "keywords": [
+        "handbag simple"
+      ]
+    },
+    {
+      "name": "handbag",
+      "category": "icon",
+      "keywords": [
+        "handbag"
+      ]
+    },
+    {
+      "name": "hands-clapping",
+      "category": "icon",
+      "keywords": [
+        "hands clapping"
+      ]
+    },
+    {
+      "name": "hands-praying",
+      "category": "icon",
+      "keywords": [
+        "hands praying"
+      ]
+    },
+    {
+      "name": "handshake",
+      "category": "icon",
+      "keywords": [
+        "handshake"
+      ]
+    },
+    {
+      "name": "hard-drive",
+      "category": "icon",
+      "keywords": [
+        "hard drive"
+      ]
+    },
+    {
+      "name": "hard-drives",
+      "category": "icon",
+      "keywords": [
+        "hard drives"
+      ]
+    },
+    {
+      "name": "hard-hat",
+      "category": "icon",
+      "keywords": [
+        "hard hat"
+      ]
+    },
+    {
+      "name": "hash-straight",
+      "category": "icon",
+      "keywords": [
+        "hash straight"
+      ]
+    },
+    {
+      "name": "hash",
+      "category": "icon",
+      "keywords": [
+        "hash"
+      ]
+    },
+    {
+      "name": "head-circuit",
+      "category": "icon",
+      "keywords": [
+        "head circuit"
+      ]
+    },
+    {
+      "name": "headlights",
+      "category": "icon",
+      "keywords": [
+        "headlights"
+      ]
+    },
+    {
+      "name": "headphones",
+      "category": "icon",
+      "keywords": [
+        "headphones"
+      ]
+    },
+    {
+      "name": "headset",
+      "category": "icon",
+      "keywords": [
+        "headset"
+      ]
+    },
+    {
+      "name": "heart-break",
+      "category": "icon",
+      "keywords": [
+        "heart break"
+      ]
+    },
+    {
+      "name": "heart-half",
+      "category": "icon",
+      "keywords": [
+        "heart half"
+      ]
+    },
+    {
+      "name": "heart-straight-break",
+      "category": "icon",
+      "keywords": [
+        "heart straight break"
+      ]
+    },
+    {
+      "name": "heart-straight",
+      "category": "icon",
+      "keywords": [
+        "heart straight"
+      ]
+    },
+    {
+      "name": "heart",
+      "category": "icon",
+      "keywords": [
+        "heart"
+      ]
+    },
+    {
+      "name": "heartbeat",
+      "category": "icon",
+      "keywords": [
+        "heartbeat"
+      ]
+    },
+    {
+      "name": "hexagon",
+      "category": "icon",
+      "keywords": [
+        "hexagon"
+      ]
+    },
+    {
+      "name": "high-definition",
+      "category": "icon",
+      "keywords": [
+        "high definition"
+      ]
+    },
+    {
+      "name": "high-heel",
+      "category": "icon",
+      "keywords": [
+        "high heel"
+      ]
+    },
+    {
+      "name": "highlighter-circle",
+      "category": "icon",
+      "keywords": [
+        "highlighter circle"
+      ]
+    },
+    {
+      "name": "highlighter",
+      "category": "icon",
+      "keywords": [
+        "highlighter"
+      ]
+    },
+    {
+      "name": "hockey",
+      "category": "icon",
+      "keywords": [
+        "hockey"
+      ]
+    },
+    {
+      "name": "hoodie",
+      "category": "icon",
+      "keywords": [
+        "hoodie"
+      ]
+    },
+    {
+      "name": "horse",
+      "category": "icon",
+      "keywords": [
+        "horse"
+      ]
+    },
+    {
+      "name": "hospital",
+      "category": "icon",
+      "keywords": [
+        "hospital"
+      ]
+    },
+    {
+      "name": "hourglass-high",
+      "category": "icon",
+      "keywords": [
+        "hourglass high"
+      ]
+    },
+    {
+      "name": "hourglass-low",
+      "category": "icon",
+      "keywords": [
+        "hourglass low"
+      ]
+    },
+    {
+      "name": "hourglass-medium",
+      "category": "icon",
+      "keywords": [
+        "hourglass medium"
+      ]
+    },
+    {
+      "name": "hourglass-simple-high",
+      "category": "icon",
+      "keywords": [
+        "hourglass simple high"
+      ]
+    },
+    {
+      "name": "hourglass-simple-low",
+      "category": "icon",
+      "keywords": [
+        "hourglass simple low"
+      ]
+    },
+    {
+      "name": "hourglass-simple-medium",
+      "category": "icon",
+      "keywords": [
+        "hourglass simple medium"
+      ]
+    },
+    {
+      "name": "hourglass-simple",
+      "category": "icon",
+      "keywords": [
+        "hourglass simple"
+      ]
+    },
+    {
+      "name": "hourglass",
+      "category": "icon",
+      "keywords": [
+        "hourglass"
+      ]
+    },
+    {
+      "name": "house-line",
+      "category": "icon",
+      "keywords": [
+        "house line"
+      ]
+    },
+    {
+      "name": "house-simple",
+      "category": "icon",
+      "keywords": [
+        "house simple"
+      ]
+    },
+    {
+      "name": "house",
+      "category": "icon",
+      "keywords": [
+        "house"
+      ]
+    },
+    {
+      "name": "hurricane",
+      "category": "icon",
+      "keywords": [
+        "hurricane"
+      ]
+    },
+    {
+      "name": "ice-cream",
+      "category": "icon",
+      "keywords": [
+        "ice cream"
+      ]
+    },
+    {
+      "name": "identification-badge",
+      "category": "icon",
+      "keywords": [
+        "identification badge"
+      ]
+    },
+    {
+      "name": "identification-card",
+      "category": "icon",
+      "keywords": [
+        "identification card"
+      ]
+    },
+    {
+      "name": "image-broken",
+      "category": "icon",
+      "keywords": [
+        "image broken"
+      ]
+    },
+    {
+      "name": "image-square",
+      "category": "icon",
+      "keywords": [
+        "image square"
+      ]
+    },
+    {
+      "name": "image",
+      "category": "icon",
+      "keywords": [
+        "image"
+      ]
+    },
+    {
+      "name": "images-square",
+      "category": "icon",
+      "keywords": [
+        "images square"
+      ]
+    },
+    {
+      "name": "images",
+      "category": "icon",
+      "keywords": [
+        "images"
+      ]
+    },
+    {
+      "name": "infinity",
+      "category": "icon",
+      "keywords": [
+        "infinity"
+      ]
+    },
+    {
+      "name": "info",
+      "category": "icon",
+      "keywords": [
+        "info"
+      ]
+    },
+    {
+      "name": "instagram-logo",
+      "category": "icon",
+      "keywords": [
+        "instagram logo"
+      ]
+    },
+    {
+      "name": "intersect-square",
+      "category": "icon",
+      "keywords": [
+        "intersect square"
+      ]
+    },
+    {
+      "name": "intersect-three",
+      "category": "icon",
+      "keywords": [
+        "intersect three"
+      ]
+    },
+    {
+      "name": "intersect",
+      "category": "icon",
+      "keywords": [
+        "intersect"
+      ]
+    },
+    {
+      "name": "intersection",
+      "category": "icon",
+      "keywords": [
+        "intersection"
+      ]
+    },
+    {
+      "name": "invoice",
+      "category": "icon",
+      "keywords": [
+        "invoice"
+      ]
+    },
+    {
+      "name": "island",
+      "category": "icon",
+      "keywords": [
+        "island"
+      ]
+    },
+    {
+      "name": "jar-label",
+      "category": "icon",
+      "keywords": [
+        "jar label"
+      ]
+    },
+    {
+      "name": "jar",
+      "category": "icon",
+      "keywords": [
+        "jar"
+      ]
+    },
+    {
+      "name": "jeep",
+      "category": "icon",
+      "keywords": [
+        "jeep"
+      ]
+    },
+    {
+      "name": "joystick",
+      "category": "icon",
+      "keywords": [
+        "joystick"
+      ]
+    },
+    {
+      "name": "kanban",
+      "category": "icon",
+      "keywords": [
+        "kanban"
+      ]
+    },
+    {
+      "name": "key-return",
+      "category": "icon",
+      "keywords": [
+        "key return"
+      ]
+    },
+    {
+      "name": "key",
+      "category": "icon",
+      "keywords": [
+        "key"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "category": "icon",
+      "keywords": [
+        "keyboard"
+      ]
+    },
+    {
+      "name": "keyhole",
+      "category": "icon",
+      "keywords": [
+        "keyhole"
+      ]
+    },
+    {
+      "name": "knife",
+      "category": "icon",
+      "keywords": [
+        "knife"
+      ]
+    },
+    {
+      "name": "ladder-simple",
+      "category": "icon",
+      "keywords": [
+        "ladder simple"
+      ]
+    },
+    {
+      "name": "ladder",
+      "category": "icon",
+      "keywords": [
+        "ladder"
+      ]
+    },
+    {
+      "name": "lamp-pendant",
+      "category": "icon",
+      "keywords": [
+        "lamp pendant"
+      ]
+    },
+    {
+      "name": "lamp",
+      "category": "icon",
+      "keywords": [
+        "lamp"
+      ]
+    },
+    {
+      "name": "laptop",
+      "category": "icon",
+      "keywords": [
+        "laptop"
+      ]
+    },
+    {
+      "name": "lasso",
+      "category": "icon",
+      "keywords": [
+        "lasso"
+      ]
+    },
+    {
+      "name": "lastfm-logo",
+      "category": "icon",
+      "keywords": [
+        "lastfm logo"
+      ]
+    },
+    {
+      "name": "layout",
+      "category": "icon",
+      "keywords": [
+        "layout"
+      ]
+    },
+    {
+      "name": "leaf",
+      "category": "icon",
+      "keywords": [
+        "leaf"
+      ]
+    },
+    {
+      "name": "lectern",
+      "category": "icon",
+      "keywords": [
+        "lectern"
+      ]
+    },
+    {
+      "name": "lego-smiley",
+      "category": "icon",
+      "keywords": [
+        "lego smiley"
+      ]
+    },
+    {
+      "name": "lego",
+      "category": "icon",
+      "keywords": [
+        "lego"
+      ]
+    },
+    {
+      "name": "less-than-or-equal",
+      "category": "icon",
+      "keywords": [
+        "less than or equal"
+      ]
+    },
+    {
+      "name": "less-than",
+      "category": "icon",
+      "keywords": [
+        "less than"
+      ]
+    },
+    {
+      "name": "letter-circle-h",
+      "category": "icon",
+      "keywords": [
+        "letter circle h"
+      ]
+    },
+    {
+      "name": "letter-circle-p",
+      "category": "icon",
+      "keywords": [
+        "letter circle p"
+      ]
+    },
+    {
+      "name": "letter-circle-v",
+      "category": "icon",
+      "keywords": [
+        "letter circle v"
+      ]
+    },
+    {
+      "name": "lifebuoy",
+      "category": "icon",
+      "keywords": [
+        "lifebuoy"
+      ]
+    },
+    {
+      "name": "lightbulb-filament",
+      "category": "icon",
+      "keywords": [
+        "lightbulb filament"
+      ]
+    },
+    {
+      "name": "lightbulb",
+      "category": "icon",
+      "keywords": [
+        "lightbulb"
+      ]
+    },
+    {
+      "name": "lighthouse",
+      "category": "icon",
+      "keywords": [
+        "lighthouse"
+      ]
+    },
+    {
+      "name": "lightning-a",
+      "category": "icon",
+      "keywords": [
+        "lightning a"
+      ]
+    },
+    {
+      "name": "lightning-slash",
+      "category": "icon",
+      "keywords": [
+        "lightning slash"
+      ]
+    },
+    {
+      "name": "lightning",
+      "category": "icon",
+      "keywords": [
+        "lightning"
+      ]
+    },
+    {
+      "name": "line-segment",
+      "category": "icon",
+      "keywords": [
+        "line segment"
+      ]
+    },
+    {
+      "name": "line-segments",
+      "category": "icon",
+      "keywords": [
+        "line segments"
+      ]
+    },
+    {
+      "name": "line-vertical",
+      "category": "icon",
+      "keywords": [
+        "line vertical"
+      ]
+    },
+    {
+      "name": "link-break",
+      "category": "icon",
+      "keywords": [
+        "link break"
+      ]
+    },
+    {
+      "name": "link-simple-break",
+      "category": "icon",
+      "keywords": [
+        "link simple break"
+      ]
+    },
+    {
+      "name": "link-simple-horizontal-break",
+      "category": "icon",
+      "keywords": [
+        "link simple horizontal break"
+      ]
+    },
+    {
+      "name": "link-simple-horizontal",
+      "category": "icon",
+      "keywords": [
+        "link simple horizontal"
+      ]
+    },
+    {
+      "name": "link-simple",
+      "category": "icon",
+      "keywords": [
+        "link simple"
+      ]
+    },
+    {
+      "name": "link",
+      "category": "icon",
+      "keywords": [
+        "link"
+      ]
+    },
+    {
+      "name": "linkedin-logo",
+      "category": "icon",
+      "keywords": [
+        "linkedin logo"
+      ]
+    },
+    {
+      "name": "linktree-logo",
+      "category": "icon",
+      "keywords": [
+        "linktree logo"
+      ]
+    },
+    {
+      "name": "linux-logo",
+      "category": "icon",
+      "keywords": [
+        "linux logo"
+      ]
+    },
+    {
+      "name": "list-bullets",
+      "category": "icon",
+      "keywords": [
+        "list bullets"
+      ]
+    },
+    {
+      "name": "list-checks",
+      "category": "icon",
+      "keywords": [
+        "list checks"
+      ]
+    },
+    {
+      "name": "list-dashes",
+      "category": "icon",
+      "keywords": [
+        "list dashes"
+      ]
+    },
+    {
+      "name": "list-heart",
+      "category": "icon",
+      "keywords": [
+        "list heart"
+      ]
+    },
+    {
+      "name": "list-magnifying-glass",
+      "category": "icon",
+      "keywords": [
+        "list magnifying glass"
+      ]
+    },
+    {
+      "name": "list-numbers",
+      "category": "icon",
+      "keywords": [
+        "list numbers"
+      ]
+    },
+    {
+      "name": "list-plus",
+      "category": "icon",
+      "keywords": [
+        "list plus"
+      ]
+    },
+    {
+      "name": "list-star",
+      "category": "icon",
+      "keywords": [
+        "list star"
+      ]
+    },
+    {
+      "name": "list",
+      "category": "icon",
+      "keywords": [
+        "list"
+      ]
+    },
+    {
+      "name": "lock-key-open",
+      "category": "icon",
+      "keywords": [
+        "lock key open"
+      ]
+    },
+    {
+      "name": "lock-key",
+      "category": "icon",
+      "keywords": [
+        "lock key"
+      ]
+    },
+    {
+      "name": "lock-laminated-open",
+      "category": "icon",
+      "keywords": [
+        "lock laminated open"
+      ]
+    },
+    {
+      "name": "lock-laminated",
+      "category": "icon",
+      "keywords": [
+        "lock laminated"
+      ]
+    },
+    {
+      "name": "lock-open",
+      "category": "icon",
+      "keywords": [
+        "lock open"
+      ]
+    },
+    {
+      "name": "lock-simple-open",
+      "category": "icon",
+      "keywords": [
+        "lock simple open"
+      ]
+    },
+    {
+      "name": "lock-simple",
+      "category": "icon",
+      "keywords": [
+        "lock simple"
+      ]
+    },
+    {
+      "name": "lock",
+      "category": "icon",
+      "keywords": [
+        "lock"
+      ]
+    },
+    {
+      "name": "lockers",
+      "category": "icon",
+      "keywords": [
+        "lockers"
+      ]
+    },
+    {
+      "name": "log",
+      "category": "icon",
+      "keywords": [
+        "log"
+      ]
+    },
+    {
+      "name": "magic-wand",
+      "category": "icon",
+      "keywords": [
+        "magic wand"
+      ]
+    },
+    {
+      "name": "magnet-straight",
+      "category": "icon",
+      "keywords": [
+        "magnet straight"
+      ]
+    },
+    {
+      "name": "magnet",
+      "category": "icon",
+      "keywords": [
+        "magnet"
+      ]
+    },
+    {
+      "name": "magnifying-glass-minus",
+      "category": "icon",
+      "keywords": [
+        "magnifying glass minus"
+      ]
+    },
+    {
+      "name": "magnifying-glass-plus",
+      "category": "icon",
+      "keywords": [
+        "magnifying glass plus"
+      ]
+    },
+    {
+      "name": "magnifying-glass",
+      "category": "icon",
+      "keywords": [
+        "magnifying glass"
+      ]
+    },
+    {
+      "name": "mailbox",
+      "category": "icon",
+      "keywords": [
+        "mailbox"
+      ]
+    },
+    {
+      "name": "map-pin-area",
+      "category": "icon",
+      "keywords": [
+        "map pin area"
+      ]
+    },
+    {
+      "name": "map-pin-line",
+      "category": "icon",
+      "keywords": [
+        "map pin line"
+      ]
+    },
+    {
+      "name": "map-pin-plus",
+      "category": "icon",
+      "keywords": [
+        "map pin plus"
+      ]
+    },
+    {
+      "name": "map-pin-simple-area",
+      "category": "icon",
+      "keywords": [
+        "map pin simple area"
+      ]
+    },
+    {
+      "name": "map-pin-simple-line",
+      "category": "icon",
+      "keywords": [
+        "map pin simple line"
+      ]
+    },
+    {
+      "name": "map-pin-simple",
+      "category": "icon",
+      "keywords": [
+        "map pin simple"
+      ]
+    },
+    {
+      "name": "map-pin",
+      "category": "icon",
+      "keywords": [
+        "map pin"
+      ]
+    },
+    {
+      "name": "map-trifold",
+      "category": "icon",
+      "keywords": [
+        "map trifold"
+      ]
+    },
+    {
+      "name": "markdown-logo",
+      "category": "icon",
+      "keywords": [
+        "markdown logo"
+      ]
+    },
+    {
+      "name": "marker-circle",
+      "category": "icon",
+      "keywords": [
+        "marker circle"
+      ]
+    },
+    {
+      "name": "martini",
+      "category": "icon",
+      "keywords": [
+        "martini"
+      ]
+    },
+    {
+      "name": "mask-happy",
+      "category": "icon",
+      "keywords": [
+        "mask happy"
+      ]
+    },
+    {
+      "name": "mask-sad",
+      "category": "icon",
+      "keywords": [
+        "mask sad"
+      ]
+    },
+    {
+      "name": "mastodon-logo",
+      "category": "icon",
+      "keywords": [
+        "mastodon logo"
+      ]
+    },
+    {
+      "name": "math-operations",
+      "category": "icon",
+      "keywords": [
+        "math operations"
+      ]
+    },
+    {
+      "name": "matrix-logo",
+      "category": "icon",
+      "keywords": [
+        "matrix logo"
+      ]
+    },
+    {
+      "name": "medal-military",
+      "category": "icon",
+      "keywords": [
+        "medal military"
+      ]
+    },
+    {
+      "name": "medal",
+      "category": "icon",
+      "keywords": [
+        "medal"
+      ]
+    },
+    {
+      "name": "medium-logo",
+      "category": "icon",
+      "keywords": [
+        "medium logo"
+      ]
+    },
+    {
+      "name": "megaphone-simple",
+      "category": "icon",
+      "keywords": [
+        "megaphone simple"
+      ]
+    },
+    {
+      "name": "megaphone",
+      "category": "icon",
+      "keywords": [
+        "megaphone"
+      ]
+    },
+    {
+      "name": "member-of",
+      "category": "icon",
+      "keywords": [
+        "member of"
+      ]
+    },
+    {
+      "name": "memory",
+      "category": "icon",
+      "keywords": [
+        "memory"
+      ]
+    },
+    {
+      "name": "messenger-logo",
+      "category": "icon",
+      "keywords": [
+        "messenger logo"
+      ]
+    },
+    {
+      "name": "meta-logo",
+      "category": "icon",
+      "keywords": [
+        "meta logo"
+      ]
+    },
+    {
+      "name": "meteor",
+      "category": "icon",
+      "keywords": [
+        "meteor"
+      ]
+    },
+    {
+      "name": "metronome",
+      "category": "icon",
+      "keywords": [
+        "metronome"
+      ]
+    },
+    {
+      "name": "microphone-slash",
+      "category": "icon",
+      "keywords": [
+        "microphone slash"
+      ]
+    },
+    {
+      "name": "microphone-stage",
+      "category": "icon",
+      "keywords": [
+        "microphone stage"
+      ]
+    },
+    {
+      "name": "microphone",
+      "category": "icon",
+      "keywords": [
+        "microphone"
+      ]
+    },
+    {
+      "name": "microscope",
+      "category": "icon",
+      "keywords": [
+        "microscope"
+      ]
+    },
+    {
+      "name": "microsoft-excel-logo",
+      "category": "icon",
+      "keywords": [
+        "microsoft excel logo"
+      ]
+    },
+    {
+      "name": "microsoft-outlook-logo",
+      "category": "icon",
+      "keywords": [
+        "microsoft outlook logo"
+      ]
+    },
+    {
+      "name": "microsoft-powerpoint-logo",
+      "category": "icon",
+      "keywords": [
+        "microsoft powerpoint logo"
+      ]
+    },
+    {
+      "name": "microsoft-teams-logo",
+      "category": "icon",
+      "keywords": [
+        "microsoft teams logo"
+      ]
+    },
+    {
+      "name": "microsoft-word-logo",
+      "category": "icon",
+      "keywords": [
+        "microsoft word logo"
+      ]
+    },
+    {
+      "name": "minus-circle",
+      "category": "icon",
+      "keywords": [
+        "minus circle"
+      ]
+    },
+    {
+      "name": "minus-square",
+      "category": "icon",
+      "keywords": [
+        "minus square"
+      ]
+    },
+    {
+      "name": "minus",
+      "category": "icon",
+      "keywords": [
+        "minus"
+      ]
+    },
+    {
+      "name": "money-wavy",
+      "category": "icon",
+      "keywords": [
+        "money wavy"
+      ]
+    },
+    {
+      "name": "money",
+      "category": "icon",
+      "keywords": [
+        "money"
+      ]
+    },
+    {
+      "name": "monitor-arrow-up",
+      "category": "icon",
+      "keywords": [
+        "monitor arrow up"
+      ]
+    },
+    {
+      "name": "monitor-play",
+      "category": "icon",
+      "keywords": [
+        "monitor play"
+      ]
+    },
+    {
+      "name": "monitor",
+      "category": "icon",
+      "keywords": [
+        "monitor"
+      ]
+    },
+    {
+      "name": "moon-stars",
+      "category": "icon",
+      "keywords": [
+        "moon stars"
+      ]
+    },
+    {
+      "name": "moon",
+      "category": "icon",
+      "keywords": [
+        "moon"
+      ]
+    },
+    {
+      "name": "moped-front",
+      "category": "icon",
+      "keywords": [
+        "moped front"
+      ]
+    },
+    {
+      "name": "moped",
+      "category": "icon",
+      "keywords": [
+        "moped"
+      ]
+    },
+    {
+      "name": "mosque",
+      "category": "icon",
+      "keywords": [
+        "mosque"
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "category": "icon",
+      "keywords": [
+        "motorcycle"
+      ]
+    },
+    {
+      "name": "mountains",
+      "category": "icon",
+      "keywords": [
+        "mountains"
+      ]
+    },
+    {
+      "name": "mouse-left-click",
+      "category": "icon",
+      "keywords": [
+        "mouse left click"
+      ]
+    },
+    {
+      "name": "mouse-middle-click",
+      "category": "icon",
+      "keywords": [
+        "mouse middle click"
+      ]
+    },
+    {
+      "name": "mouse-right-click",
+      "category": "icon",
+      "keywords": [
+        "mouse right click"
+      ]
+    },
+    {
+      "name": "mouse-scroll",
+      "category": "icon",
+      "keywords": [
+        "mouse scroll"
+      ]
+    },
+    {
+      "name": "mouse-simple",
+      "category": "icon",
+      "keywords": [
+        "mouse simple"
+      ]
+    },
+    {
+      "name": "mouse",
+      "category": "icon",
+      "keywords": [
+        "mouse"
+      ]
+    },
+    {
+      "name": "music-note-simple",
+      "category": "icon",
+      "keywords": [
+        "music note simple"
+      ]
+    },
+    {
+      "name": "music-note",
+      "category": "icon",
+      "keywords": [
+        "music note"
+      ]
+    },
+    {
+      "name": "music-notes-minus",
+      "category": "icon",
+      "keywords": [
+        "music notes minus"
+      ]
+    },
+    {
+      "name": "music-notes-plus",
+      "category": "icon",
+      "keywords": [
+        "music notes plus"
+      ]
+    },
+    {
+      "name": "music-notes-simple",
+      "category": "icon",
+      "keywords": [
+        "music notes simple"
+      ]
+    },
+    {
+      "name": "music-notes",
+      "category": "icon",
+      "keywords": [
+        "music notes"
+      ]
+    },
+    {
+      "name": "navigation-arrow",
+      "category": "icon",
+      "keywords": [
+        "navigation arrow"
+      ]
+    },
+    {
+      "name": "needle",
+      "category": "icon",
+      "keywords": [
+        "needle"
+      ]
+    },
+    {
+      "name": "network-slash",
+      "category": "icon",
+      "keywords": [
+        "network slash"
+      ]
+    },
+    {
+      "name": "network-x",
+      "category": "icon",
+      "keywords": [
+        "network x"
+      ]
+    },
+    {
+      "name": "network",
+      "category": "icon",
+      "keywords": [
+        "network"
+      ]
+    },
+    {
+      "name": "newspaper-clipping",
+      "category": "icon",
+      "keywords": [
+        "newspaper clipping"
+      ]
+    },
+    {
+      "name": "newspaper",
+      "category": "icon",
+      "keywords": [
+        "newspaper"
+      ]
+    },
+    {
+      "name": "not-equals",
+      "category": "icon",
+      "keywords": [
+        "not equals"
+      ]
+    },
+    {
+      "name": "not-member-of",
+      "category": "icon",
+      "keywords": [
+        "not member of"
+      ]
+    },
+    {
+      "name": "not-subset-of",
+      "category": "icon",
+      "keywords": [
+        "not subset of"
+      ]
+    },
+    {
+      "name": "not-superset-of",
+      "category": "icon",
+      "keywords": [
+        "not superset of"
+      ]
+    },
+    {
+      "name": "notches",
+      "category": "icon",
+      "keywords": [
+        "notches"
+      ]
+    },
+    {
+      "name": "note-blank",
+      "category": "icon",
+      "keywords": [
+        "note blank"
+      ]
+    },
+    {
+      "name": "note-pencil",
+      "category": "icon",
+      "keywords": [
+        "note pencil"
+      ]
+    },
+    {
+      "name": "note",
+      "category": "icon",
+      "keywords": [
+        "note"
+      ]
+    },
+    {
+      "name": "notebook",
+      "category": "icon",
+      "keywords": [
+        "notebook"
+      ]
+    },
+    {
+      "name": "notepad",
+      "category": "icon",
+      "keywords": [
+        "notepad"
+      ]
+    },
+    {
+      "name": "notification",
+      "category": "icon",
+      "keywords": [
+        "notification"
+      ]
+    },
+    {
+      "name": "notion-logo",
+      "category": "icon",
+      "keywords": [
+        "notion logo"
+      ]
+    },
+    {
+      "name": "nuclear-plant",
+      "category": "icon",
+      "keywords": [
+        "nuclear plant"
+      ]
+    },
+    {
+      "name": "number-circle-eight",
+      "category": "icon",
+      "keywords": [
+        "number circle eight"
+      ]
+    },
+    {
+      "name": "number-circle-five",
+      "category": "icon",
+      "keywords": [
+        "number circle five"
+      ]
+    },
+    {
+      "name": "number-circle-four",
+      "category": "icon",
+      "keywords": [
+        "number circle four"
+      ]
+    },
+    {
+      "name": "number-circle-nine",
+      "category": "icon",
+      "keywords": [
+        "number circle nine"
+      ]
+    },
+    {
+      "name": "number-circle-one",
+      "category": "icon",
+      "keywords": [
+        "number circle one"
+      ]
+    },
+    {
+      "name": "number-circle-seven",
+      "category": "icon",
+      "keywords": [
+        "number circle seven"
+      ]
+    },
+    {
+      "name": "number-circle-six",
+      "category": "icon",
+      "keywords": [
+        "number circle six"
+      ]
+    },
+    {
+      "name": "number-circle-three",
+      "category": "icon",
+      "keywords": [
+        "number circle three"
+      ]
+    },
+    {
+      "name": "number-circle-two",
+      "category": "icon",
+      "keywords": [
+        "number circle two"
+      ]
+    },
+    {
+      "name": "number-circle-zero",
+      "category": "icon",
+      "keywords": [
+        "number circle zero"
+      ]
+    },
+    {
+      "name": "number-eight",
+      "category": "icon",
+      "keywords": [
+        "number eight"
+      ]
+    },
+    {
+      "name": "number-five",
+      "category": "icon",
+      "keywords": [
+        "number five"
+      ]
+    },
+    {
+      "name": "number-four",
+      "category": "icon",
+      "keywords": [
+        "number four"
+      ]
+    },
+    {
+      "name": "number-nine",
+      "category": "icon",
+      "keywords": [
+        "number nine"
+      ]
+    },
+    {
+      "name": "number-one",
+      "category": "icon",
+      "keywords": [
+        "number one"
+      ]
+    },
+    {
+      "name": "number-seven",
+      "category": "icon",
+      "keywords": [
+        "number seven"
+      ]
+    },
+    {
+      "name": "number-six",
+      "category": "icon",
+      "keywords": [
+        "number six"
+      ]
+    },
+    {
+      "name": "number-square-eight",
+      "category": "icon",
+      "keywords": [
+        "number square eight"
+      ]
+    },
+    {
+      "name": "number-square-five",
+      "category": "icon",
+      "keywords": [
+        "number square five"
+      ]
+    },
+    {
+      "name": "number-square-four",
+      "category": "icon",
+      "keywords": [
+        "number square four"
+      ]
+    },
+    {
+      "name": "number-square-nine",
+      "category": "icon",
+      "keywords": [
+        "number square nine"
+      ]
+    },
+    {
+      "name": "number-square-one",
+      "category": "icon",
+      "keywords": [
+        "number square one"
+      ]
+    },
+    {
+      "name": "number-square-seven",
+      "category": "icon",
+      "keywords": [
+        "number square seven"
+      ]
+    },
+    {
+      "name": "number-square-six",
+      "category": "icon",
+      "keywords": [
+        "number square six"
+      ]
+    },
+    {
+      "name": "number-square-three",
+      "category": "icon",
+      "keywords": [
+        "number square three"
+      ]
+    },
+    {
+      "name": "number-square-two",
+      "category": "icon",
+      "keywords": [
+        "number square two"
+      ]
+    },
+    {
+      "name": "number-square-zero",
+      "category": "icon",
+      "keywords": [
+        "number square zero"
+      ]
+    },
+    {
+      "name": "number-three",
+      "category": "icon",
+      "keywords": [
+        "number three"
+      ]
+    },
+    {
+      "name": "number-two",
+      "category": "icon",
+      "keywords": [
+        "number two"
+      ]
+    },
+    {
+      "name": "number-zero",
+      "category": "icon",
+      "keywords": [
+        "number zero"
+      ]
+    },
+    {
+      "name": "numpad",
+      "category": "icon",
+      "keywords": [
+        "numpad"
+      ]
+    },
+    {
+      "name": "nut",
+      "category": "icon",
+      "keywords": [
+        "nut"
+      ]
+    },
+    {
+      "name": "ny-times-logo",
+      "category": "icon",
+      "keywords": [
+        "ny times logo"
+      ]
+    },
+    {
+      "name": "octagon",
+      "category": "icon",
+      "keywords": [
+        "octagon"
+      ]
+    },
+    {
+      "name": "office-chair",
+      "category": "icon",
+      "keywords": [
+        "office chair"
+      ]
+    },
+    {
+      "name": "onigiri",
+      "category": "icon",
+      "keywords": [
+        "onigiri"
+      ]
+    },
+    {
+      "name": "open-ai-logo",
+      "category": "icon",
+      "keywords": [
+        "open ai logo"
+      ]
+    },
+    {
+      "name": "option",
+      "category": "icon",
+      "keywords": [
+        "option"
+      ]
+    },
+    {
+      "name": "orange-slice",
+      "category": "icon",
+      "keywords": [
+        "orange slice"
+      ]
+    },
+    {
+      "name": "orange",
+      "category": "icon",
+      "keywords": [
+        "orange"
+      ]
+    },
+    {
+      "name": "oven",
+      "category": "icon",
+      "keywords": [
+        "oven"
+      ]
     }
   ]
 }
