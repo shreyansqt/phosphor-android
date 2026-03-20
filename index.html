@@ -18235,19 +18235,13 @@ ${paths.join('\n')}
 </svg>`;
         }
 
-        function renderGrid(icons) {
-            const grid = document.getElementById('grid');
-            grid.innerHTML = icons.map(icon => {
-                const svg = iconMap[icon.name] ? vdToSvg(iconMap[icon.name]) : '';
-                const keywords = icon.keywords.filter(kw => kw !== icon.name).join(', ');
-                return `
-                    <div class="icon-card" onclick="copyXML('${icon.name}')" data-name="${icon.name}" data-keywords="${keywords}">
-                        <div class="icon-preview">${svg}</div>
-                        <p class="icon-name">${icon.name}</p>
-                        <div class="copy-hint">Click to copy XML</div>
-                    </div>
-                `;
-            }).join('');
+        function renderGrid(iconNames) {
+            // Just show/hide cards - SVGs are already in HTML from build time
+            const allCards = Array.from(document.querySelectorAll('.icon-card[data-name]'));
+            allCards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                card.classList.toggle('hidden', !iconNames.some(i => i.name === name));
+            });
         }
 
         function copyXML(iconName) {
